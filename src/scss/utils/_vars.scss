@@ -1,0 +1,49 @@
+// ==================
+// Variables
+// ==================
+
+// GT Colors
+
+$lego-green     :   #83bc20; // (131,188,32)
+$lego-gray      :   #63666a; // (99,102,106)
+
+$lego-gray-1    :   #e7e8e8; // R231 G232 B232
+$lego-gray-2    :   #d0d1d2; // R208 G209 B210
+$lego-gray-3    :   #b8babb; // R184 G186 B187 
+$lego-gray-4    :   #a1a3a5; // R161 G163 B165
+$lego-gray-5    :   #898c8f; // R137 G140 B143
+
+// Basics Colors
+
+$white         :   #ffffff;
+$light-gray    :   #eeeeee; // (238,238,238)
+$dark-gray     :   #2a2f33; // (42,47,51)
+$black         :   #000000;
+$papaya        :   #e86160; // (232,97,96)
+$dark-blue     :   #212943; // (33,41,67)
+$true-blue     :   #337ab7; // (51,122,183)
+$input-default :   #b8babb; // (184,186,187)
+
+// Font Sizes
+
+$font-lg      :   22px;
+$font-md      :   18px;
+$font-sm      :   14px;
+$font-xs      :   12px;
+
+// Font Families
+
+$arial        :  arial, sans-serif;
+$flexo-medium : 'Flexo-Medium', sans-serif;
+$flexo-thin   : 'Flexo-Thin', sans-serif;
+$montserrat   : 'Montserrat', sans-serif;
+
+// Components
+
+$custom-checkbox-border-color :  $lego-green;
+$custom-checkbox-bg-color     :  $lego-green;
+$custom-checkbox-label-color  :  $lego-gray;
+
+$custom-radio-border-color    :  $lego-green;
+$custom-radio-bg-color        :  $white;
+$custom-radio-circle-color    :  $lego-green;

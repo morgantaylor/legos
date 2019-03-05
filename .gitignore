@@ -2,8 +2,10 @@
 
 # compiled output
 /dist
+/dist-server
 /tmp
 /out-tsc
+*.map
 
 # dependencies
 /node_modules
@@ -33,6 +35,10 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
 
 # System Files
 .DS_Store

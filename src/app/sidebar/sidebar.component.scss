@@ -1,6 +1,6 @@
 @import "src/scss/utils/index.scss";
 
-sidebar + .content {
+sidebar + section {
   margin-left: 20px;
   padding-left: 45px;
 
@@ -10,22 +10,6 @@ sidebar + .content {
   }
 }
 
-.menu__mobile-icon {
-  @include absolute();
-  color: $dark-gray;
-
-  @include for-size(tablet-landscape-up) {
-    display: none;
-  }
-
-  .fa {
-    padding: 10px;
-  }
-
-  #close-menu {
-    display: none;
-  }
-}
 
 
 

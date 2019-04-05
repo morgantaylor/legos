@@ -11,6 +11,7 @@ import { StatesComponent } from './buttons/states/states.component';
 import { GroupsComponent } from './buttons/groups/groups.component';
 import { DropdownsComponent } from './buttons/dropdowns/dropdowns.component';
 import { TypographyComponent } from './typography/typography.component';
+import { IconsComponent } from './icons/icons.component';
 import { ColorsComponent } from './colors/colors.component';
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ColorsComponent } from './colors/colors.component';
     SidebarComponent
     ButtonsComponent,
     TypographyComponent,
+    IconsComponent,
     ColorsComponent,
     IconComponent,
     StatesComponent,

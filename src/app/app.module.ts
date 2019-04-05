@@ -10,13 +10,15 @@ import { IconComponent } from './buttons/icon/icon.component';
 import { StatesComponent } from './buttons/states/states.component';
 import { GroupsComponent } from './buttons/groups/groups.component';
 import { DropdownsComponent } from './buttons/dropdowns/dropdowns.component';
+
 import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
 import { ColorsComponent } from './colors/colors.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
+    SidebarComponent,
     ButtonsComponent,
     TypographyComponent,
     IconsComponent,

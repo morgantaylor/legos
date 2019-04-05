@@ -1,0 +1,33 @@
+<h5 class="section__title" id="buttons">buttons with icons</h5>
+<div class="container">
+  <p>Incorportate Font Awesome icons into your buttons or use an icon as a button.</p>
+  <button class="btn skin-blue"><i class="fas fa-cog icon--pad--right"></i>Settings</button>
+  <button class="btn skin-reverse-blue"><i class="fas fa-cog"></i></button>
+  <p>If you have a combination button that has an icon and a word use the icon classes ex: <code>.icon--pad--left, .icon--pad--right, or .icon--pad</code> to add some space between your icon and words.</p>
+<pre>&lt;button class="btn skin-blue"&gt;<br />
+&nbsp;&nbsp;&lt;i class="fas fa-cog icon--pad--right"&gt;&lt;/i&gt;<br />
+&nbsp;&nbsp;Settings<br />
+&lt;/button&gt;</pre>
+</div>
+
+<h5 class="section__title" id="buttons">upload button</h5>
+<div class="container">
+  <p>An upload file button is special. We use an input and a label to make a button. You can also add an icon inside.</p>
+  <p>The <code>.btn--upload</code> class comes along with the button styles that the label needs to look like a button as well as accepting style classes ontop of it like <code>.skin-blue</code>.</p>
+  <div class="container">
+    <div class="btn-upload-container">
+      <input type="file" name="uploadFile" id="upload" class="inputfile" tabindex="0" accept=".xlsx" required="required" aria-required="true" aria-invalid="true">
+      <label for="upload" class="btn--upload skin-blue">
+        <i class="fas icon--pad--right fa-upload"></i> Choose a file
+      </label>
+    </div>
+  </div>
+  <p>Make sure to add the skin color class and or the size class in the correct place. The <code>.skin-{{color}}</code> and <code>.skin-{{size}}</code>go on the <code>label</code> tag. See example below.</p>
+<pre>&lt;div class="btn-upload-container"&gt;<br />
+&nbsp;&nbsp;&lt;input type="file" name="uploadFile" id="upload" class="inputfile"&gt;<br />
+&nbsp;&nbsp;&lt;label for="upload" class="btn btn--upload skin-blue skin-md"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fas icon--pad--right fa-upload"&gt;&lt;/i&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Choose a file<br />
+&nbsp;&nbsp;&lt;label&gt;<br />
+&lt;/div&gt;</pre>
+</div>

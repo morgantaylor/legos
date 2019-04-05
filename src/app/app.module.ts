@@ -14,6 +14,8 @@ import { DropdownsComponent } from './buttons/dropdowns/dropdowns.component';
 import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
 import { ColorsComponent } from './colors/colors.component';
+import { AppNameComponent } from './app-name/app-name.component';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { ColorsComponent } from './colors/colors.component';
     TypographyComponent,
     IconsComponent,
     ColorsComponent,
+    AppNameComponent,
     IconComponent,
     StatesComponent,
     GroupsComponent,

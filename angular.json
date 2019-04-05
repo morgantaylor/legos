@@ -22,7 +22,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/scss/legos.scss"
+              "src/assets/styles.css",
+              "src/assets/app.css"
             ],
             "scripts": []
           },

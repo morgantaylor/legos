@@ -1,0 +1,87 @@
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+  position:relative;
+  display: flex;
+}
+.content {
+  max-width: 1100px;
+  min-width: 20px;
+  width: 100%;
+  padding-top: 40px;
+  margin-right: 20px;
+  padding-right: 45px;
+}
+pre.no-background {
+  background-color: #fff;
+}
+.logo-grid {
+  background: #ededed;
+  align-items: flex-start;
+  padding: 0 0 0 15px;
+  display: inline-block;
+  width: auto;
+}
+.logo-item {
+  margin: 10px 20px 10px 0;
+  max-width:  220px;
+}
+header {
+  border: 1px solid #ccc;
+}
+.arial-bold-text {
+  font-family: arial, sans-serif;
+  font-weight: 600;
+}
+.arial-text {
+  font-family: arial, sans-serif;
+  font-weight: 400;
+}
+.montserrat-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.icons-container p {
+  width:  200px;
+}
+.section__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+#documentation-table {
+  max-width:  600px;
+}
+#documentation-table input[type="text"], 
+#documentation-table input[type="color"], 
+#documentation-table input[type="date"], 
+#documentation-table input[type="email"], 
+#documentation-table input[type="number"], 
+#documentation-table input[type="password"], 
+#documentation-table input[type="search"], 
+#documentation-table input[type="time"], 
+#documentation-table input[type="range"], 
+#documentation-table select, 
+#documentation-table textarea {
+  margin:  0;
+}
+h4 .fas {
+  color:  #ccc;
+}
+h5 {
+  text-decoration:  underline;
+}
+#colors .card {
+  width:  110px !important;
+}
+
+sidebar + section {
+  margin-left: 20px;
+  padding-left: 45px;
+
+  @media screen (min-width: 1200px) {
+    padding-top: 55px;
+    margin-left: 300px;
+  }
+}

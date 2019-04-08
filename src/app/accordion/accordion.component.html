@@ -1,0 +1,105 @@
+<section class="paragraph">
+  <h4 class="section__title" id="accordion"><i class="fas fa-hashtag icon--pad--right" aria-hidden="true"></i>accordion</h4>
+  <div class="container">
+    <p>Our base accordion has all the styles stripped out. It's just a container with an arrow that changes positioning for open and close. By default the accorions are closed but we have highlighted in the _accordion.scss file what you need to comment out and comment in to switch that around. There are also additional syles you can add on to make the accordion look like a mixture of panel accordions, examples below.</p>
+    <p>The reason for the additional <code>list-unstyled</code> on the <code>ul class="accordion__wrapper"</code> is to clear the padding and list style type of an unordered list. The <code>.accordion__warpper</code> turns the <code>ul</code> into a flex parent with a direction of column, and also sets a max width of 650px with 0 margins.</p>
+    <ul class="accordion__wrapper list--unstyled">
+      <li class="accordion">
+        <input type="checkbox" checked>
+        <i></i>
+        <div class="accordion__title">
+          Header 1
+          <span class="accordion__title--secondary">(Note)</span>
+        </div>
+        <p class="accordion__container">
+          <span>This is something in the container</span>
+        </p>
+      </li>
+      <li class="accordion">
+        <input type="checkbox" checked>
+        <i></i>
+        <div class="accordion__title">
+          Header 2
+          <span class="accordion__title--secondary"><span class="fas fa-info-circle" aria-hidden="true"></span></span>
+        </div>
+        <p class="accordion__container">
+          <span>This is something in the container</span>
+          <span>This is something in the container</span>
+          <span>This is something in the container</span>
+        </p>
+      </li>
+    </ul>
+    <p>Example: Base Accordion</p>
+<pre>&lt;ul class="accordion__wrapper list--unstyled"&gt;<br />
+&nbsp;&nbsp;&lt;li class="accordion"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" checked&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&gt;&lt;/i&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="accordion__title"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Header 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="accordion__title--secondary"&gt;(Note)&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="accordion__container"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;This is something in the container&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&lt;ul&gt;</pre>
+    <h5 class="section__title">Paneled Accordion</h5>
+    <p>To make your accordions look like panel accordions just add onto the accordion base styles. Add <code>--paneled</code> onto <code>.accordion</code>, <code>.accordion__title</code>, and <code>.accordion__container</code>.</p>
+    <ul class="accordion__wrapper list--unstyled">
+      <li class="accordion--paneled">
+        <input type="checkbox" checked>
+        <i></i>
+        <div class="accordion__title--paneled">
+          Header 1
+          <span class="accordion__title--secondary">(Note)</span>
+        </div>
+        <p class="accordion__container--paneled">
+          <span>This is something in the container</span>
+        </p>
+      </li>
+      <li class="accordion--paneled">
+        <input type="checkbox" checked>
+        <i></i>
+        <div class="accordion__title--paneled">
+          Header 2
+          <span class="accordion__title--secondary"><span class="fas fa-info-circle" aria-hidden="true"></span></span>
+        </div>
+        <p class="accordion__container--paneled">
+          <span>This is something in the container</span>
+          <span>This is something in the container</span>
+          <span>This is something in the container</span>
+        </p>
+      </li>
+    </ul>
+    <p>Example: Paneled Accordion</p>
+<pre>&lt;ul class="accordion__wrapper list--unstyled"&gt;<br />
+&lt;li class="accordion--paneled"&gt;<br />
+&lt;input type="checkbox" checked&gt;<br />
+&lt;i&gt;&lt;/i&gt;<br />
+&lt;div class="accordion__title--paneled"&gt;<br />
+Header 1<br />
+&lt;span class="accordion__title--secondary"&gt;(Note)&lt;/span&gt;<br />
+&lt;/div&gt;<br />
+&lt;p class="accordion__container--paneled"&gt;<br />
+&lt;span&gt;This is something in the container&lt;/span&gt;<br />
+&lt;/p&gt;<br />
+&lt;/li&gt;<br />
+&lt;li class="accordion--paneled"&gt;<br />
+&lt;input type="checkbox" checked&gt;<br />
+&lt;i&gt;&lt;/i&gt;<br />
+&lt;div class="accordion__title--paneled"&gt;<br />
+Header 2<br />
+&lt;span class="accordion__title--secondary"&gt;<br />
+  &lt;span class="fas fa-info-circle" aria-hidden="true"&gt;<br />
+  &lt;/span&gt;<br />
+&lt;/span&gt;<br />
+&lt;/div&gt;<br />
+&lt;p class="accordion__container--paneled"&gt;<br />
+&lt;span&gt;This is something in the container&lt;/span&gt;<br />
+&lt;span&gt;This is something in the container&lt;/span&gt;<br />
+&lt;span&gt;This is something in the container&lt;/span&gt;<br />
+&lt;/p&gt;<br />
+&lt;/li&gt;<br />
+&lt;/ul&gt;</pre>
+  </div>
+</section>

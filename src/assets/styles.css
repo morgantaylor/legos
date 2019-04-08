@@ -142,7 +142,7 @@ button,
   flex-direction: column;
 }
 
-.modal-header, .flex--align--center, .lego-nav, pagination, .switch-toggle input + label, .switch-toggle, .switch-toggle__wrapper, .ui-select-container .ui-select-match .ui-select-toggle {
+.modal-header, .flex--align--center, .lego-nav, .pagination, .switch-toggle input + label, .switch-toggle, .switch-toggle__wrapper, .ui-select-container .ui-select-match .ui-select-toggle {
   display: flex;
   align-items: center;
 }
@@ -206,9 +206,7 @@ button:hover,
 .input--btn > .btn-reverse-input[readonly].btn .input--btn > .btn-input[readonly].btn {
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #A3A3A3;
-  background-color: #ffffff;
-  border-color: #A3A3A3;
+  opacity: 0.4;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -791,6 +789,7 @@ hr {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 0 5px;
 }
 .icon img, .icon--lg img, .icon--sm img {
   max-height: 30px;
@@ -803,18 +802,6 @@ hr {
 }
 .icon--lg img {
   max-height: 45px;
-}
-
-.fa-pad-left {
-  padding-left: 5px;
-}
-
-.fa-pad-light {
-  padding-right: 5px;
-}
-
-.fa-pad {
-  padding: 0 5px;
 }
 
 .input--btn {
@@ -1520,7 +1507,6 @@ button, .btn {
   text-transform: capitalize;
   text-align: center;
   white-space: nowrap;
-  margin: 0 5px;
   padding: 10px 18px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -2630,23 +2616,23 @@ that will remove styles or apply styles */
   pointer-events: auto;
 }
 
-pagination {
+.pagination {
   position: relative;
   margin: 40px 0 20px 0;
   padding-left: 0;
   border-radius: 4px;
 }
 
-pagination > li {
+.pagination > li {
   display: inline;
 }
 
-pagination .pagination--first {
+.pagination .pagination--first {
   margin-right: 10px;
 }
 
-pagination > li > a,
-pagination > li > span {
+.pagination > li > a,
+.pagination > li > span {
   position: relative;
   line-height: 1.4;
   color: #0083c6;
@@ -2658,49 +2644,49 @@ pagination > li > span {
   border: 1px solid #C9C9C9;
 }
 
-pagination li a {
+.pagination li a {
   color: #0083c6;
   background-color: #eeeeee;
 }
 
-pagination > .disabled > span,
-pagination > .disabled > span:hover,
-pagination > .disabled > span:focus,
-pagination > .disabled > a,
-pagination > .disabled > a:hover,
-pagination > .disabled > a:focus {
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
   color: #585858;
   cursor: not-allowed;
   background-color: #ffffff;
   border-color: #C9C9C9;
 }
 
-pagination .pagination--first a {
+.pagination .pagination--first a {
   border-radius: 4px;
 }
 
-pagination > li:first-child > a,
-pagination > li:first-child > span {
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
   margin-left: 0;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-pagination .pagination--first.disabled a,
-pagination .pagination--last.disabled a,
-pagination .pagination--prev.disabled a,
-pagination .pagination--next.disabled a {
+.pagination .pagination--first.disabled a,
+.pagination .pagination--last.disabled a,
+.pagination .pagination--prev.disabled a,
+.pagination .pagination--next.disabled a {
   color: #C9C9C9;
   background-color: #eeeeee;
   border-color: transparent;
 }
 
-pagination > .active > a,
-pagination > .active > span,
-pagination > .active > a:hover,
-pagination > .active > span:hover,
-pagination > .active > a:focus,
-pagination > .active > span:focus {
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
   cursor: default;
@@ -2708,16 +2694,16 @@ pagination > .active > span:focus {
   border-color: #0083c6;
 }
 
-pagination .pagination--last {
+.pagination .pagination--last {
   margin-left: 10px;
 }
 
-pagination .pagination--last a {
+.pagination .pagination--last a {
   border-radius: 4px;
 }
 
-pagination > li:last-child > a,
-pagination > li:last-child > span {
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }

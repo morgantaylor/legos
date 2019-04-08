@@ -1,0 +1,61 @@
+<section class="paragraph">
+  <h4 class="section__title" id="pagination"><i class="fas fa-hashtag icon--pad--right" aria-hidden="true"></i>pagination</h4>
+  <div class="container">
+    <p>We have default pagination. We should have a few different skins to choose from that we can put on top of these base styles.</p>
+    <p><strong>Labelling the pagination component:</strong><br>For accesability purposes the pagination component should be wrapped in a <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies. It's also possible that a page may have more than one <code>&lt;nav&gt;</code> section already (such as the primary navigation in the header, or a sidebar navigation). It would be good to follow best practices and provide a descriptive aria-label for the <code>&lt;nav&gt;</code>.</p>
+    <p><strong>Example:</strong> If the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label="Search results pages"</code>.</p>
+    <p>Both show a disabled button on the first item and the active state on the the 1 button.</p>
+    <p>The first is a baseline example of the default pagination.</p>
+    <div class="container__row">
+      <div class="pagination">
+        <li class="disabled">
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </div>
+    </div>
+    <p>Example: Pagination</p>
+<pre>&nbsp;&lt;div class="pagination" role="menu"&gt;<br />
+&nbsp;&nbsp;&lt;li role="menu-item" class="[add for specific styling] disabled"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" aria-label="Previous or < symbol]"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span aria-hidden="true"&gt;First&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&nbsp;&nbsp;&lt;li role="menu-item" class="[add for specific styling]&gt;<br />
+&nbsp;&nbsp;&lt;a href="#"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;#60;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&nbsp;&nbsp;&lt;li role="menu-item" class="active"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;1&lt;/a&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&nbsp;&nbsp;&lt;li role="menu-item"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;2&lt;/a&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&nbsp;&nbsp;&lt;li role="menu-item"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;3&lt;/a&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&nbsp;&nbsp;&lt;li role="menu-item" class="[add for specific styling]"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&nbsp;&nbsp;&lt;li role="menu-item" class="[add for specific styling]"&gt;<br />
+&nbsp;&nbsp;&lt;a href="#" aria-label="[Next or > symbol]"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span aria-hidden="true"&gt;Last&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />
+&nbsp;&nbsp;&lt;/li&gt;<br />
+&nbsp;&lt;/div&gt;</pre>
+  </div>
+</section>

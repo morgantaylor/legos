@@ -1,0 +1,21 @@
+<section class="paragraph">
+  <h4 class="section__title" id="tooltip"><i class="fas fa-hashtag icon--pad--right" aria-hidden="true"></i>tooltip</h4>
+  <p>Our tooltips are pure css and don't rely on on Javascript or jQuery. To add a tooltip follow these instruction:</p>
+  <p>1. Add a <code>.tooltip__wrapper</code>to the parent of the <code>tooltip</code>.</p>
+  <p>2. The tooltip itself will be a <code>div or a span</code> with a class of <code>tooltip tooltip--[direction]</code>.</p>
+  <p>Along with the toltip class you need to give the tooltip a direction which will designate where the tooltip will appear from and where the arrow will be located.</p>
+  <p>Options: <code>tooltip--top, tooltip--right, tooltip--bottom, tooltip--left</code></p>
+  <div class="container">
+    <p></p>
+    <button type="button" class="btn skin-reverse-gray tooltip__wrapper">Tooltip on left<div class="tooltip tooltip--left">This is a tooltip on the left</div></button>
+    <button type="button" class="btn skin-reverse-gray tooltip__wrapper">Tooltip on top<div class="tooltip tooltip--top">This is a short tooltip on the top</div></button>
+    <button type="button" class="btn skin-reverse-gray tooltip__wrapper">Tooltip on bottom<div class="tooltip tooltip--bottom">This is a super long tooltip that is on the bottom and it's really really long</div></button>
+    <button type="button" class="btn skin-reverse-gray tooltip__wrapper">Tooltip on right<div class="tooltip tooltip--right">This is a tooltip on the right</div></button>
+    <p>Example: Tooltip</p>
+<pre>&lt;button type="button" class="btn skin-reverse-gray tooltip__wrapper"&gt;<br />
+Tooltip on left<br />
+&lt;div class="tooltip tooltip--left"&gt;This is a tooltip on the left&lt;/div&gt;<br />
+&lt;/button&gt;</pre>
+    <p>If you want to change the tooltip color that would be in the <code>tooltip</code>class.</p>
+  </div>
+</section>

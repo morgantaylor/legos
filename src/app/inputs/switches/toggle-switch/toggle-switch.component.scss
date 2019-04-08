@@ -1,0 +1,18 @@
+.switch-toggle.skin-class {
+  background-color: #eeeeee;
+
+  label {
+    color: #585858;
+    text-shadow: none;
+  }
+
+  a {
+    background-color: #5cb85c;
+    border-color: darken(#5cb85c, 10%);
+  }
+
+  input:checked + label {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #191b1e;
+  }
+}

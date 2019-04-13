@@ -66,12 +66,10 @@ header {
 #documentation-table textarea {
   margin:  0;
 }
-h4 .fas {
+h3 .fas {
   color:  #ccc;
 }
-h5 {
-  text-decoration:  underline;
-}
+
 #colors .card {
   width:  110px !important;
 }

@@ -1,5 +1,8 @@
 <section class="paragraph">
-  <h4 class="section__title" id="accordion"><i class="icon fas fa-hashtag" aria-hidden="true"></i>accordion</h4>
+  <h3 class="section__title" id="accordion">
+    <i class="icon fas fa-hashtag" aria-hidden="true"></i>
+    <span>accordion</span>
+  </h3>
   <div class="container">
     <p>Our base accordion has all the styles stripped out. It's just a container with an arrow that changes positioning for open and close. By default the accorions are closed but we have highlighted in the _accordion.scss file what you need to comment out and comment in to switch that around. There are also additional syles you can add on to make the accordion look like a mixture of panel accordions, examples below.</p>
     <p>The reason for the additional <code>list-unstyled</code> on the <code>ul class="accordion__wrapper"</code> is to clear the padding and list style type of an unordered list. The <code>.accordion__warpper</code> turns the <code>ul</code> into a flex parent with a direction of column, and also sets a max width of 650px with 0 margins.</p>
@@ -43,7 +46,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
 &nbsp;&nbsp;&lt;/li&gt;<br />
 &lt;ul&gt;</pre>
-    <h5 class="section__title">Paneled Accordion</h5>
+    <h5>Paneled Accordion</h5>
     <p>To make your accordions look like panel accordions just add onto the accordion base styles. Add <code>--paneled</code> onto <code>.accordion</code>, <code>.accordion__title</code>, and <code>.accordion__container</code>.</p>
     <ul class="accordion__wrapper list--unstyled">
       <li class="accordion--paneled">

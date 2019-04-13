@@ -1,57 +1,40 @@
-<h5 class="section__title">Legos dropdowns</h5>
-  <div class="container">
-    <p>Our dropdowns are pur css that is activated with an invisible input checkbox. The only downside is if it is open you need to click it again to close it. Clicking outside of it will not close it.</p>
-    <div class="lego-dropdown">
-      <input type="checkbox">
-      <button class="btn skin-reverse-blue">
-        Dropdown Menu
-        <i class="icon fas fa-caret-down" aria-hidden="true"></i>
-      </button>
-      <ul>
-        <li><a href="#">A Link</a></li>
-        <li><a href="#">Another Link</a></li>
-        <li><a href="#">Sign off</a></li>
-        <li><a href="#">A Link</a></li>
-        <li><a href="#">Another Link</a></li>
-      </ul>
-    </div>
-    <div class="lego-dropdown">
-      <input type="checkbox" disabled>
-      <button class="btn skin-reverse-blue" disabled>
-        Dropdown Menu
-        <i class="icon fas fa-caret-down" aria-hidden="true"></i>
-      </button>
-      <ul>
-        <li><a href="#">A Link</a></li>
-        <li><a href="#">Another Link</a></li>
-        <li><a href="#">Sign off</a></li>
-      </ul>
-    </div>
-    <div class="lego-dropdown">
-      <input type="checkbox">
-      <button class="btn skin-reverse-blue">
-        <span>
-          Words
-        </span>
-        <i class="icon fas fa-caret-down" aria-hidden="true"></i>
-      </button>
-      <ul>
-        <li><a href="#">A Link</a></li>
-        <li><a href="#">Another Link</a></li>
-        <li><a href="#">Sign off</a></li>
-      </ul>
-    </div>
-    <p>Example: Pure Css Dropdown</p>
-<pre>&lt;div class="lego-dropdown"&gt;<br />
-&lt;input type="checkbox"&gt;<br />
-&lt;button class="btn skin-reverse-blue"&gt;<br />
-Dropdown Menu<br />
-&lt;i class="icon fas fa-caret-down" aria-hidden="true"&gt;&lt;/i&gt;<br />
-&lt;/button&gt;<br />
-&lt;ul&gt;<br />
-&lt;li&gt;&lt;a href="#"&gt;A Link&lt;/a&gt;&lt;/li&gt;<br />
-&lt;li&gt;&lt;a href="#"&gt;Another Link&lt;/a&gt;&lt;/li&gt;<br />
-&lt;li&gt;&lt;a href="#"&gt;Sign off&lt;/a&gt;&lt;/li&gt;<br />
-&lt;/ul&gt;<br />
-&lt;/div&gt;</pre>
-</div>
+<h5>Dropdowns</h5>
+  <p>Our dropdowns are powered only by CSS activated with an invisible input checkbox. The only downside is if it is open you need to click it again to close it. Clicking outside of it will not close it, but you could add some javascript if that's your thing.</p>
+  <h6>Demo:</h6>
+  <div class="lego-dropdown">
+    <input type="checkbox">
+    <button class="btn btn--outline-primary">
+      <span>Dropdown Menu</span>
+      <i class="icon fas fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <ul>
+      <li><a href="#">A Link</a></li>
+      <li><a href="#">Another Link</a></li>
+      <li><a href="#">Sign off</a></li>
+      <li><a href="#">A Link</a></li>
+      <li><a href="#">Another Link</a></li>
+    </ul>
+  </div>
+  <div class="lego-dropdown">
+    <input type="checkbox" disabled>
+    <button class="btn btn--outline-primary" disabled>
+      <span>Dropdown Menu</span>
+      <i class="icon fas fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <ul>
+      <li><a href="#">A Link</a></li>
+      <li><a href="#">Another Link</a></li>
+      <li><a href="#">Sign off</a></li>
+    </ul>
+  </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>lego-dropdown</mark>&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
+  &#x3C;button class=&#x22;btn <mark>btn--outline-primary</mark>&#x22;&#x3E;
+    &#x3C;span&#x3E;Dropdown Menu&#x3C;/span&#x3E;
+    &#x3C;i class=&#x22;icon fas fa-caret-down&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
+  &#x3C;/button&#x3E;
+  &#x3C;ul&#x3E;
+    &#x3C;li&#x3E;...&#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;</pre>

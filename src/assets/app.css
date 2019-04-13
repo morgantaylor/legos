@@ -85,3 +85,11 @@ sidebar + section {
     margin-left: 300px;
   }
 }
+.custom-alert-notifcation {
+  height: 68px;
+  padding-left: 0;
+  position:  relative;
+}
+.alert--notification.custom__position {
+  top: 15px;
+}

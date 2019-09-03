@@ -1,56 +1,83 @@
 <h5>Native Selects</h5>
-<div class="container">
-  <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via border-radius properties.</p>
-  <p>We have a custom block level select: <code>.select</code></p>
-  <div class="select">
-    <select name="selectExample" id="selectExample">
-      <option>Choose</option>
-      <option value="1">Pure CSS</option>
-      <option value="2">No JS</option>
-      <option value="3">Nice!</option>
-    </select>
-  </div>
-  <p>As wells as an inline select: <code>.select-inline</code></p>
-  <div class="select-inline skin-blue">
-    <select name="selectExample" id="selectExample">
-      <option>Choose</option>
-      <option value="1">Pure CSS</option>
-      <option value="2">No JS</option>
-      <option value="3">Nice!</option>
-    </select>
-  </div>
-  <div class="select-inline skin-reverse-blue">
-    <select name="selectExample" id="selectExample">
-      <option>Choose</option>
-      <option value="1">Pure CSS</option>
-      <option value="2">No JS</option>
-      <option value="3">Nice!</option>
-    </select>
-  </div>
-  <div class="select-inline skin-reverse-blue disabled">
-    <select name="selectExample" id="selectExample" disabled>
-      <option>Choose</option>
-      <option value="1">Pure CSS</option>
-      <option value="2">No JS</option>
-      <option value="3">Nice!</option>
-    </select>
-  </div>
-  <p>Add any of the custom button colors to the <code>.select</code> wrapper.</p>
-<pre>&lt;div class="select or select-inline"&gt;<br />
-&nbsp;&nbsp;&lt;select name="selectExample" id="selectExample"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option>Choose an option&lt;/option&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1">&lt;/option&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2">&lt;/option&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3">&lt;/option&gt;<br />
-&nbsp;&nbsp;&lt;/select&gt;<br />
-&lt;/div&gt;</pre>
-  <p>To add a color class or a button class you need to apply the classes in the following places. The <code>.skin-{{color}}</code> goes on the select wrapper and the <code>.skin-{{size}}</code> goes on the select itself. Example below.</p>
-<pre>&lt;div class="select skin-green"&gt;<br />
-&nbsp;&nbsp;&lt;select name="selectExample" id="selectExample" class="skin-md"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option>Choose an option&lt;/option&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1">&lt;/option&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2">&lt;/option&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3">&lt;/option&gt;<br />
-&nbsp;&nbsp;&lt;/select&gt;<br />
-&lt;/div&gt;</pre>
+<p>Note that many native select menus—namely in Safari and Chrome—are not customizable. They have rounded corners that cannot be modified via border-radius properties etc. With our select menu we can customize whether you want rounded or squared corners. Our default is rounded but with the addition of class <code>.select-squared</code> you call change the border radius.</p>
+<h5>Block Level</h5>
+<p>Use this when you want the select to take up the entire container it's in or take up the entire line.</p>
+<h6>Demo:</h6>
+<div class="select">
+  <select name="selectExample" id="selectExample">
+    <option>Choose</option>
+    <option value="1">Pure CSS</option>
+    <option value="2">No JS</option>
+    <option value="3">Nice!</option>
+  </select>
 </div>
+<h6>Markup:</h6>
+<pre>&#x3C;div <mark>class=&#x22;select&#x22;</mark>&#x3E;
+&#x3C;select name=&#x22;name&#x22; id=&#x22;id&#x22;&#x3E;
+  &#x3C;option>Choose an option&#x3C;/option&#x3E;
+  &#x3C;option value=&#x22;1&#x22;>&#x3C;/option&#x3E;
+  &#x3C;option value=&#x22;2&#x22;>&#x3C;/option&#x3E;
+  &#x3C;option value=&#x22;3&#x22;>&#x3C;/option&#x3E;
+&#x3C;/select&#x3E;
+&#x3C;/div&#x3E;</pre>
+<h5>Inline</h5>
+<p>If you need to put a select menu next to another input or another button or input use the inline select.</p>
+<h6>Demo:</h6>
+<input type="email">
+<div class="select-inline">
+  <select name="selectExample" id="selectExample">
+    <option>Choose</option>
+    <option value="1">Pure CSS</option>
+    <option value="2">No JS</option>
+    <option value="3">Nice!</option>
+  </select>
+</div>
+<div class="select-inline">
+  <select name="selectExample" id="selectExample">
+    <option>Choose</option>
+    <option value="1">Pure CSS</option>
+    <option value="2">No JS</option>
+    <option value="3">Nice!</option>
+  </select>
+</div>
+<button class="btn btn--default">Default</button>
+<h6>Markup:</h6>
+<pre>&#x3C;div <mark>class=&#x22;select-inline&#x22;</mark>&#x3E;
+&#x3C;select name=&#x22;name&#x22; id=&#x22;id&#x22;&#x3E;
+  ...
+&#x3C;/select&#x3E;
+&#x3C;/div&#x3E;</pre>
+<h5>Squared Corners</h5>
+<p>For a customized square corner that is not the default add the <code>.select-squared</code>class to the select wrapper.</p>
+<h6>Demo:</h6>
+<div class="select-inline select-squared">
+  <select name="selectExample" id="selectExample">
+    <option>Choose</option>
+    <option value="1">Pure CSS</option>
+    <option value="2">No JS</option>
+    <option value="3">Nice!</option>
+  </select>
+</div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;select <mark>select-squared</mark>&#x22;&#x3E;
+&#x3C;select name=&#x22;name&#x22; id=&#x22;id&#x22;&#x3E;
+...
+  &#x3C;/select&#x3E;
+&#x3C;/div&#x3E;</pre>
+<h5>Select Skins</h5>
+<p>Just like buttons, you can customize a select menu to have a skin color. To do this just add the skin class to the <code>.select</code> wrapper.</p>
+<h6>Demo:</h6>
+<div class="select skin-blue">
+  <select name="selectExample" id="selectExample">
+    <option>Choose</option>
+    <option value="1">Pure CSS</option>
+    <option value="2">No JS</option>
+    <option value="3">Nice!</option>
+  </select>
+</div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;select <mark>skin-blue</mark>&#x22;&#x3E;
+  &#x3C;select name=&#x22;name&#x22; id=&#x22;ID&#x22;&#x3E;
+    ...
+  &#x3C;/select&#x3E;
+&#x3C;/div&#x3E;</pre>

@@ -88,7 +88,7 @@ sidebar + section {
   padding-left: 0;
   position:  relative;
 }
-.alert--notification.custom__position {
+.alert--notification.alert__position {
   top: 15px;
 }
 .color-swatch {

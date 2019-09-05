@@ -4,65 +4,72 @@
     <span>alerts</span>
   </h3>
   <div class="container">
+    <p>Alerts are messages that are brought on by different types of user actions. There are two different types of alerts. Use the main <code>alert</code> class on your container.</p>
+    <p>Attributes: <code>role="alert"</code>.
     <h5>Global Alerts</h5>
-    <p>These are alerts that get fixed to the top of the screen and stay until they are dismissed with the close button <code>alert__close</code>. I would have an example here but it would just stay fixed to the top and that doesn't seem nessisary.</p>
+    <p>This type of alert gets fixed to the top of the screen and stays until dismissed with the close button. This is what differentiates it from a notification alert that fades on it's own after a certain amount of time.</p>
+    <h6>Demo:</h6>
+    <p><em>* I would have a demo here but it would just stay fixed to the top and that doesn't seem necessary, as it would just sit at the top of this screen.</em></p>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>alert alert--global alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
-...
+<pre>&#x3C;div class=&#x22;alert <mark>alert--global</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
+  ...
 &#x3C;/div&#x3E;
 </pre>
-    <h5>Notifcations</h5>
-    <p>These alerts that fade into an area of the viewport and a smaller text area, normally in the top corner and then fade out after a certain amount of time. For these notifications you can customise their placement sby adding your own position class to it. Recommended: top right</p>
-    <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>alert alert-notification alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
-...
-&#x3C;/div&#x3E;
-</pre>
+    <h5>Notifcation Alerts</h5>
+    <p>This type of alert fades into an area of the viewport brought on by some user interaction. They fade-in and then out after a certain amount of time. For these notifications you can customize their placement by adding your own position property to it. Recommendation: top right.</p>
+    <h6>Demo:</h6>
     <div class="custom-alert-notifcation">
-      <div class="alert alert--notification alert--success custom__position">
-        <div>Oh snap! Class alert--success.</div>
+      <div class="alert alert--notification alert--success alert__position">
+        <div>.alert--success</div>
       </div>
     </div>
-    <br>
-    <h5>Colors</h5>
+    <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;alert <mark>alert--notification</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
+  ...
+&#x3C;/div&#x3E;
+</pre>
+    <h5>Alert Colors</h5>
     <ul>
       <li><code>alert--danger</code></li>
       <li><code>alert--success</code></li>
       <li><code>alert--info</code></li>
       <li><code>alert--warning</code></li>
     </ul>
-    <p>These colors control the alerts backgroud color, font color, and when alert--notification is used a border color.</p>
+    <p>These colors control the alerts:</p> 
+    <ul>
+      <li>Backgroud Color</li>
+      <li>Font Color</li>
+      <li>Close Button Color (only for alert--global)</li>
+      <li>Border Color (only for alert--notification)</li>
+    </ul>
+    <h6>Demo:</h6>
     <div class="alert alert--danger" role="alert">
-      <div>Oh snap! Class alert--danger.</div>
+      <div>alert--danger</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <br>
     <div class="alert alert--success">
-      <div>Oh snap! Class alert--success.</div>
+      <div>alert--success</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <br>
     <div class="alert alert--info">
-      <div>Oh snap! Class alert--info.</div>
+      <div>alert--info</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <br>
     <div class="alert alert--warning">
-      <div>Oh snap! Class alert--warning.</div>
+      <div>alert--warning</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <br>
-    <h5>Element Markup</h5>
-<pre>&#x3C;div class=&#x22;alert alert--global alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
-  &#x3C;div&#x3E;Oh snap! Class alert--danger.&#x3C;/div&#x3E;
+    <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;alert alert--global <mark>alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
+  &#x3C;div&#x3E;Alert text here&#x3C;/div&#x3E;
   &#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;
     &#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;/button&#x3E;

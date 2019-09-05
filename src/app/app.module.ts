@@ -7,15 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+import { ColorsComponent } from './colors/colors.component';
+import { TypographyComponent } from './typography/typography.component';
+import { IconsComponent } from './icons/icons.component';
+import { ContainersComponent } from './containers/containers.component';
+
 import { ButtonsComponent } from './buttons/buttons.component';
 import { IconComponent } from './buttons/icon/icon.component';
 import { StatesComponent } from './buttons/states/states.component';
 import { GroupsComponent } from './buttons/groups/groups.component';
 import { DropdownsComponent } from './buttons/dropdowns/dropdowns.component';
-
-import { TypographyComponent } from './typography/typography.component';
-import { IconsComponent } from './icons/icons.component';
-import { ColorsComponent } from './colors/colors.component';
 
 import { InputsComponent } from './inputs/inputs.component';
 import { SelectsComponent } from './inputs/selects/selects.component';
@@ -80,7 +81,8 @@ import { PaginationComponent } from './pagination/pagination.component';
     LightSwitchComponent,
     SlideSwitchComponent,
     FlipSwitchComponent,
-    ToggleSwitchComponent
+    ToggleSwitchComponent,
+    ContainersComponent
   ],
   imports: [
     BrowserModule,

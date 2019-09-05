@@ -1,37 +1,29 @@
-<h5>Checkboxes Groups</h5>
-<div class="container">
-  <p>In our forms checkboxes are <strong>stacked by default</strong>. Just add a the <code>.checkbox</code> class around a parent container for the inputs.</p>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" value="">Checkbox Option 1
-    </label>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" value="" >Checkbox Option 2
-    </label>
-  </div>
-<pre>&lt;div class="checkbox"&gt;<br />
-&nbsp;&nbsp;&lt;label&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" value="" &gt;Checkbox Option 2<br />
-&nbsp;&nbsp;&lt;/label&gt;<br />
-&lt;/div&gt;</pre>
-</div>
-<h5>Inline Checkboxes</h5>
-<div class="container">
-  <p>Similarly use <code>.checkbox--inline</code> class on a series of checkboxes that you want to appear alongside eachother.</p>
-  <label class="checkbox--inline">
-      <input type="checkbox" value="">Checkbox Option 1
-  </label>
-  <label class="checkbox--inline">
-      <input type="checkbox" value="" >Checkbox Option 2
-  </label>
-  <br /><br />
-<pre>&lt;label class="checkbox--inline"&gt;<br />
-&nbsp;&nbsp;&lt;input type="checkbox" id="" value=""&gt; 2<br />
-&lt;/label&gt;<br />
-&lt;label class="checkbox--inline"&gt;<br />
-&nbsp;&nbsp;&lt;input type="checkbox" id="" value=""&gt; 3<br />
-&lt;/label&gt;</pre>
-</div>
-<custom-checkboxes></custom-checkboxes>
+<h5>Native Checkbox</h5>
+<p>When we have checkbox inputs, by default, they are wrapped with a <code>label</code> element with a class of <code>.checkbox</code>. Be sure to add <code>type="checkbox"</code> as an attribute.</p>
+<h6>Demo:</h6>
+<label class="checkbox">
+  <input type="checkbox" value="">Label 1
+</label>
+<label class="checkbox">
+  <input type="checkbox" value="" >Label 2
+</label>
+<h6>Markup:</h6>
+<pre>&#x3C;label class=&#x22;<mark>checkbox</mark>&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;&#x22;&#x3E;Label 1
+&#x3C;/label&#x3E;</pre>
+<h5>Native Inline Checkbox</h5>
+<p>Similar to our default checkbox inputs, modify the checkbox class and add <code>--inline</code> to the checkbox class on the <code>label</code> element for a series of checkboxes that you want to appear alongside eachother.</p>
+<h6>Demo:</h6>
+<label class="checkbox--inline">
+  <input type="checkbox" value="">Label Inline 1
+</label>
+<label class="checkbox--inline">
+  <input type="checkbox" value="" >Label Inline 2
+</label>
+<h6>Markup:</h6>
+<pre>&#x3C;label class=&#x22;<mark>checkbox--inline</mark>&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;&#x22; value=&#x22;&#x22;&#x3E;Label Inline 1
+&#x3C;/label&#x3E;
+&#x3C;label class=&#x22;<mark>checkbox--inline</mark>&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;&#x22; value=&#x22;&#x22;&#x3E;Label Inline 2
+&#x3C;/label&#x3E;</pre>

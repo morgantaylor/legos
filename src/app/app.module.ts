@@ -22,8 +22,6 @@ import { SelectsComponent } from './inputs/selects/selects.component';
 import { InputGroupsComponent } from './inputs/input-groups/input-groups.component';
 import { CheckboxesComponent } from './inputs/checkboxes/checkboxes.component';
 import { RadiosComponent } from './inputs/radios/radios.component';
-import { CustomRadioComponent } from './inputs/radios/custom-radio/custom-radio.component';
-import { CustomCheckboxesComponent } from './inputs/checkboxes/custom-checkboxes/custom-checkboxes.component';
 import { SwitchesComponent } from './inputs/switches/switches.component';
 import { LightSwitchComponent } from './inputs/switches/light-switch/light-switch.component';
 import { SlideSwitchComponent } from './inputs/switches/slide-switch/slide-switch.component';
@@ -67,8 +65,6 @@ import { PaginationComponent } from './pagination/pagination.component';
     InputGroupsComponent,
     CheckboxesComponent,
     RadiosComponent,
-    CustomRadioComponent,
-    CustomCheckboxesComponent,
     AccordionComponent,
     AlertsComponent,
     BreadcrumbsComponent,

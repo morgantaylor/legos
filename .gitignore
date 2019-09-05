@@ -6,7 +6,7 @@
 /tmp
 /out-tsc
 *.map
-src/assets/styles.css
+src/assets/*.css
 
 # dependencies
 /node_modules

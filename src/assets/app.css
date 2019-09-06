@@ -134,10 +134,6 @@ sidebar + section {
   display: inline-block;
   margin-bottom: -5px;
 }
-.custom-width {
-  width:  65px;
-  display:  inline-block;
-}
 .custom-bg-dark {
   display: inline-block;
   background-color: #333;

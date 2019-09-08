@@ -4,105 +4,248 @@
     <span>accordion</span>
   </h3>
   <div class="container">
-    <p>Our base accordion has all the styles stripped out. It's just a container with an arrow that changes positioning for open and close. By default the accorions are closed but we have highlighted in the _accordion.scss file what you need to comment out and comment in to switch that around. There are also additional syles you can add on to make the accordion look like a mixture of panel accordions, examples below.</p>
-    <p>The reason for the additional <code>list-unstyled</code> on the <code>ul class="accordion__wrapper"</code> is to clear the padding and list style type of an unordered list. The <code>.accordion__warpper</code> turns the <code>ul</code> into a flex parent with a direction of column, and also sets a max width of 650px with 0 margins.</p>
-    <ul class="accordion__wrapper list--unstyled">
-      <li class="accordion">
+    <p>Our base accordion is very simple with a few enhancements that you can add depending on what you want to use it for. The accordion has a wrapper, meaning you can add several accordions to one containers for them to be grouped together. By default the accordion is in the closed state but with a slight modification you can switch it to open by defaul. They will take up the entire space of their parent container or you can add a max-width property to the wrapper element. There are also additional modification styles you can add on. I'll walk you through them below.</p>
+    <h5>Basic</h5>
+    <p>The basic accordion has squared corners and has a white background.</p>
+    <h6>Demo:</h6>
+    <div class="accordion__wrapper acc-custom">
+      <div class="accordion">
         <input type="checkbox" checked>
         <i></i>
         <div class="accordion__title">
-          Header 1
-          <span class="accordion__title--secondary">(Note)</span>
+          Accordion 1
         </div>
-        <p class="accordion__container">
-          <span>This is something in the container</span>
-        </p>
-      </li>
-      <li class="accordion">
+        <div class="accordion__container">
+          Accordion 1 Item
+        </div>
+      </div>
+      <div class="accordion">
         <input type="checkbox" checked>
         <i></i>
         <div class="accordion__title">
-          Header 2
-          <span class="accordion__title--secondary"><span class="icon fas fa-info-circle" aria-hidden="true"></span></span>
+          Accordion 2
         </div>
-        <p class="accordion__container">
-          <span>This is something in the container</span>
-          <span>This is something in the container</span>
-          <span>This is something in the container</span>
-        </p>
-      </li>
-    </ul>
-    <p>Example: Base Accordion</p>
-<pre>&lt;ul class="accordion__wrapper list--unstyled"&gt;<br />
-&nbsp;&nbsp;&lt;li class="accordion"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" checked&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&gt;&lt;/i&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="accordion__title"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Header 1<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="accordion__title--secondary"&gt;(Note)&lt;/span&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="accordion__container"&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;This is something in the container&lt;/span&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
-&nbsp;&nbsp;&lt;/li&gt;<br />
-&lt;ul&gt;</pre>
-    <h5>Paneled Accordion</h5>
-    <p>To make your accordions look like panel accordions just add onto the accordion base styles. Add <code>--paneled</code> onto <code>.accordion</code>, <code>.accordion__title</code>, and <code>.accordion__container</code>.</p>
-    <ul class="accordion__wrapper list--unstyled">
-      <li class="accordion--paneled">
-        <input type="checkbox" checked>
-        <i></i>
-        <div class="accordion__title--paneled">
-          Header 1
-          <span class="accordion__title--secondary">(Note)</span>
+        <div class="accordion__container">
+          Accordion 2 Item
         </div>
-        <p class="accordion__container--paneled">
-          <span>This is something in the container</span>
-        </p>
-      </li>
-      <li class="accordion--paneled">
-        <input type="checkbox" checked>
-        <i></i>
-        <div class="accordion__title--paneled">
-          Header 2
-          <span class="accordion__title--secondary"><span class="icon fas fa-info-circle" aria-hidden="true"></span></span>
-        </div>
-        <p class="accordion__container--paneled">
-          <span>This is something in the container</span>
-          <span>This is something in the container</span>
-          <span>This is something in the container</span>
-        </p>
-      </li>
-    </ul>
-    <p>Example: Paneled Accordion</p>
-<pre>&lt;ul class="accordion__wrapper list--unstyled"&gt;<br />
-&lt;li class="accordion--paneled"&gt;<br />
-&lt;input type="checkbox" checked&gt;<br />
-&lt;i&gt;&lt;/i&gt;<br />
-&lt;div class="accordion__title--paneled"&gt;<br />
-Header 1<br />
-&lt;span class="accordion__title--secondary"&gt;(Note)&lt;/span&gt;<br />
-&lt;/div&gt;<br />
-&lt;p class="accordion__container--paneled"&gt;<br />
-&lt;span&gt;This is something in the container&lt;/span&gt;<br />
-&lt;/p&gt;<br />
-&lt;/li&gt;<br />
-&lt;li class="accordion--paneled"&gt;<br />
-&lt;input type="checkbox" checked&gt;<br />
-&lt;i&gt;&lt;/i&gt;<br />
-&lt;div class="accordion__title--paneled"&gt;<br />
-Header 2<br />
-&lt;span class="accordion__title--secondary"&gt;<br />
-  &lt;span class="icon fas fa-info-circle" aria-hidden="true"&gt;<br />
-  &lt;/span&gt;<br />
-&lt;/span&gt;<br />
-&lt;/div&gt;<br />
-&lt;p class="accordion__container--paneled"&gt;<br />
-&lt;span&gt;This is something in the container&lt;/span&gt;<br />
-&lt;span&gt;This is something in the container&lt;/span&gt;<br />
-&lt;span&gt;This is something in the container&lt;/span&gt;<br />
-&lt;/p&gt;<br />
-&lt;/li&gt;<br />
-&lt;/ul&gt;</pre>
+      </div>
+    </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>accordion__wrapper</mark>&#x22;&#x3E;
+  &#x3C;div class=&#x22;<mark>accordion</mark>&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; checked&#x3E;
+    &#x3C;i&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div class=&#x22;<mark>accordion__title</mark>&#x22;&#x3E;
+      Header 1
+    &#x3C;/div&#x3E;
+    &#x3C;p class=&#x22;<mark>accordion__container</mark>&#x22;&#x3E;
+      &#x3C;span&#x3E;This is something in the container&#x3C;/span&#x3E;
+    &#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+  <h5>Panel</h5>
+  <p>To make your accordions look like panels just add these classes onto the base classess. Add <code>--panel</code> to the <code>accordion</code> class. That's it!</p>
+  <p>By changing your accordion to a panel it:</p>
+  <ul>
+    <li>rounds the edges</li>
+    <li>adds a background color for the title</li>
+    <li>adds uniform padding to the accordion contents</li>
+  </ul>
+  <h6>Demo:</h6>
+  <div class="accordion__wrapper">
+    <div class="accordion--panel">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Header 1
+      </div>
+      <p class="accordion__container">
+        <span>This is something in the container</span>
+      </p>
+    </div>
+  </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;<mark>accordion--panel</mark>&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; checked&#x3E;
+    &#x3C;i&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div class=&#x22;accordion__title&#x22;&#x3E;
+      Header 2
+    &#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;p class=&#x22;accordion__container&#x22;&#x3E;
+      &#x3C;span&#x3E;This is something in the container&#x3C;/span&#x3E;
+    &#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+  <h5>Skins</h5>
+  <p>We provide four different types of skins. They transform color, border-color, background-color, and arrow color. You have to put the skin color on the <code>accordion</code> class, inside the <code>accordion__wrapper</code> or it will not work. When you add a skin to the basic accordion it make it look so similar to the panels that it's more useful if you want to add a color to just use a panel. The only real distinction is the rounded corners.</p>
+  <h6>Demo:</h6>
+  <h5>Basic Skins</h5>
+  <div class="accordion__wrapper acc-custom">
+    <div class="accordion skin-green">
+      <input type="checkbox">
+      <i></i>
+      <div class="accordion__title">
+        Green Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion <mark>skin-green</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+    <div class="accordion skin-gray">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Gray Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion <mark>skin-gray</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+    <div class="accordion skin-red">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Red Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion <mark>skin-red</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+    <div class="accordion skin-blue">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Blue Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion <mark>skin-blue</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+  </div>
+  <h5>Panel Skins</h5>
+  <div class="accordion__wrapper acc-custom">
+    <div class="accordion--panel skin-green">
+      <input type="checkbox">
+      <i></i>
+      <div class="accordion__title">
+        Panel Green Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion--panel <mark>skin-green</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+    <div class="accordion--panel skin-gray">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+       Panel Gray Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion--panel <mark>skin-gray</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+    <div class="accordion--panel skin-red">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Panel Red Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion--panel <mark>skin-red</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+    <div class="accordion--panel skin-blue">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Panel Blue Accordion
+      </div>
+      <div class="accordion__container">
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion--panel <mark>skin-blue</mark>&#x22;&#x3E;
+    ...
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+      </div>
+    </div>
+  </div>
+  <h5>Other Modifications</h5>
+  <ul>
+    <li>Add secondary text on title</li>
+    <li>Add icons inside the title</li>
+    <li>Round the edged of the accordion (can't see unless you have a skin on the basic version or a background color behind it)</li>
+    <li>Add skin colors</li>
+  </ul>
+  <h6>Demo:</h6>
+  <div class="accordion__wrapper">
+    <div class="accordion">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Header 1
+        <span class="accordion__title--secondary">secondary text</span>
+      </div>
+      <p class="accordion__container">
+        <span>This is something in the container</span>
+      </p>
+    </div>
+    <div class="accordion--panel">
+      <input type="checkbox" checked>
+      <i></i>
+      <div class="accordion__title">
+        Header 2 w/ icon
+        <span class="accordion__title--secondary"><span class="icon fas fa-info-circle" aria-hidden="true"></span></span>
+      </div>
+      <p class="accordion__container">
+        <span>This is something in the container</span>
+      </p>
+    </div>
+  </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion--panel&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; checked&#x3E;
+    &#x3C;i&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div class=&#x22;accordion__title&#x22;&#x3E;
+      Header 2
+      <mark>&#x3C;span class=&#x22;accordion__title--secondary&#x22;&#x3E;secondary text&#x3C;/span&#x3E;</mark>
+      <mark>&#x3C;span class=&#x22;icon fas fa-info-circle&#x22; aria-hidden=&#x22;true&#x22;&#x3E;</mark>
+    &#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;p class=&#x22;accordion__container&#x22;&#x3E;
+      &#x3C;span&#x3E;This is something in the container&#x3C;/span&#x3E;
+    &#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
   </div>
 </section>

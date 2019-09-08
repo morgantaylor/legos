@@ -67,6 +67,9 @@ sidebar + section {
     margin-left: 300px;
   }
 }
+.acc-custom {
+  max-width: 650px;
+}
 .custom-alert-notifcation {
   height: 68px;
   padding-left: 0;

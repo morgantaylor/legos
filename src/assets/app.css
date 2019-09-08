@@ -95,7 +95,6 @@ sidebar + section {
   margin-bottom:  5px;
 }
 .color-swatch code {
-  width:  80px;
   display: inline-block;
 }
 .color-swatch .swatch-primary {

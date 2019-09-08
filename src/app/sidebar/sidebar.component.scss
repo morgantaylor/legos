@@ -1,0 +1,13 @@
+@import '../app.component.scss';
+
+.list__item {
+
+  &:hover {
+    background-color: $lego-primary;
+    color: $white;
+  }
+
+  &:active {
+    border-left: 2px solid $lego-primary;
+  }
+}

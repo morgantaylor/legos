@@ -31,24 +31,8 @@ pre.no-background {
 header {
   border: 1px solid #ccc;
 }
-.arial-bold-text {
-  font-family: arial, sans-serif;
-  font-weight: 600;
-}
-.arial-text {
-  font-family: arial, sans-serif;
-  font-weight: 400;
-}
-.montserrat-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
 .icons-container p {
   width:  230px;
-}
-.section__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
 }
 #documentation-table {
   max-width:  600px;

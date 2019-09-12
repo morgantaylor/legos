@@ -53,11 +53,6 @@ header {
 h3 .fas {
   color:  #ccc;
 }
-
-#colors .card {
-  width:  110px !important;
-}
-
 sidebar + section {
   margin-left: 20px;
   padding-left: 45px;

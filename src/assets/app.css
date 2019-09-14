@@ -15,7 +15,9 @@
   margin-right: 20px;
   padding-right: 45px;
 }
-
+pre {
+  max-height: 350px;
+}
 pre.no-background {
   background-color: #fff;
 }

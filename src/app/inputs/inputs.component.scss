@@ -1,0 +1,16 @@
+#documentation-table {
+  max-width:  600px;
+}
+#documentation-table input[type="text"], 
+#documentation-table input[type="color"], 
+#documentation-table input[type="date"], 
+#documentation-table input[type="email"], 
+#documentation-table input[type="number"], 
+#documentation-table input[type="password"], 
+#documentation-table input[type="search"], 
+#documentation-table input[type="time"], 
+#documentation-table input[type="range"], 
+#documentation-table select, 
+#documentation-table textarea {
+  margin:  0;
+}

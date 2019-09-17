@@ -38,9 +38,6 @@ import { ChipsComponent } from './chips/chips.component';
 
 import { SwitchesComponent } from './switches/switches.component';
 import { LightSwitchComponent } from './switches/light-switch/light-switch.component';
-import { SlideSwitchComponent } from './switches/slide-switch/slide-switch.component';
-import { FlipSwitchComponent } from './switches/flip-switch/flip-switch.component';
-import { ToggleSwitchComponent } from './switches/toggle-switch/toggle-switch.component';
 
 import { TabsComponent } from './tabs/tabs.component';
 
@@ -84,9 +81,6 @@ import { PaginationComponent } from './pagination/pagination.component';
     TooltipsComponent,
     SwitchesComponent,
     LightSwitchComponent,
-    SlideSwitchComponent,
-    FlipSwitchComponent,
-    ToggleSwitchComponent,
     ContainersComponent
   ],
   imports: [

@@ -1,53 +1,99 @@
-<h5>Switch Toggle</h5>
-  <div class="container">
-  <p><code>.switch</code> : Default switches that that take up the whole line.</p>
-  <div class="switch">
-    <strong class="title">Light Switch</strong>
-    <input type="checkbox">
-    <span>
-      <span>Off</span>
-      <span>On</span>
-      <a></a>
-    </span>
-  </div>
-  <div class="switch">
-    <strong class="title">Light Switch</strong>
-    <input type="checkbox" disabled>
-    <span>
-      <span>Off</span>
-      <span>On</span>
-      <a></a>
-    </span>
-  </div>
-  <p><code>&lt;switch-inline&gt;</code> : If you want your switch to be an inline item alongside another item.</p>
-  <div class="switch-inline">
-    <strong class="title">Light Switch</strong>
-    <input type="checkbox">
-    <span>
-      <span>Off</span>
-      <span>On</span>
-      <a></a>
-    </span>
-  </div>
-  <div class="switch-inline">
-    <strong class="title">Light Switch</strong>
-    <input type="checkbox" disabled>
-    <span>
-      <span>Off</span>
-      <span>On</span>
-      <a></a>
-    </span>
-  </div>
-  <br />
-  <p>Example: Default Switch</p>
-<pre>&lt;div class="switch"&gt;<br />
-&nbsp;&nbsp;&lt;input type="checkbox"&gt;<br />
-&nbsp;&nbsp;&lt;strong class="title"&gt;Light Switch&lt;/strong&gt;<br />
-&nbsp;&nbsp;&lt;span&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Off&lt;/span&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;On&lt;/span&gt;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;&lt;/a&gt;<br />
-&nbsp;&nbsp;&lt;/span&gt;<br />
-&lt;/div"&gt;</pre>
-  <p>If you want to customize your switch i recomment making a skin and applying your styles there. <code>&lt;div class="switch skin"&gt;</code>Target that <code>.switch.skin a, .switch-inline.skin a, .switch-inline.skin a</code> tag and change the <code>background-color</code> to change the switch circle color.</p>
+<h5>Basic</h5>
+<p>By default the light switch component is a block element. The label is encosed within it so that will always be on the same line as its corresponding switch. The default switch is very much light a light switch, dark and gray when off and golden when on. Colors are customizeable along with the default skins that come with the element.</p>
+<h6>Demo:</h6>
+<div class="switch">
+  <div class="title">Light Switch</div>
+  <input type="checkbox">
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
 </div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>switch</mark>&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
+  &#x3C;div class=&#x22;title&#x22;&#x3E;label text here&#x3C;/div&#x3E;
+  &#x3C;span&#x3E;
+    &#x3C;span&#x3E;Off&#x3C;/span&#x3E;
+    &#x3C;span&#x3E;On&#x3C;/span&#x3E;
+    &#x3C;a&#x3E;&#x3C;/a&#x3E;
+  &#x3C;/span&#x3E;
+&#x3C;/div&#x3E;</pre>
+<h5>Inline</h5>
+<p>If you want a switch component to be inline with another element just use the <code>switch-inline</code> class instead.</p>
+<h6>Demo:</h6>
+<div class="switch-inline">
+  <div class="title">Light Switch</div>
+  <input type="checkbox">
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
+</div>
+<div class="switch-inline">
+  <div class="title">Light Switch</div>
+  <input type="checkbox">
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
+</div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>switch-inline</mark>&#x22;&#x3E;
+  ...
+&#x3C;/div&#x3E;</pre>
+<h5>Skins</h5>
+<p>Default skins colors availible: <code>primary</code><code>success</code><code>danger</code>
+<h6>Demo: <code>skin--primary</code></h6>
+<div class="switch skin--primary">
+  <div class="title">Light Switch</div>
+  <input type="checkbox" checked>
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
+</div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>switch skin--primary</mark>&#x22;&#x3E;
+  ...
+&#x3C;/div&#x3E;</pre>
+<h6>Demo: <code>skin--success</code></h6>
+<div class="switch skin--success">
+  <div class="title">Light Switch</div>
+  <input type="checkbox" checked>
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
+</div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>switch skin--success</mark>&#x22;&#x3E;
+  ...
+&#x3C;/div&#x3E;</pre>
+<h6>Demo: <code>skin--danger</code></h6>
+<div class="switch skin--danger">
+  <div class="title">Light Switch</div>
+  <input type="checkbox" checked>
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
+</div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>switch skin--danger</mark>&#x22;&#x3E;
+  ...
+&#x3C;/div&#x3E;</pre>
+<h5>Color Custumizations</h5>
+<p>If you want to customize your switch with a specific color that isn't part of our default skins I recomment making your own skin class, add your styles, to that, and add it alongside the <code>switch</code> element class.</p>
+<pre>&#x3C;div class="switch <mark>custom-skin</mark>"&#x3E;</pre>
+<p>Inside your stylesheet target these elements:</p> 
+<ul>
+  <li><code>.switch input:checked + span</code> : targets the background color of the switch when its on</li>
+  <li><code>switch input:checked + span a</code> : targets the color of the circle when switch is on</li>
+</ul>

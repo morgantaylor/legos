@@ -1,0 +1,21 @@
+$tabCount: 8;
+
+.show--tab--content {
+  display: block;
+  padding: 20px;
+  background: #fff;
+}
+
+@for $i from 1 through $tabCount {
+  #tab-#{$i}:checked ~ #content-#{$i}{
+    @extend .show--tab--content;
+  }
+}
+
+.tab__container--bordered {
+  @for $i from 1 through $tabCount {
+    #tab-#{$i}:checked ~ #content-#{$i}{
+      @extend .show--tab--content; 
+    }
+  }
+}

@@ -18,11 +18,12 @@
     <h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;<mark>btn btn--outline-default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
     <h5>Link</h5>
-    <p>While a link does look different than a button, its base is still the same. The text is the color and that's it. No border or background color.</p>
+    <p>This element is not a <code>&#x3C;button&#x3E;</code> tag, it is infact <code>&#x3C;a&#x3E;</code> tag.</p>
+    <p>While not specifically a button, it does not get the <code>.btn</code> base, links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space. The link space takes up only the amount of what's inside of it, which is unlike buttons that have a set padding.</p>
     <h6>Demo:</h6>
-    <button class="btn link--default">link default</button>
+    <a class="link--default">link default</a>
     <h6>Markup:</h6>
-<pre>&#x3C;button class=&#x22;<mark>btn link--default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
+<pre>&#x3C;a class=&#x22;<mark>link--default</mark>&#x22;&#x3E;...&#x3C;/a&#x3E;</pre>
     <h5>Button Colors</h5>
     <ul>
       <li class="color-swatch"><code>--primary</code><span class="swatch-primary"></span></li>
@@ -51,11 +52,11 @@
     <div class="container flex-column">
       <div>Links: </div>
       <div>
-        <button class="btn link--primary">link primary / default</button>
-        <button class="btn link--success">link success</button>
-        <button class="btn link--danger">link danger</button>
-        <button class="btn link--gray">link gray</button>
-        <div class="custom-bg-dark"><button class="btn link--white">link white</button></div>
+        <a class="link--primary link-demo">link primary / default</a>
+        <a class="link--success link-demo">link success</a>
+        <a class="link--danger link-demo">link danger</a>
+        <a class="link--gray link-demo">link gray</a>
+        <div class="custom-bg-dark link-demo"><a class="link--white">link white</a></div>
       </div>
       <p><em><sup>*</sup>Note: Above background just to show the white link.</em></p>
     </div>

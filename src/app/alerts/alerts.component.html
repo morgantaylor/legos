@@ -7,24 +7,24 @@
     <p>Alerts are messages that are brought on by different types of user actions. There are two different types of alerts. Use the main <code>alert</code> class on your container.</p>
     <p>Attributes: <code>role="alert"</code>.
     <h5>Global Alerts</h5>
-    <p>This type of alert gets fixed to the top of the screen and stays until dismissed with the close button. This is what differentiates it from a notification alert that fades on it's own after a certain amount of time.</p>
+    <p>The global modification of the alert block gets fixed to the top of the screen and stays until dismissed with the close button. This is what differentiates it from a notification alert that fades away after a certain amount of time.</p>
     <h6>Demo:</h6>
     <p><em>* I would have a demo here but it would just stay fixed to the top and that doesn't seem necessary, as it would just sit at the top of this screen.</em></p>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert <mark>alert-global</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;alert <mark>alert--global</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;
 </pre>
     <h5>Notifcation Alerts</h5>
-    <p>This type of alert fades into an area of the viewport brought on by some user interaction. They usually fade-in and then out after a certain amount of time. For these notifications you can customize their placement by adding your own position property to it. The default is: top right.</p>
+    <p>The notification modification of the alert block fades into an area of the viewport brought on by some type of user interaction. They usually fade-in and out after a certain amount of time. Notifications placement can be customized by adding your own position property to it. The default is: top right.</p>
     <h6>Demo:</h6>
     <div class="custom-alert-notifcation">
-      <div class="alert alert-notification alert--success demo">
+      <div class="alert alert--notification alert--success demo">
         <div>.alert--success</div>
       </div>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert <mark>alert-notification</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;alert <mark>alert--notification</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;
 </pre>
@@ -45,66 +45,66 @@
     <h6>Demo:</h6>
     <div class="alert alert-demo alert--danger" role="alert">
       <div>alert--danger</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <div class="alert alert-demo alert--success">
       <div>alert--success</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <div class="alert alert-demo alert--border alert--primary">
       <div>alert--primary</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <div class="alert alert-demo alert--border alert--warning">
       <div>alert--warning</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert alert-global <mark>alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;alert alert--global <mark>alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
   &#x3C;div&#x3E;Alert text here&#x3C;/div&#x3E;
-  &#x3C;button type=&#x22;button&#x22; class=&#x22;alert-close&#x22;&#x3E;
+  &#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;
     &#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;/button&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h5>Border</h5>
-    <p>If you would like to add a border around your alert just add <code>-border</code> to your skin class.</p>
+    <p>If you would like to add a border around your alert add the <code>--border</code> modifier to the skin class.</p>
     <h6>Demo:</h6>
-    <div class="alert alert--danger-border" role="alert">
+    <div class="alert alert--danger--border" role="alert">
       <div>alert--danger</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="alert alert--success-border">
+    <div class="alert alert--success--border">
       <div>alert--success</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="alert alert--primary-border">
+    <div class="alert alert--primary--border">
       <div>alert--primary</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="alert alert--warning-border">
+    <div class="alert alert--warning--border">
       <div>alert--warning</div>
-      <button type="button" class="alert-close">
+      <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert alert-global alert--danger<mark>-border</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;alert alert--global alert--danger<mark>--border</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
   &#x3C;div&#x3E;Alert text here&#x3C;/div&#x3E;
-  &#x3C;button type=&#x22;button&#x22; class=&#x22;alert-close&#x22;&#x3E;
+  &#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;
     &#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;/button&#x3E;
 &#x3C;/div&#x3E;</pre>

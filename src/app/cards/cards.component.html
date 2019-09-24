@@ -8,43 +8,43 @@
     <p>The card component is made with content in mind. It had to be very veritile to take all different types of content in as many different ways that the user throws at it. With that in mind the first demo is classic representation of a card. Image/display area, card title, and text.</p>
     <h6>Demo:</h6>
     <div class="card">
-      <div class="card-display--top card-display-overlay bg-dark">300 x 168</div>
-      <div class="card-body">
-        <span class="card-title">Card Title</span>
-        <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+      <div class="card__display--top card__display--overlay bg-dark">300 x 168</div>
+      <div class="card__body">
+        <span class="card__title">Card Title</span>
+        <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
       </div>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>card</mark>&#x22;&#x3E;
-  &#x3C;div class=&#x22;<mark>card-body</mark>&#x22;&#x3E;
-    &#x3C;span class=&#x22;<mark>card-title</mark>&#x22;&#x3E;card title&#x3C;/span&#x3E;
-    &#x3C;span class=&#x22;<mark>card-text</mark>&#x22;&#x3E;card text&#x3C;/span&#x3E;
+  &#x3C;div class=&#x22;<mark>card__body</mark>&#x22;&#x3E;
+    &#x3C;span class=&#x22;<mark>card__title</mark>&#x22;&#x3E;card title&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;<mark>card__text</mark>&#x22;&#x3E;card text&#x3C;/span&#x3E;
   &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
     <p>Next we'll walk through what options we can add on and configure.</p>
     <h5>Images</h5>
-    <p>You can add an image to the top or the bottom of you card by adding a image or div element with a class of<code>.card-display--top</code> or <code>.card-display--bottom</code> and making sure to put it above or below the <code>.card-body</code> section.</p>
+    <p>You can add an image to the top or the bottom of you card by adding a image or div element with a class of<code>.card__display--top</code> or <code>.card__display--bottom</code> and making sure to put it above or below the <code>.card__body</code> section.</p>
     <h6>Demo:</h6>
     <div class="flex-container">
       <div class="card">
-        <img class="card-display--top img-demo">
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+        <img class="card__display--top img-demo">
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
         </div>
       </div>
       <div class="card">
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
         </div>
-        <img class="card-display--bottom img-demo">
+        <img class="card__display--bottom img-demo">
       </div>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;card&#x22;&#x3E;
-  &#x3C;img class=&#x22;<mark>card-display--[top OR bottom]</mark>&#x22;&#x3E;
-  &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+  &#x3C;img class=&#x22;<mark>card__display--[top OR bottom]</mark>&#x22;&#x3E;
+  &#x3C;div class=&#x22;card__body&#x22;&#x3E;
    ...
   &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
@@ -52,78 +52,78 @@
     <h6>Demo:</h6>
     <div class="flex-container cards-container">
       <div class="card">
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <button class="card-button btn--primary">Card Button</button>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <button class="card__button btn btn--primary">Card Button</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <a class="card-link" href="#">Link</a>
-          <a class="card-link" href="#">More Links</a>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <a class="card__link link--primary" href="#">Link</a>
+          <a class="card__link link--primary" href="#">More Links</a>
         </div>
       </div>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;card&#x22;&#x3E;
-  &#x3C;img class=&#x22;card-display--top&#x22;&#x3E;
-  &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+  &#x3C;img class=&#x22;card__display--top&#x22;&#x3E;
+  &#x3C;div class=&#x22;card__body&#x22;&#x3E;
     ...
-    &#x3C;button class=&#x22;<mark>card-button</mark> btn--primary&#x22;&#x3E;Card Button&#x3C;/button&#x3E;
-    &#x3C;a class=&#x22;<mark>card-link</mark>&#x22; href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+    &#x3C;button class=&#x22;<mark>card__button</mark> btn btn--primary&#x22;&#x3E;Card Button&#x3C;/button&#x3E;
+    &#x3C;a class=&#x22;<mark>card__link</mark> link--primary&#x22; href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
   &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h5>Header & Footer</h5>
     <h6>Demo:</h6>
     <div class="card">
-      <div class="card-header">Card Header</div>
-      <div class="card-body">
-        <span class="card-title">Card Title</span>
-        <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-        <button class="card-button btn--primary">Card Button</button>
+      <div class="card__header">Card Header</div>
+      <div class="card__body">
+        <span class="card__title">Card Title</span>
+        <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+        <button class="card__button btn btn--primary">Card Button</button>
       </div>
-      <div class="card-footer">Card Footer</div>
+      <div class="card__footer">Card Footer</div>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;card&#x22;&#x3E;
-  &#x3C;div class=&#x22;<mark>card-header</mark>&#x22;&#x3E;Card Header&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+  &#x3C;div class=&#x22;<mark>card__header</mark>&#x22;&#x3E;Card Header&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;card__body&#x22;&#x3E;
     ...
   &#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;<mark>card-footer</mark>&#x22;&#x3E;Card Footer&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;<mark>card__footer</mark>&#x22;&#x3E;Card Footer&#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h5>Sizes</h5>
     <p>There are three different sizes that come with the card, unless you'd like to customize the sizes on your own. The default size of the card, if you don't add a size class to it is defaulted to the medium card size. To add a card size to a card add <code>.card--sm</code> or <code>.card--lg</code>.</p>
     <h6>Demo:</h6>
     <div class="flex-container cards-container">
       <div class="card card--sm">
-        <div class="card-display--top card-display-overlay bg-dark">150 x 84</div>
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <button class="card-button btn--primary">Card Button</button>
+        <div class="card__display--top card__display--overlay bg-dark">150 x 84</div>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <button class="card__button btn btn--primary">Card Button</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-display--middle card-display-overlay bg-dark">150 x 84</div>
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <a class="card-link" href="#">Link</a>
-          <a class="card-link" href="#">More Links</a>
+        <div class="card__header">Card Header</div>
+        <div class="card__display--middle card__display--overlay bg-dark">150 x 84</div>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <a class="card__link link--primary" href="#">Link</a>
+          <a class="card__link link--primary" href="#">More Links</a>
         </div>
       </div>
       <div class="card card--lg">
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <button class="card-button btn--primary">Card Button</button>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <button class="card__button btn btn--primary">Card Button</button>
         </div>
-        <div class="card-display--bottom card-display-overlay bg-dark">450 x 253</div>
+        <div class="card__display--bottom card__display--overlay bg-dark">450 x 253</div>
       </div>
     </div>
     <h5>Alignment</h5>
@@ -131,29 +131,29 @@
     <h6>Demo:</h6>
     <div class="flex-container cards-container">
       <div class="card card--left">
-        <div class="card-display--top card-display-overlay bg-dark">300 x 168</div>
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <button class="card-button btn--primary">Card Button</button>
+        <div class="card__display--top card__display--overlay bg-dark">300 x 168</div>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <button class="card__button btn btn--primary">Card Button</button>
         </div>
       </div>
       <div class="card card--centered">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <a class="card-link" href="#">Link</a>
-          <a class="card-link" href="#">More Links</a>
+        <div class="card__header">Card Header</div>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <a class="card__link link--primary" href="#">Link</a>
+          <a class="card__link link--primary" href="#">More Links</a>
         </div>
       </div>
       <div class="card card--right">
-        <div class="card-body">
-          <span class="card-title">Card Title</span>
-          <span class="card-text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
-          <button class="card-button btn--primary">Card Button</button>
+        <div class="card__body">
+          <span class="card__title">Card Title</span>
+          <span class="card__text">This is content for the card. Summary for the card goes here, two to three lines maximum.</span>
+          <button class="card__button btn btn--primary">Card Button</button>
         </div>
-        <div class="card-display--bottom card-display-overlay bg-dark">300 x 168</div>
+        <div class="card__display--bottom card__display--overlay bg-dark">300 x 168</div>
       </div>
     </div>
   </div>

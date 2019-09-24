@@ -1,40 +1,40 @@
 <h5>Dropdowns</h5>
   <p>Our dropdowns are powered only by CSS activated with an invisible input checkbox. The only downside is if it is open you need to click it again to close it. Clicking outside of it will not close it, but you could add some javascript if that's your thing.</p>
   <h6>Demo:</h6>
-  <div class="lego-dropdown">
-    <input type="checkbox">
-    <button class="btn btn--outline-primary">
+  <div class="dropdown">
+    <input type="checkbox" class="dropdown__toggle">
+    <button class="dropdown__btn btn btn--primary">
       <span>Dropdown Menu</span>
       <i class="icon fas fa-caret-down" aria-hidden="true"></i>
     </button>
-    <ul>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Sign off</a></li>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">Another Link</a></li>
+    <ul class="dropdown__container">
+      <li class="dropdown__item"><a href="#">A Link</a></li>
+      <li class="dropdown__item"><a href="#">Another Link</a></li>
+      <li class="dropdown__item"><a href="#">Sign off</a></li>
+      <li class="dropdown__item"><a href="#">A Link</a></li>
+      <li class="dropdown__item"><a href="#">Another Link</a></li>
     </ul>
   </div>
-  <div class="lego-dropdown">
-    <input type="checkbox" disabled>
-    <button class="btn btn--outline-primary" disabled>
+  <div class="dropdown">
+    <input type="checkbox" class="dropdown__toggle" disabled>
+    <button class="dropdown__btn btn btn--outline-primary" disabled>
       <span>Dropdown Menu</span>
       <i class="icon fas fa-caret-down" aria-hidden="true"></i>
     </button>
-    <ul>
-      <li><a href="#">A Link</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Sign off</a></li>
+    <ul class="dropdown__container">
+      <li class="dropdown__item"><a href="#">A Link</a></li>
+      <li class="dropdown__item"><a href="#">Another Link</a></li>
+      <li class="dropdown__item"><a href="#">Sign off</a></li>
     </ul>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>lego-dropdown</mark>&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
-  &#x3C;button class=&#x22;btn <mark>btn--outline-primary</mark>&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>dropdown</mark>&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;dropdown__toggle&#x22;&#x3E;
+  &#x3C;button class=&#x22;dropdown__btn btn <mark>btn--outline-primary</mark>&#x22;&#x3E;
     &#x3C;span&#x3E;Dropdown Menu&#x3C;/span&#x3E;
     &#x3C;i class=&#x22;icon fas fa-caret-down&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;/button&#x3E;
-  &#x3C;ul&#x3E;
-    &#x3C;li&#x3E;...&#x3C;/li&#x3E;
+  &#x3C;ul  class=&#x22;dropdown__container&#x22;&#x3E;
+    &#x3C;li class=&#x22;dropdown__item&#x22;&#x3E;...&#x3C;/li&#x3E;
   &#x3C;/ul&#x3E;
 &#x3C;/div&#x3E;</pre>

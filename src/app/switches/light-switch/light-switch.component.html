@@ -2,7 +2,7 @@
 <p>By default the light switch component is a block element. The label is encosed within it so that will always be on the same line as its corresponding switch. The default switch is very much light a light switch, dark and gray when off and golden when on. Colors are customizeable along with the default skins that come with the element.</p>
 <h6>Demo:</h6>
 <div class="switch">
-  <div class="title">Light Switch</div>
+  <div class="switch__title">Light Switch</div>
   <input type="checkbox">
   <span>
     <span>Off</span>
@@ -13,7 +13,7 @@
 <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>switch</mark>&#x22;&#x3E;
   &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
-  &#x3C;div class=&#x22;title&#x22;&#x3E;label text here&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;switch__title&#x22;&#x3E;label text here&#x3C;/div&#x3E;
   &#x3C;span&#x3E;
     &#x3C;span&#x3E;Off&#x3C;/span&#x3E;
     &#x3C;span&#x3E;On&#x3C;/span&#x3E;
@@ -21,10 +21,10 @@
   &#x3C;/span&#x3E;
 &#x3C;/div&#x3E;</pre>
 <h5>Inline</h5>
-<p>If you want a switch component to be inline with another element just use the <code>switch-inline</code> class instead.</p>
+<p>If you want a switch component to be inline with another element just use the <code>switch--inline</code> class instead.</p>
 <h6>Demo:</h6>
-<div class="switch-inline">
-  <div class="title">Light Switch</div>
+<div class="switch--inline">
+  <div class="switch__title">Light Switch</div>
   <input type="checkbox">
   <span>
     <span>Off</span>
@@ -32,8 +32,8 @@
     <a></a>
   </span>
 </div>
-<div class="switch-inline">
-  <div class="title">Light Switch</div>
+<div class="switch--inline">
+  <div class="switch__title">Light Switch</div>
   <input type="checkbox">
   <span>
     <span>Off</span>
@@ -42,14 +42,14 @@
   </span>
 </div>
 <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>switch-inline</mark>&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>switch--inline</mark>&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;</pre>
 <h5>Skins</h5>
-<p>Default skins colors availible: <code>primary</code><code>success</code><code>danger</code>
+<p>Default skins colors availible:</p>
 <h6>Demo: <code>switch--primary</code></h6>
 <div class="switch switch--primary">
-  <div class="title">Light Switch</div>
+  <div class="switch__title">Light Switch</div>
   <input type="checkbox" checked>
   <span>
     <span>Off</span>
@@ -63,7 +63,7 @@
 &#x3C;/div&#x3E;</pre>
 <h6>Demo: <code>switch--success</code></h6>
 <div class="switch switch--success">
-  <div class="title">Light Switch</div>
+  <div class="switch__title">Light Switch</div>
   <input type="checkbox" checked>
   <span>
     <span>Off</span>
@@ -77,7 +77,7 @@
 &#x3C;/div&#x3E;</pre>
 <h6>Demo: <code>switch--danger</code></h6>
 <div class="switch switch--danger">
-  <div class="title">Light Switch</div>
+  <div class="switch__title">Light Switch</div>
   <input type="checkbox" checked>
   <span>
     <span>Off</span>

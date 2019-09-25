@@ -11,18 +11,18 @@
     <p><strong>Example:</strong> If the pagination component is used to navigate between a set of pages in a sign up form, an appropriate label could be <code>aria-label="sign up form pages"</code>.</p>
     <h6>Demo:</h6>
     <div class="flex-container">
-      <nav class="pagination">
-        <li class="pagination--first disabled">
+      <nav class="pagination" role="menu">
+        <li class="pagination__item--first disabled" role="menu-item">
           <a href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li class="pagination--last">
+        <li class="pagination__item active" role="menu-item"><a href="#">1</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">2</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">3</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">4</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">5</a></li>
+        <li class="pagination__item--last" role="menu-item">
           <a href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
@@ -30,63 +30,59 @@
       </nav>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;nav class=&#x22;pagination&#x22; role=&#x22;menu&#x22;&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22; class=&#x22;[ifDisabled] [prevArrow]&#x22;&#x3E;
+<pre>&#x3C;nav class=&#x22;<mark>pagination</mark>&#x22; role=&#x22;menu&#x22;&#x3E;
+  &#x3C;li class=&#x22;<mark>pagination__item--first</mark> [ifDisabled]&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22; aria-label=&#x22;[Previous or < symbol]&#x22;&#x3E;
-    &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;First&#x3C;/span&#x3E;
+      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;First&#x3C;/span&#x3E;
     &#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
-    &#x3C;a href=&#x22;#&#x22;&#x3E;
-    &amp;#60;
-    &#x3C;/a&#x3E;
+  &#x3C;li class=&#x22;<mark>pagination__item</mark>&#x22; role=&#x22;menu-item&#x22;&#x3E;
+    &#x3C;a href=&#x22;#&#x22;&#x3E;&amp;#60;&#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22; class=&#x22;active&#x22;&#x3E;
+  &#x3C;li class=&#x22;<mark>pagination__item</mark>&#x22; role=&#x22;menu-item&#x22; class=&#x22;active&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
+  &#x3C;li class=&#x22;<mark>pagination__item</mark>&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
+  &#x3C;li class=&#x22;<mark>pagination__item</mark>&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
-    &#x3C;a href=&#x22;#&#x22;&#x3E;
-    &amp;#62;
-  &#x3C;/a&#x3E;
+  &#x3C;li class=&#x22;<mark>pagination__item</mark>&#x22; role=&#x22;menu-item&#x22;&#x3E;
+    &#x3C;a href=&#x22;#&#x22;&#x3E;&amp;#62;&#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22; class&#x22;[lastArrow]&#x22;&#x3E;
+  &#x3C;li class&#x22;<mark>pagination__item--last</mark>&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22; aria-label=&#x22;[Next or > symbol]&#x22;&#x3E;
-    &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;Last&#x3C;/span&#x3E;
+      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;Last&#x3C;/span&#x3E;
     &#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
 &#x3C;/nav&#x3E;</pre>
     <h5>Prev/Next Labels</h5>
-    <p>You can customize how you want to represent the previous/first and next/last items. You could choose to have all of them, or just choose one set. Either way you can use words or symbols.</p>
+    <p>You can customize how you want to represent the previous/first and next/last items. You could choose to have all of them displayed, or just choose one set. Either way you can use words or symbols. The only thing that changes when you add <code>--first</code> or <code>--last</code> to <code>.pagination__item</code> is the spacing. The first and last buttons have a margin that seperate them from the inner set of buttons.</p>
     <h6>Demo:</h6>
     <div class="flex-container">
-      <nav class="pagination">
-        <li class="pagination--first disabled">
+      <nav class="pagination" role="menu">
+        <li class="pagination__item--first disabled" role="menu-item">
           <a href="#" aria-label="First">
             <span aria-hidden="true">First</span>
           </a>
         </li>
-        <li>
+        <li class="pagination__item" role="menu-item">
           <a href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
+        <li class="pagination__item active" role="menu-item"><a href="#">1</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">2</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">3</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">4</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">5</a></li>
+        <li  class="pagination__item"role="menu-item">
           <a href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>
-        <li class="pagination--last">
+        <li class="pagination__item--last" role="menu-item">
           <a href="#" aria-label="last">
             <span aria-hidden="true">Last</span>
           </a>
@@ -95,43 +91,43 @@
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;nav class=&#x22;pagination&#x22; role=&#x22;menu&#x22;&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
+  &#x3C;li class=&#x22;pagination__item--first&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22; aria-label=&#x22;First&#x22;&#x3E;
-    &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;First&#x3C;/span&#x3E;
+      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;First&#x3C;/span&#x3E;
     &#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
+  &#x3C;li class=&#x22;pagination__item&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22; aria-label=&#x22;[Previous or < symbol]&#x22;&#x3E;
-    &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&laquo;&#x3C;/span&#x3E;
+      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&laquo;&#x3C;/span&#x3E;
     &#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
   ...
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
+  &#x3C;li class=&#x22;pagination__item&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22; aria-label=&#x22;[Next or > symbol]&#x22;&#x3E;
-    &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&raquo;&#x3C;/span&#x3E;
+      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&raquo;&#x3C;/span&#x3E;
     &#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
-  &#x3C;li role=&#x22;menu-item&#x22;&#x3E;
+  &#x3C;li class=&#x22;pagination__item--last&#x22; role=&#x22;menu-item&#x22;&#x3E;
     &#x3C;a href=&#x22;#&#x22; aria-label=&#x22;Last&#x22;&#x3E;
-    &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;Last&#x3C;/span&#x3E;
+      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;Last&#x3C;/span&#x3E;
     &#x3C;/a&#x3E;
   &#x3C;/li&#x3E;
 &#x3C;/nav&#x3E;</pre>
     <h5>Skins</h5>
     <h6>Demo: <code>pagination--green</code></h6>
     <div class="flex-container">
-      <nav class="pagination pagination--green">
-        <li class="disabled">
+      <nav class="pagination pagination--green" role="menu">
+        <li class="pagination__item--first disabled" role="menu-tem">
           <a href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
+        <li class="pagination__item active" role="menu-item"><a href="#">1</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">2</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">3</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">4</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">5</a></li>
+        <li class="pagination__item--last" role="menu-item">
           <a href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
@@ -144,18 +140,18 @@
 &#x3C;/nav&#x3E;</pre>
     <h6>Demo: <code>pagination--red</code></h6>
     <div class="flex-container">
-      <nav class="pagination pagination--red">
-        <li class="disabled">
+      <nav class="pagination pagination--red" role="menu">
+        <li class="pagination__item--first disabled" role="menu-item">
           <a href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
+        <li class="pagination__item active" role="menu-item"><a href="#">1</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">2</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">3</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">4</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">5</a></li>
+        <li class="pagination__item--last" role="menu-item">
           <a href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
@@ -168,18 +164,18 @@
 &#x3C;/nav&#x3E;</pre>
     <h6>Demo: <code>pagination--blue</code></h6>
     <div class="flex-container">
-      <nav class="pagination pagination--blue">
-        <li class="disabled">
+      <nav class="pagination pagination--blue" role="menu">
+        <li class="pagination__item--first disabled" role="menu-item">
           <a href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
+        <li class="pagination__item active" role="menu-item"><a href="#">1</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">2</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">3</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">4</a></li>
+        <li class="pagination__item" role="menu-item"><a href="#">5</a></li>
+        <li class="pagination__item--last" role="menu-item">
           <a href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>

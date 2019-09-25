@@ -5,54 +5,54 @@
   </h3>
   <div class="container">
     <h5>Basic</h5>
-    <p>Chips are pill shaped elements. They can be used as list items, labels, or as counters, just as an example. They can be static elements or you can allow users to interact and remove them.</p>
-    <p>To create chips you need to house them in a <code>.chips</code> container that keeps them all together. Each individual chip gets a <code>.chip</code> class.</p>
+    <p>Chips are pill shaped elements. They can be used for is several ways, such as list items, labels, or as counters for example. They can be static elements or you can allow users to interact and remove them.</p>
+    <p>To create chips you need to house them in a <code>.chips</code> container that keeps them all together in a wrapping container. Each individual chip gets the <code>.chip</code> class applied. Chips are bare by default leaving room for the skin to be applied onto of it.</p>
     <h6>Demo:</h6>
     <div class="chips">
-      <span class="chip chip-default">Hockey</span>
-      <span class="chip chip-default">Lacrosse</span>
-      <span class="chip chip-default">Baseball</span>
+      <span class="chip">Hockey</span>
+      <span class="chip">Lacrosse</span>
+      <span class="chip">Baseball</span>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>chips</mark>&#x22;&#x3E;
-  &#x3C;span class=&#x22;<mark>chip</mark> chip-default&#x22;&#x3E;Hockey&#x3C;/span&#x3E;
+  &#x3C;span class=&#x22;<mark>chip</mark>&#x22;&#x3E;Hockey&#x3C;/span&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h5>Skins</h5>
-    <p>On top of the basic chip you can add the default skin colors to chips. They will alter the background-color, text color, border, and if the chips are removable then the delete icon color as well. To add a skin to the chip just add it to the  <code>.chip</code> element. There are two types of skins that can be applied to chips. Just like with buttons, there is a filled chip and and outlined chip. See below for examples.</p>
+    <p>On the chip you add the skin color. This will alter the background-color, text color, border color, and if the chips are removable then the close icon color as well. To add a skin to the chip add it with the  <code>.chip</code> class. There are two options for skins that can be applied to chips. Just like other elements, there is a filled skin and and outlined skin. See below for examples.</p>
     <h6>Demo:</h6>
     <div class="chips">
+      <span class="chip">No Skin</span>
       <span class="chip skin-green">Hockey</span>
       <span class="chip skin-gray">Lacrosse</span>
       <span class="chip skin-red">Baseball</span>
       <span class="chip skin-blue">Football</span>
-      <span class="chip skin-input">Soccer</span>
     </div>
     <div class="chips">
-      <span class="chip skin-reverse-green">Hockey</span>
-      <span class="chip skin-reverse-gray">Lacrosse</span>
-      <span class="chip skin-reverse-red">Baseball</span>
-      <span class="chip skin-reverse-blue">Football</span>
-      <span class="chip skin-reverse-input">Soccer</span>
+      <span class="chip">No Skin</span>
+      <span class="chip skin-outline-green">Hockey</span>
+      <span class="chip skin-outline-gray">Lacrosse</span>
+      <span class="chip skin-outline-red">Baseball</span>
+      <span class="chip skin-outline-blue">Football</span>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class&#x22;chips&#x22;&#x3E;
   &#x3C;span class=&#x22;chip <mark>skin-green</mark>&#x22;&#x3E;Hockey&#x3C;/span&#x3E;
-  &#x3C;span class=&#x22;chip <mark>skin-reverse-blue</mark>&#x22;&#x3E;Lacrosse&#x3C;/span&#x3E;
+  &#x3C;span class=&#x22;chip <mark>skin-outline-blue</mark>&#x22;&#x3E;Lacrosse&#x3C;/span&#x3E;
 &#x3C;span class=&#x22;chip <mark>skin-red</mark>&#x22;&#x3E;Baseball&#x3C;/span&#x3E;
 &#x3C;div/&#x3E;</pre>
     <h5>Removable Add-On</h5>
-    <p>It is possible that you want the user to use the chips for a list and be able to remove items as they choose. To do that add the <code>.removable</code> class to the <code>.chip</code> element and the icon element after your chip text. This will add the "x" icon to the end of the chip and allow the user to delete the chip.</p>
+    <p>It is possible that you want the user to use the chips for a list and be able to remove items as they choose. To do that add the <code>--removable</code> modifier to the <code>.chip</code> class and add the icon element after your chip text. This will add the "x" icon to the end of the chip and allow the user to delete the chip.</p>
     <h6>Demo:</h6>
     <div class="chips">
-      <span class="chip chip-default removable">Hockey<i class="icon fas fa-times close-chip"></i></span>
-      <span class="chip skin-green removable">Lacrosse<i class="icon fas fa-times close-chip"></i></span>
-      <span class="chip chip-default removable">Baseball<i class="icon fas fa-times close-chip"></i></span>
+      <span class="chip--removable skin-outline-gray">Hockey<i class="icon fas fa-times chip__close-btn"></i></span>
+      <span class="chip--removable skin-green ">Lacrosse<i class="icon fas fa-times chip__close-btn"></i></span>
+      <span class="chip--removable skin-outline-blue">Baseball<i class="icon fas fa-times chip__close-btn"></i></span>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;chips&#x22;&#x3E;
-  &#x3C;span class=&#x22;chip chip-default <mark>removable</mark>&#x22;&#x3E;
+  &#x3C;span class=&#x22;chip--<mark>removable</mark>&#x22;&#x3E;
     Hockey
-    &#x3C;i class=&#x22;icon fas fa-times close-chip&#x22;&#x3E;&#x3C;/i&#x3E;
+    <mark>&#x3C;i class=&#x22;icon fas fa-times chip__close-btn&#x22;&#x3E;&#x3C;/i&#x3E;</mark>
   &#x3C;/span&#x3E;
 &#x3C;/div&#x3E;</pre>
   </div>

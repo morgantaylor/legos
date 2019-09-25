@@ -7,9 +7,11 @@
     <p>Usually we see tabs done with Javascript via a framework of sorts like Angular, taking advantage of <code>ng-show, ng-hide, ng-if</code> but if you're looking for a pure CSS version of tabs it is possible. The base style for our tabs visually float with no prominent container around them. There are no borders, just a bottom border on the tab that is currently selected.</p>
     <p>You can choose where the blue line is, either top or bottom by putting <code>--top</code> or <code>--bottom</code> on the label element.</p>
     <h6>Demo:</h6>
-    <div class="tab-wrapper">
+    <div class="tab">
       <input id="tab-1" type="radio" name="tabs1" checked>
-      <label class="border--bottom" for="tab-1"><i class="icon fas fa-code"></i><span>Thing 1</span></label>
+      <label class="border--bottom" for="tab-1">
+        <i class="icon fas fa-code"></i><span>Thing 1</span>
+      </label>
 
       <input id="tab-2" type="radio" name="tabs1">
       <label class="border--bottom" for="tab-2"><i class="icon fas fa-code"></i><span>Thing 2</span></label>
@@ -23,30 +25,30 @@
       <input id="tab-5" type="radio" name="tabs1">
       <label class="border--bottom" for="tab-5"><i class="icon fas fa-code"></i><span>Thing 5</span></label>
 
-      <section id="content-1" class="tab-content">
+      <section id="content-1" class="tab__content">
         <h3>Headline 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
         cillum dolore eu fugiat nulla pariatur.</p>
       </section>
-      <section id="content-2" class="tab-content">
+      <section id="content-2" class="tab__content">
         <h3>Headline 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
       </section>
-      <section id="content-3" class="tab-content">
+      <section id="content-3" class="tab__content">
         <h3>Headline 3</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
       </section>
-      <section id="content-4" class="tab-content">
+      <section id="content-4" class="tab__content">
         <h3>Headline 4</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.</p>
       </section>
-      <section id="content-5" class="tab-content">
+      <section id="content-5" class="tab__content">
         <h3>Headline 5</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -54,24 +56,24 @@
       </section>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>tab-wrapper</mark>&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>tab</mark>&#x22;&#x3E;
   &#x3C;input id=&#x22;tab-1&#x22; type=&#x22;radio&#x22; name=&#x22;tabs&#x22; checked&#x3E;
   &#x3C;label for=&#x22;tab-1&#x22; class=&#x22;<mark>border--bottom</mark>&#x22;&#x3E;
     &#x3C;i class=&#x22;icon fas fa-code&#x22;&#x3E;&#x3C;/i&#x3E;
     &#x3C;span&#x3E;Tab Title&#x3C;/span&#x3E;
   &#x3C;/label&#x3E;
   ... more tabs here
-
-  &#x3C;section id=&#x22;content-1&#x22; class=&#x22;<mark>tab-content</mark>&#x22;&#x3E;
+  &#x3C;section id=&#x22;content-1&#x22; class=&#x22;<mark>tabs__content</mark>&#x22;&#x3E;
     &#x3C;h3&#x3E;Headline 1&#x3C;/h3&#x3E;
     &#x3C;p&#x3E;Content goes here...&#x3C;/p&#x3E;
   &#x3C;/section&#x3E;
   ... more sections here
 &#x3C;/div&#x3E;</pre>
+
     <h5>Bordered</h5>
-    <p>If you want your tabs to have borders add <code>--bordered</code> to the <code>tab-wrapper</code> class.</p>
+    <p>If you want your tabs to have a border enclosing it add <code>--bordered</code> to the <code>tabs</code> class.</p>
     <h6>Demo:</h6>
-    <div class="tab-wrapper--bordered">
+    <div class="tab--bordered">
       <input id="tab-6" type="radio" name="tabs2" checked>
       <label class="border--bottom" for="tab-6"><i class="icon fas fa-code"></i><span>Thing 1</span></label>
 
@@ -81,19 +83,19 @@
       <input id="tab-8" type="radio" name="tabs2">
       <label class="border--bottom" for="tab-8"><i class="icon fas fa-code"></i><span>Thing 3</span></label>
 
-      <section id="content-6" class="tab-content">
+      <section id="content-6" class="tab__content">
         <h3>Headline 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
         cillum dolore eu fugiat nulla pariatur.</p>
       </section>
-      <section id="content-7" class="tab-content">
+      <section id="content-7" class="tab__content">
         <h3>Headline 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
       </section>
-      <section id="content-8" class="tab-content">
+      <section id="content-8" class="tab__content">
         <h3>Headline 3</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -101,7 +103,7 @@
       </section>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>tab-wrapper--bordered</mark>&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>tab--bordered</mark>&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;</pre>
     <h5>Tab Amount</h5>

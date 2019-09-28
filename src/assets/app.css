@@ -15,6 +15,10 @@
   margin-right: 20px;
   padding-right: 45px;
 }
+
+h1 {
+  text-align: center;
+}
 pre {
   max-height: 350px;
 }
@@ -24,10 +28,6 @@ pre.no-background {
 
 header {
   border: 1px solid #ccc;
-}
-
-h3 .fas {
-  color:  #ccc;
 }
 
 sidebar + section {

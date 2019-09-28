@@ -1,30 +1,27 @@
 <section class="paragraph">
-  <h3 class="section__title" id="buttons">
-    <i class="icon fas fa-hashtag" aria-hidden="true"></i>
-    <span>buttons</span>
-  </h3>
+  <h2 class="section__title" id="buttons">buttons</h2>
   <div class="container">
     <p>When making a button please be sure to use a <code>button</code> or <code>a</code> tag for accessability purposes. There are three different type of buttons.</p>
-    <h5>Filled Buttons</h5>
+    <h4>Filled Buttons</h4>
     <p>Filled buttons have colored borders and backgrounds with a white font color.</p>
     <h6>Demo:</h6>
     <button class="btn btn--default">filled default</button>
     <h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;<mark>btn btn--default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
-    <h5>Outlined Buttons</h5>
+    <h4>Outlined Buttons</h4>
     <p>Outlined buttons only have colored text and borders, otherwise they are the exact same as filled buttons. Same rules apply.</p>
     <h6>Demo:</h6>
     <button class="btn btn--outline-default">outlined default</button>
     <h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;<mark>btn btn--outline-default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
-    <h5>Link</h5>
+    <h4>Link</h4>
     <p>This element is not a <code>&#x3C;button&#x3E;</code> tag, it is infact <code>&#x3C;a&#x3E;</code> tag.</p>
     <p>While not specifically a button, it does not get the <code>.btn</code> base, links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space. The link space takes up only the amount of what's inside of it, which is unlike buttons that have a set padding.</p>
     <h6>Demo:</h6>
     <a class="link--default">link default</a>
     <h6>Markup:</h6>
 <pre>&#x3C;a class=&#x22;<mark>link--default</mark>&#x22;&#x3E;...&#x3C;/a&#x3E;</pre>
-    <h5>Button Colors</h5>
+    <h4>Button Colors</h4>
     <ul>
       <li class="color-swatch"><code>--primary</code><span class="swatch-primary"></span></li>
       <li class="color-swatch"><code>--success</code><span class="swatch-success"></span></li>
@@ -32,7 +29,7 @@
       <li class="color-swatch"><code>--default</code><span class="swatch-default"></span></li>
     </ul>
     <div class="container flex-column">
-      <div>Filled: </div>
+      <p>Filled: </p>
       <div>
         <button class="btn btn--primary">primary</button>
         <button class="btn btn--success">success</button>
@@ -41,7 +38,7 @@
       </div>
     </div>
     <div class="container flex-column">
-      <div>Outlined: </div>
+      <p>Outlined: </p>
       <div>
         <button class="btn btn--outline-primary">outlined primary</button>
         <button class="btn btn--outline-success">outlined success</button>
@@ -50,7 +47,7 @@
       </div>
     </div>
     <div class="container flex-column">
-      <div>Links: </div>
+      <p>Links: </p>
       <div>
         <a class="link--primary link-demo">link primary / default</a>
         <a class="link--success link-demo">link success</a>
@@ -61,7 +58,7 @@
       <p><em><sup>*</sup>Note: Above background just to show the white link.</em></p>
     </div>
     
-    <h5>Block Buttons</h5>
+    <h4>Block Buttons</h4>
     <p>For block buttons that span the entire width of the parent container use <code>.btn--block</code>.</p>
     <h6>Demo:</h6>
     <div class="container" style="width: 400px; border: 1px solid #999; padding: 10px; border-radius: 6px; margin: 0;">

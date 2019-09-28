@@ -2,29 +2,24 @@
   <sidebar class="sidebar--fixed"></sidebar>
   <section class="content">
     <app-name></app-name>
-    <h3>Naming Convention: BEM</h3>
+    <h1>Lego Design System</h1>
+    <h4>Naming Convention: BEM</h4>
     <p>The primary purpose of BEM naming convention is to give names meaning so that they are as informative as possible for the developer.</p>
-    <p>BEM stands for:</p>
-    <ul>
-        <li>B: Block</li>
-        <li>E: Element</li>
-        <li>M: Modifier</li>
-    </ul>
-    <h6>Rules:</h6>
+    <h6>B: Block</h6>
+    <p>The block name defines the namespace for its elements and modifiers. Think of it as the parent.</p>
+    <h6>E: Element</h6>
+    <p>The element name is separated from the block name by a double underscore (__). These are elements that are inside the parent that rely on it.</p>
+    <h6>M: Modifier</h6>
+    <p>A modifier is an entity that defines the appearance, state, or behavior of a block or element. The modifier name is separated from the block or element name by two hyphens (--). Modifiers can manipulate the block or element so in order to theme or style that particular component without influincing the styles of the original component.</p>
+    <p>Rules:</p>
     <ul>
         <li>Names are written in lowercase letters.</li>
         <li>Words are separated by a hyphen (-).</li>
         <li>If a section of code can't be used separately without the parent entity (the block).</li>
     </ul>
-    <h6>Block</h6>
-    <p>The block name defines the namespace for its elements and modifiers. Think of it as the parent.</p>
-    <h6>Element</h6>
-    <p>The element name is separated from the block name by a double underscore (__). These are elements that are inside the parent that rely on it.</p>
-    <h6>Modifier</h6>
-    <p>A modifier is an entity that defines the appearance, state, or behavior of a block or element. The modifier name is separated from the block or element name by two hyphens (--). Modifiers can manipulate the block or element so in order to theme or style that particular component without influincing the styles of the original component.</p>
     <hr>
     <!-- Base -->
-    <h2>Base</h2>
+    <h1>Base</h1>
     <buttons></buttons>
     <hr>
     <colors></colors>
@@ -38,8 +33,7 @@
     <typography></typography>
     <hr>
     <!-- Components -->
-    <h2>Components</h2>
-    <p>Approach:</p>
+    <h1>Components</h1>
     <accordion></accordion>
     <hr>
     <alerts></alerts>

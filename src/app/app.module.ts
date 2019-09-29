@@ -18,7 +18,6 @@ import { ContainersComponent } from './containers/containers.component';
 
 import { ButtonsComponent } from './buttons/buttons.component';
 import { BtnIconsComponent } from './buttons/icons/icons.component';
-import { StatesComponent } from './buttons/states/states.component';
 import { GroupsComponent } from './buttons/groups/groups.component';
 import { DropdownsComponent } from './buttons/dropdowns/dropdowns.component';
 
@@ -58,7 +57,6 @@ import { ToastComponent } from './toast/toast.component';
     SidebarComponent,
     ButtonsComponent,
     BtnIconsComponent,
-    StatesComponent,
     GroupsComponent,
     DropdownsComponent,
     TypographyComponent,

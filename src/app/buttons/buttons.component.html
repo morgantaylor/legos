@@ -2,62 +2,68 @@
   <h2 class="section__title" id="buttons">buttons</h2>
   <div class="container">
     <p>When making a button please be sure to use a <code>button</code> or <code>a</code> tag for accessability purposes. There are three different type of buttons.</p>
-    <h4>Filled Buttons</h4>
+    <h4>Filled</h4>
     <p>Filled buttons have colored borders and backgrounds with a white font color.</p>
     <h6>Demo:</h6>
-    <button class="btn btn--default">filled default</button>
+    <div>
+      <button class="btn btn--primary">primary</button>
+      <button class="btn btn--success">success</button>
+      <button class="btn btn--danger">danger</button>
+      <button class="btn btn--default">default</button>
+    </div>
+    <div>
+      <button class="btn btn--primary" disabled>disabled primary</button>
+      <button class="btn btn--success" disabled>disabled success</button>
+      <button class="btn btn--danger" disabled>disabled danger</button>
+      <button class="btn btn--default" disabled>disabled default</button>
+    </div>
     <h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;<mark>btn btn--default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
-    <h4>Outlined Buttons</h4>
+    <h4>Outlined</h4>
     <p>Outlined buttons only have colored text and borders, otherwise they are the exact same as filled buttons. Same rules apply.</p>
     <h6>Demo:</h6>
-    <button class="btn btn--outline-default">outlined default</button>
+    <div>
+      <button class="btn btn--outline-primary">outlined primary</button>
+      <button class="btn btn--outline-success">outlined success</button>
+      <button class="btn btn--outline-danger">outlined danger</button>
+      <button class="btn btn--outline-default">outlined default</button>
+    </div>
+    <div>
+      <button class="btn btn--outline-primary" disabled>disabled outlined primary</button>
+      <button class="btn btn--outline-success" disabled>disabled outlined success</button>
+      <button class="btn btn--outline-danger" disabled>disabled outlined danger</button>
+      <button class="btn btn--outline-default" disabled>disabled outlined default</button>
+    </div>
     <h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;<mark>btn btn--outline-default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
-    <h4>Link</h4>
+    <h4>Links</h4>
     <p>This element is not a <code>&#x3C;button&#x3E;</code> tag, it is infact <code>&#x3C;a&#x3E;</code> tag.</p>
     <p>While not specifically a button, it does not get the <code>.btn</code> base, links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space. The link space takes up only the amount of what's inside of it, which is unlike buttons that have a set padding.</p>
     <h6>Demo:</h6>
-    <a class="link--default">link default</a>
+    <div>
+      <a class="link--primary link-demo">link primary / default</a>
+      <a class="link--success link-demo">link success</a>
+      <a class="link--danger link-demo">link danger</a>
+      <a class="link--gray link-demo">link gray</a>
+      <div class="custom-bg-dark link-demo"><a class="link--white">link white</a></div>
+    </div>
+    <br>
+    <div>
+      <a class="btn link--primary link-demo" disabled>disabled link primary / default</a>
+      <a class="btn link--success link-demo" disabled>disabled link success</a>
+      <a class="btn link--danger link-demo" disabled>disabled link danger</a>
+      <a class="btn link--gray link-demo" disabled>disabled link gray</a>
+      <div class="custom-bg-dark"><a class="btn link--white" disabled>link white</a></div>
+    </div>
     <h6>Markup:</h6>
 <pre>&#x3C;a class=&#x22;<mark>link--default</mark>&#x22;&#x3E;...&#x3C;/a&#x3E;</pre>
-    <h4>Button Colors</h4>
+    <h4>Colors</h4>
     <ul>
       <li class="color-swatch"><code>--primary</code><span class="swatch-primary"></span></li>
       <li class="color-swatch"><code>--success</code><span class="swatch-success"></span></li>
       <li class="color-swatch"><code>--danger</code><span class="swatch-danger"></span></li>
       <li class="color-swatch"><code>--default</code><span class="swatch-default"></span></li>
     </ul>
-    <div class="container flex-column">
-      <p>Filled: </p>
-      <div>
-        <button class="btn btn--primary">primary</button>
-        <button class="btn btn--success">success</button>
-        <button class="btn btn--danger">danger</button>
-        <button class="btn btn--default">default</button>
-      </div>
-    </div>
-    <div class="container flex-column">
-      <p>Outlined: </p>
-      <div>
-        <button class="btn btn--outline-primary">outlined primary</button>
-        <button class="btn btn--outline-success">outlined success</button>
-        <button class="btn btn--outline-danger">outlined danger</button>
-        <button class="btn btn--outline-default">outlined default</button>
-      </div>
-    </div>
-    <div class="container flex-column">
-      <p>Links: </p>
-      <div>
-        <a class="link--primary link-demo">link primary / default</a>
-        <a class="link--success link-demo">link success</a>
-        <a class="link--danger link-demo">link danger</a>
-        <a class="link--gray link-demo">link gray</a>
-        <div class="custom-bg-dark link-demo"><a class="link--white">link white</a></div>
-      </div>
-      <p><em><sup>*</sup>Note: Above background just to show the white link.</em></p>
-    </div>
-    
     <h4>Block Buttons</h4>
     <p>For block buttons that span the entire width of the parent container use <code>.btn--block</code>.</p>
     <h6>Demo:</h6>
@@ -67,8 +73,6 @@
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;<mark>btn btn--danger btn--block</mark>&#x22;&#x3E;Default Size&#x3C;/button&#x3E;</pre>
-
-    <states></states>
     <btn-icons></btn-icons>
     <groups></groups>
     <dropdowns></dropdowns>

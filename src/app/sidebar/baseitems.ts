@@ -4,71 +4,71 @@ export const BASEITEMS: Item[] = [
   {
     link: 'base/colors',
     class: 'list__item',
-    name: 'colors'
+    name: 'Colors'
   },
   {
     link: 'base/typography',
     class: 'list__item',
-    name: 'typography'
+    name: 'Typography'
   },
   {
     link: 'base/icons',
     class: 'list__item',
-    name: 'icons'
+    name: 'Icons'
   },
   {
     link: 'base/containers',
     class: 'list__item',
-    name: 'containers'
+    name: 'Containers'
   },
   {
     link: 'base/buttons',
     class: 'list__item',
-    name: 'buttons'
+    name: 'Buttons'
   },
   {
     link: 'base/buttons/button-icons',
     class: 'list__item',
-    name: 'button icons'
+    name: 'Button Icons'
   },
   {
     link: 'base/buttons/button-groups',
     class: 'list__item',
-    name: 'button groups'
+    name: 'Button Groups'
   },
   {
     link: 'base/buttons/dropdowns',
     class: 'list__item',
-    name: 'dropdown'
+    name: 'Dropdown'
   },
   {
     link: 'base/inputs',
     class: 'list__item',
-    name: 'inputs'
+    name: 'Inputs'
   },
   {
     link: 'base/inputs/selects',
     class: 'list__item',
-    name: 'selects'
+    name: 'Selects'
   },
   {
     link: 'base/inputs/input-groups',
     class: 'list__item',
-    name: 'input groups'
+    name: 'Input Groups'
   },
   {
     link: 'base/inputs/checkboxes',
     class: 'list__item',
-    name: 'checkboxes'
+    name: 'Checkboxes'
   },
   {
     link: 'base/inputs/radios',
     class: 'list__item',
-    name: 'radios'
+    name: 'Radios'
   },
   {
     link: 'base/tables',
     class: 'list__item',
-    name: 'tables'
+    name: 'Tables'
   }
 ]

@@ -4,46 +4,46 @@ export const COMPONENTITEMS: Item[] = [
   {
     link: 'components/accordions',
     class: 'list__item',
-    name: 'accordion'
+    name: 'Accordions'
   },
   {
     link: 'components/alerts',
     class: 'list__item',
-    name: 'alerts'
+    name: 'Alerts'
   },
   {
     link: 'components/breadcrumbs',
     class: 'list__item',
-    name: 'breadcrumbs'
+    name: 'Breadcrumbs'
   },
   {
     link: 'components/cards',
     class: 'list__item',
-    name: 'cards'
+    name: 'Cards'
   },
   {
     link: 'components/chips',
     class: 'list__item',
-    name: 'chips'
+    name: 'Chips'
   },
   {
     link: 'components/pagination',
     class: 'list__item',
-    name: 'pagination'
+    name: 'Pagination'
   },
   {
     link: 'components/switches',
     class: 'list__item',
-    name: 'switches'
+    name: 'Switches'
   },
   {
     link: 'components/tabs',
     class: 'list__item',
-    name: 'tabs'
+    name: 'Tabs'
   },
   {
     link: 'components/toast',
     class: 'list__item',
-    name: 'toast'
+    name: 'Toast'
   }
 ]

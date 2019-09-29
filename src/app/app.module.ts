@@ -46,6 +46,7 @@ import { StripedComponent } from './tables/striped/striped.component';
 
 import { TooltipsComponent } from './tooltips/tooltips.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { ToastComponent } from './toast/toast.component';
 
 // layout section
 
@@ -81,7 +82,8 @@ import { PaginationComponent } from './pagination/pagination.component';
     TooltipsComponent,
     SwitchesComponent,
     LightSwitchComponent,
-    ContainersComponent
+    ContainersComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,

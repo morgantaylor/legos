@@ -1,31 +1,35 @@
 <section class="paragraph">
   <h2 class="section__title" id="alerts">alerts</h2>
   <div class="container">
-    <p>Alerts are messages that are brought on by different types of user actions. There are two different types of alerts. Use the main <code>alert</code> class on your container.</p>
-    <p>Attributes: <code>role="alert"</code>.
-    <h5>Global Alerts</h5>
-    <p>The global modification of the alert block gets fixed to the top of the screen and stays until dismissed with the close button. This is what differentiates it from a notification alert that fades away after a certain amount of time.</p>
+    <p>Normally alert banners are global notifications that are typically displayed as a thin banner at the top of the screen and are used to make user aware about a state change (like the system is down, planned maintenance, there's a new feature etc).</p>
+    <p>Alert banners get fixed to the top of the screen and usually staying till the user dismisses it with the close button. This is what differentiates it from a toast that fades away after a certain amount of time.</p>
+    <p>Attributes: <code>role="alert"</code>
     <h6>Demo:</h6>
-    <p><em>* I would have a demo here but it would just stay fixed to the top and that doesn't seem necessary, as it would just sit at the top of this screen.</em></p>
+    <div class="alert demo" role="alert">
+      <div class="alert__body">This is the default alert banner</div>
+    </div>
+    <p>For demonstration purposes this alert banner is inside the document for you to see instead of fixes to the top of the screen. It's really just a big rectangle till you add a skin indicating what type of alert it is.</p>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert <mark>alert--global</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
-  ...
-&#x3C;/div&#x3E;
-</pre>
-    <h4>Notifcation Alerts</h4>
-    <p>The notification modification of the alert block fades into an area of the viewport brought on by some type of user interaction. They usually fade-in and out after a certain amount of time. Notifications placement can be customized by adding your own position property to it. The default is: top right.</p>
+<pre>&#x3C;div class=&#x22;alert&#x22; role=&#x22;alert&#x22;&#x3E;
+  &#x3C;div class=&#x22;alert__body&#x22;&#x3E;Alert text here&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+    <h4>Close (optional)</h4>
+    <p>In certain cases you might want the user to be able to dismiss the alert, awknowledging that they saw it. To do this just add a close button inside the alert after the <code>alert__body</code>.</p>
     <h6>Demo:</h6>
-    <div class="custom-alert-notifcation">
-      <div class="alert alert--notification alert--success demo">
-        <div>.alert--success</div>
-      </div>
+    <div class="alert demo" role="alert">
+      <div class="alert__body">An alert banner with an optional close button</div>
+      <button type="button" class="alert__close">
+        <i class="icon fas fa-times" aria-hidden="true"></i>
+      </button>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert <mark>alert--notification</mark> alert--danger&#x22; role=&#x22;alert&#x22;&#x3E;
-  ...
-&#x3C;/div&#x3E;
-</pre>
-    <h4>Alert Colors</h4>
+    <pre>&#x3C;div class=&#x22;alert role=&#x22;alert&#x22;&#x3E;
+  &#x3C;div class=&#x22;alert__body&#x22;&#x3E;Alert text here&#x3C;/div&#x3E;
+  <mark>&#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;</mark>
+    <mark>&#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;</mark>
+  <mark>&#x3C;/button&#x3E;</mark>
+&#x3C;/div&#x3E;</pre>
+    <h4>Skins</h4>
     <ul>
       <li><code>alert--danger</code></li>
       <li><code>alert--success</code></li>
@@ -36,71 +40,56 @@
     <ul>
       <li>Backgroud Color</li>
       <li>Font Color</li>
-      <li>Close Button Color (only for alert-global)</li>
+      <li>Close Button Color (optional add-on)</li>
       <li>Border Color (optional add-on)</li>
     </ul>
     <h6>Demo:</h6>
-    <div class="alert alert-demo alert--danger" role="alert">
-      <div>alert--danger</div>
-      <button type="button" class="alert__close">
-        <i class="icon fas fa-times" aria-hidden="true"></i>
-      </button>
+    <div class="alert demo alert--danger" role="alert">
+      <div class="alert__body">This is a danger alert</div>
     </div>
-    <div class="alert alert-demo alert--success">
-      <div>alert--success</div>
-      <button type="button" class="alert__close">
-        <i class="icon fas fa-times" aria-hidden="true"></i>
-      </button>
+    <div class="alert demo alert--success">
+      <div class="alert__body">This is a success alert</div>
     </div>
-    <div class="alert alert-demo alert--border alert--primary">
-      <div>alert--primary</div>
-      <button type="button" class="alert__close">
-        <i class="icon fas fa-times" aria-hidden="true"></i>
-      </button>
+    <div class="alert demo alert--border alert--primary">
+      <div class="alert__body">This is a primary alert</div>
     </div>
-    <div class="alert alert-demo alert--border alert--warning">
-      <div>alert--warning</div>
-      <button type="button" class="alert__close">
-        <i class="icon fas fa-times" aria-hidden="true"></i>
-      </button>
+    <div class="alert demo alert--border alert--warning">
+      <div class="alert__body">This is a warning alert</div>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert alert--global <mark>alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
-  &#x3C;div&#x3E;Alert text here&#x3C;/div&#x3E;
-  &#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;
-    &#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
-  &#x3C;/button&#x3E;
+<pre>&#x3C;div class=&#x22;alert <mark>alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
+  &#x3C;div class="alert__body"&#x3E;Alert text here&#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h4>Border</h4>
     <p>If you would like to add a border around your alert add the <code>--border</code> modifier to the skin class.</p>
     <h6>Demo:</h6>
-    <div class="alert alert--danger--border" role="alert">
-      <div>alert--danger</div>
+    <div class="alert demo alert--danger--border" role="alert">
+      <div class="alert__body">This is a danger alert with a border</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="alert alert--success--border">
-      <div>alert--success</div>
+    <div class="alert demo alert--success--border">
+      <div class="alert__body">This is a success alert with a border</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="alert alert--primary--border">
-      <div>alert--primary</div>
+    <div class="alert demo alert--primary--border">
+      <div class="alert__body">This is a primary alert with a border</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="alert alert--warning--border">
-      <div>alert--warning</div>
+    <div class="alert demo alert--warning--border">
+      <div class="alert__body">This is a warning alert with a border</div>
       <button type="button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert alert--global alert--danger<mark>--border</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
-  &#x3C;div&#x3E;Alert text here&#x3C;/div&#x3E;
+<pre>&#x3C;div class=&#x22;alert alert--danger<mark>--border</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
+  &#x3C;div class="alert__body"&#x3E;Alert text here&#x3C;/div&#x3E;
   &#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;
     &#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;/button&#x3E;

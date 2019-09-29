@@ -1,0 +1,85 @@
+<section class="paragraph">
+  <h2 class="section__title" id="toast">toast</h2>
+  <div class="container">
+    <p>Toasts are dynamic, they are displayed for a short period of time and typically contain system's feedback to user's micro interactions. It isn't always and is not necessarily a feedback of a user action. The content shown in these messages are helpful to the user but not as important to break the users current workflow and divert her complete attention to that message.</p>
+    <p>Example: You added something to your cart or you updated your password successfully.</p>
+    <p>Attributes: <code>role="toast"</code>.
+    <h6>Demo:</h6>
+    <div class="toast demo" role="toast">
+      <div class="toast__body">This is the default toast</div>
+    </div>
+    <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>toast</mark>&#x22; role=&#x22;toast&#x22;&#x3E;
+  &#x3C;div class=&#x22;<mark>toast__body</mark>&#x22;&#x3E;Toast text here&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+    <h4>Close (optional)</h4>
+    <p>In certain cases you might want the user to be able to dismiss the toast, awknowledging that they saw it. To do this just add a close button inside the toast either inside a <code>toast__header</code> or inside the <code>toast__body</code>.</p>
+    <h6>Demo:</h6>
+    <div class="toast demo" role="toast">
+      <div class="toast__header">
+        Toast Header
+        <button type="button" class="toast__close">
+          <i class="icon fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="toast__body">A toast with an optional dismiss</div>
+    </div>
+    <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;toast&#x22; role=&#x22;toast&#x22;&#x3E;
+  &#x3C;div class=&#x22;toast__header&#x22;&#x3E;
+    Toast Header
+    <mark>&#x3C;button type=&#x22;button&#x22; class=&#x22;toast__close&#x22;&#x3E;</mark>
+      <mark>&#x3C;i class=&#x22;icon fas fa-times&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;</mark>
+    <mark>&#x3C;/button&#x3E;</mark>
+  &#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;toast__body&#x22;&#x3E;A toast with an optional dismiss&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+    <h4>Colors</h4>
+    <ul>
+      <li><code>toast--danger</code></li>
+      <li><code>toast--success</code></li>
+      <li><code>toast--primary</code></li>
+      <li><code>toast--warning</code></li>
+    </ul>
+    <p>These colors control the toast:</p> 
+    <ul>
+      <li>Background Color</li>
+      <li>Font Color</li>
+      <li>Border Color</li>
+      <li>Close Button Color (optional add-on)</li>
+    </ul>
+    <h6>Demo:</h6>
+    <div class="toast demo toast--danger" role="toast">
+      <div class="toast__body">This is a danger toast
+        <button type="button" class="toast__close">
+          <i class="icon fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="toast demo toast--success">
+      <div class="toast__body">This is a danger toast
+        <button type="button" class="toast__close">
+          <i class="icon fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="toast demo toast--primary">
+      <div class="toast__body">This is a danger toast
+        <button type="button" class="toast__close">
+          <i class="icon fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="toast demo toast--warning">
+      <div class="toast__body">This is a danger toast
+        <button type="button" class="toast__close">
+          <i class="icon fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;toast <mark>toast--success</mark>&#x22; role=&#x22;toast&#x22;&#x3E;
+  ...
+&#x3C;/div&#x3E;</pre>
+  </div>
+</section>

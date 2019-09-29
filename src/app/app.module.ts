@@ -11,41 +11,46 @@ import { AppRoutingModule } from './app-routing.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 // base section
-import { ColorsComponent } from './colors/colors.component';
-import { TypographyComponent } from './typography/typography.component';
-import { IconsComponent } from './icons/icons.component';
-import { ContainersComponent } from './containers/containers.component';
+import { BaseComponent } from './base/base.component';
 
-import { ButtonsComponent } from './buttons/buttons.component';
-import { BtnIconsComponent } from './buttons/icons/icons.component';
-import { GroupsComponent } from './buttons/groups/groups.component';
-import { DropdownsComponent } from './buttons/dropdowns/dropdowns.component';
+import { ColorsComponent } from './base/colors/colors.component';
+import { TypographyComponent } from './base/typography/typography.component';
+import { IconsComponent } from './base/icons/icons.component';
+import { ContainersComponent } from './base/containers/containers.component';
 
-import { InputsComponent } from './inputs/inputs.component';
-import { SelectsComponent } from './inputs/selects/selects.component';
-import { InputGroupsComponent } from './inputs/input-groups/input-groups.component';
-import { CheckboxesComponent } from './inputs/checkboxes/checkboxes.component';
-import { RadiosComponent } from './inputs/radios/radios.component';
+import { ButtonsComponent } from './base/buttons/buttons.component';
+import { BtnIconsComponent } from './base/buttons/icons/icons.component';
+import { GroupsComponent } from './base/buttons/groups/groups.component';
+import { DropdownsComponent } from './base/buttons/dropdowns/dropdowns.component';
+
+import { InputsComponent } from './base/inputs/inputs.component';
+import { SelectsComponent } from './base/inputs/selects/selects.component';
+import { InputGroupsComponent } from './base/inputs/input-groups/input-groups.component';
+import { CheckboxesComponent } from './base/inputs/checkboxes/checkboxes.component';
+import { RadiosComponent } from './base/inputs/radios/radios.component';
+
+import { TablesComponent } from './base/tables/tables.component';
+import { BorderedComponent } from './base/tables/bordered/bordered.component';
+import { StripedComponent } from './base/tables/striped/striped.component';
 
 // component section
-import { AccordionComponent } from './accordion/accordion.component';
-import { AlertsComponent } from './alerts/alerts.component';
-import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { BorderedComponent } from './tables/bordered/bordered.component';
-import { CardsComponent } from './cards/cards.component';
-import { ChipsComponent } from './chips/chips.component';
+import { ComponentsComponent } from './components/components.component';
 
-import { SwitchesComponent } from './switches/switches.component';
-import { LightSwitchComponent } from './switches/light-switch/light-switch.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
+import { AlertsComponent } from './components/alerts/alerts.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { ChipsComponent } from './components/chips/chips.component';
 
-import { TabsComponent } from './tabs/tabs.component';
+import { SwitchesComponent } from './components/switches/switches.component';
+import { LightSwitchComponent } from './components/switches/light-switch/light-switch.component';
 
-import { TablesComponent } from './tables/tables.component';
-import { StripedComponent } from './tables/striped/striped.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
-import { TooltipsComponent } from './tooltips/tooltips.component';
-import { PaginationComponent } from './pagination/pagination.component';
-import { ToastComponent } from './toast/toast.component';
+import { TooltipsComponent } from './components/tooltips/tooltips.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
+import { ToastComponent } from './components/toast/toast.component';
+
 
 // layout section
 
@@ -81,7 +86,9 @@ import { ToastComponent } from './toast/toast.component';
     SwitchesComponent,
     LightSwitchComponent,
     ContainersComponent,
-    ToastComponent
+    ToastComponent,
+    BaseComponent,
+    ComponentsComponent,
   ],
   imports: [
     BrowserModule,

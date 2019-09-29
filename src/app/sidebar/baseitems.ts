@@ -67,8 +67,8 @@ export const BASEITEMS: Item[] = [
     name: 'radios'
   },
   {
-    link: 'base/table',
+    link: 'base/tables',
     class: 'list__item',
-    name: 'table'
+    name: 'tables'
   }
 ]

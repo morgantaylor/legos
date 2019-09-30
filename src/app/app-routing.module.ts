@@ -1,7 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppNameComponent }      from './app-name/app-name.component';
+import { AppBaseComponent } from './app-base/app-base.component';
+
+// introduction Section
+import { IntroductionComponent } from './introduction/introduction.component';
+import { LegosComponent } from './introduction/legos/legos.component';
+import { AboutComponent } from './introduction/about/about.component';
+
+// getting started Section
+import { GettingStartedComponent } from './getting-started/getting-started.component';
+import { IncludingComponent } from './getting-started/including/including.component';
+import { DocumentationComponent } from './getting-started/documentation/documentation.component';
+import { NamingComponent } from './introduction/naming/naming.component';
+import { AccessabilityComponent } from './getting-started/accessability/accessability.component';
 
 // base section
 import { BaseComponent } from './base/base.component';
@@ -43,7 +55,21 @@ import { ToastComponent } from './components/toast/toast.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },  
-  { path: '', component: AppNameComponent },
+  { path: '', component: AppBaseComponent },
+  { path: 'introduction', component: IntroductionComponent, 
+    children: [
+      { path: 'legos', component: LegosComponent },
+      { path: 'about', component: AboutComponent }
+    ]
+  },
+  { path: 'getting-started', component: GettingStartedComponent, 
+    children: [
+      { path: 'including', component: IncludingComponent },
+      { path: 'documentation', component: DocumentationComponent },
+      { path: 'naming', component: NamingComponent },
+      { path: 'accessability', component: AccessabilityComponent }
+    ]
+  },
   { path: 'base', component: BaseComponent, 
     children: [
       { path: 'colors', component: ColorsComponent },

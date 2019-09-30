@@ -4,11 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppNameComponent } from './app-name/app-name.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AppBaseComponent } from './app-base/app-base.component';
 
 // only for documentation
 import { SidebarComponent } from './sidebar/sidebar.component';
+
+// introduction Section
+import { IntroductionComponent } from './introduction/introduction.component';
+import { LegosComponent } from './introduction/legos/legos.component';
+import { AboutComponent } from './introduction/about/about.component';
+import { NamingComponent } from './introduction/naming/naming.component';
+
+// getting started Section
+import { GettingStartedComponent } from './getting-started/getting-started.component';
+import { IncludingComponent } from './getting-started/including/including.component';
+import { DocumentationComponent } from './getting-started/documentation/documentation.component';
+import { AccessabilityComponent } from './getting-started/accessability/accessability.component';
 
 // base section
 import { BaseComponent } from './base/base.component';
@@ -51,14 +63,13 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ToastComponent } from './components/toast/toast.component';
 
-
 // layout section
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppNameComponent,
+    IntroductionComponent,
     SidebarComponent,
     ButtonsComponent,
     BtnIconsComponent,
@@ -89,6 +100,14 @@ import { ToastComponent } from './components/toast/toast.component';
     ToastComponent,
     BaseComponent,
     ComponentsComponent,
+    LegosComponent,
+    AboutComponent,
+    NamingComponent,
+    AppBaseComponent,
+    GettingStartedComponent,
+    IncludingComponent,
+    DocumentationComponent,
+    AccessabilityComponent,
   ],
   imports: [
     BrowserModule,

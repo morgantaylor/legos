@@ -3,12 +3,14 @@ import { Item } from '../sidebar/item';
 export const INTRODUCTIONITEMS: Item[] = [
   {
     link: 'introduction/legos',
-    class: 'list__item',
-    name: 'Legos'
+    class: 'menu__item--nested',
+    name: 'Legos',
+    divider: false
   },
   {
     link: 'introduction/about',
-    class: 'list__item',
-    name: 'About'
+    class: 'menu__item--nested',
+    name: 'About',
+    divider: false
   }
 ]

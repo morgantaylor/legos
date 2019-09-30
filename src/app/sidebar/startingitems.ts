@@ -3,23 +3,27 @@ import { Item } from '../sidebar/item';
 export const STARTINGITEMS: Item[] = [
   {
     link: 'getting-started/including',
-    class: 'list__item',
-    name: 'How to Include'
+    class: 'menu__item--nested',
+    name: 'How to Include',
+    divider: false
   },
   {
     link: 'getting-started/documentation',
-    class: 'list__item',
-    name: 'Documentation'
+    class: 'menu__item--nested',
+    name: 'Documentation',
+    divider: false
   },
   {
     link: 'getting-started/naming',
-    class: 'list__item',
-    name: 'Naming Convention'
+    class: 'menu__item--nested',
+    name: 'Naming Convention',
+    divider: false
   }
   ,
   {
     link: 'getting-started/accessability',
-    class: 'list__item',
-    name: 'Accessability'
+    class: 'menu__item--nested',
+    name: 'Accessability',
+    divider: false
   }
 ]

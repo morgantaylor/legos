@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppBaseComponent } from './app-base/app-base.component';
 
 // only for documentation
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 // introduction Section
@@ -108,6 +109,7 @@ import { ToastComponent } from './components/toast/toast.component';
     IncludingComponent,
     DocumentationComponent,
     AccessabilityComponent,
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,

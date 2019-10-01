@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppBaseComponent } from './app-base/app-base.component';
 
-// only for documentation
-import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+// only for documentation not the component
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 // introduction Section
@@ -64,7 +63,8 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ToastComponent } from './components/toast/toast.component';
 
-// layout section
+// module/layout section
+import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 
 
 @NgModule({
@@ -109,7 +109,7 @@ import { ToastComponent } from './components/toast/toast.component';
     IncludingComponent,
     DocumentationComponent,
     AccessabilityComponent,
-    MobileMenuComponent,
+    MobileNavComponent,
   ],
   imports: [
     BrowserModule,

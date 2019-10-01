@@ -17,17 +17,3 @@ pre {
 pre.no-background {
   background-color: #fff;
 }
-
-header {
-  border: 1px solid #ccc;
-}
-
-sidebar + section {
-  margin-left: 20px;
-  padding-left: 45px;
-
-  @media screen (min-width: 1200px) {
-    padding-top: 55px;
-    margin-left: 300px;
-  }
-}

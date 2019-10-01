@@ -1,0 +1,16 @@
+.accordion i:before, 
+.accordion--panel i:before, 
+.accordion i:after, 
+.accordion--panel i:after {
+  background-color: #fff !important;
+}
+
+.nav__item,
+.nav__item--nested {
+  color: #fff !important;
+
+  &:active,
+  &:focus {
+    border-left-color: #fff !important;
+  }
+}

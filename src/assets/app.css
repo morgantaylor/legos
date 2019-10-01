@@ -16,3 +16,8 @@ pre {
 pre.no-background {
   background-color: #fff;
 }
+
+.sidebar.sidebar--lego {
+  background-color: #0083c6 !important;
+}
+

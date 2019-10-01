@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppBaseComponent } from './app-base/app-base.component';
 
 // only for documentation not the component
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavComponent } from './nav/nav.component';
 
 // introduction Section
 import { IntroductionComponent } from './introduction/introduction.component';
@@ -71,7 +71,7 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
   declarations: [
     AppComponent,
     IntroductionComponent,
-    SidebarComponent,
+    NavComponent,
     ButtonsComponent,
     BtnIconsComponent,
     GroupsComponent,

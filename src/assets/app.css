@@ -15,6 +15,6 @@ h2 { margin-top: 0; }
 
 pre { max-height: 350px; }
 pre.no-background { background-color: #fff; }
-
+pre + pre {margin-top:15px;}
 .sidebar.sidebar--lego { background-color: #0083c6 !important; }
 

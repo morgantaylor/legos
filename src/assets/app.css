@@ -10,14 +10,11 @@ h1 {
   margin-bottom: 1em;
   border-bottom: 1px solid #eee;
 }
-pre {
-  max-height: 350px;
-}
-pre.no-background {
-  background-color: #fff;
-}
 
-.sidebar.sidebar--lego {
-  background-color: #0083c6 !important;
-}
+h2 { margin-top: 0; }
+
+pre { max-height: 350px; }
+pre.no-background { background-color: #fff; }
+
+.sidebar.sidebar--lego { background-color: #0083c6 !important; }
 

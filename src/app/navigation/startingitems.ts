@@ -1,4 +1,4 @@
-import { Item } from '../nav/item';
+import { Item } from '../navigation/item';
 
 export const STARTINGITEMS: Item[] = [
   {

@@ -1,4 +1,4 @@
-import { Item } from '../sidebar/item';
+import { Item } from '../nav/item';
 
 export const BASEITEMS: Item[] = [
   {

@@ -52,6 +52,8 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ToastComponent } from './components/toast/toast.component';
 
+import { FormsComponent } from './components/forms/forms.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },  
@@ -98,7 +100,8 @@ const routes: Routes = [
       { path: 'switches', component: SwitchesComponent },
       { path: 'tabs', component: TabsComponent },
       { path: 'pagination', component: PaginationComponent },
-      { path: 'toast', component: ToastComponent }
+      { path: 'toast', component: ToastComponent },
+      { path: 'forms', component: FormsComponent }
     ]
   },
   { path: '**', redirectTo: '/', pathMatch: 'full' }

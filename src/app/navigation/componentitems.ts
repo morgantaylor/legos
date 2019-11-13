@@ -31,6 +31,12 @@ export const COMPONENTITEMS: Item[] = [
     name: 'Chips',
     divider: false
   },
+   {
+    link: 'components/forms',
+    class: 'nav__item--nested',
+    name: 'Forms',
+    divider: false
+  },
   {
     link: 'components/pagination',
     class: 'nav__item--nested',

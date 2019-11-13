@@ -1,0 +1,156 @@
+<section class="paragraph">
+  <h2 class="section__title" id="forms">forms</h2>
+  <div class="container">
+    <p>A lot of what we do has to do with styling forms and how all their components fit together. Hopefully these classes can help simplify the process.</p>
+    <p>Attributes: <code>for=&#x22;&#x22;</code>, <code>id=&#x22;&#x22;</code>, <code>type=&#x22;&#x22;</code>, <code>placeholder=&#x22;&#x22;</code></p>
+    <h4>Accesability</h4>
+    <p>Forms are made up of inputs, labels, and buttons. Therefore best practices for inputs is the same for forms. Make sure to match labels with their coresponding input using <code>for=&#x22;&#x22;</code> and <code>id=&#x22;&#x22;</code> attributes. Use the <code>placeholder=&#x22;&#x22;</code> attribute to give your users a hint as to how you want them to fill in certain inputs.</p>
+    <p>Associated classes: <code>form__group</code>. This class groups together label and input elements so that they don't stray from eachother. This is not needed for small inline forms, more so for stacked and aligned forms.</p>
+    <h4>Labels</h4>
+    <p>It is recommend that you use <code>&lt;label&gt;</code> elements in a form and not <code>&lt;div&gt;</code> or <code>&lt;p&gt;</code> tags. The <code>.form__label</code> styles will override even the <code>&lt;p&gt;</code> tag styles but it is better to write semantic code from the beginning.</p>
+    <h6>Demo:</h6>
+    <h6>Markup:</h6>
+    <h4>Default</h4>
+    <p>Our default forms make labels and inputs inline with eachother. By wrapping any form elements such as, inputs and labels, in a form element with the classname <code>.form</code> they will take on the correct styles.</p>
+    <h6>Demo:</h6>
+    <form class="form">
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="john doe">
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="someone@something.com">
+      <button class="btn btn--primary" type="button">Submit</button>
+    </form>
+    <h6>Markup:</h6>
+<pre>&#x3C;form class=&#x22;<mark>form</mark>&#x22;&#x3E;
+  &#x3C;label for=&#x22;name&#x22;&#x3E;Name:&#x3C;/label&#x3E;
+  &#x3C;input id=&#x22;name&#x22; type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
+  &#x3C;label for=&#x22;email&#x22;&#x3E;Email:&#x3C;/label&#x3E;
+  &#x3C;input id=&#x22;email&#x22; type=&#x22;email&#x22; placeholder=&#x22;...&#x22;&#x3E;
+  &#x3C;button class=&#x22;btn btn--primary&#x22; type=&#x22;button&#x22;&#x3E;Submit&#x3C;/button&#x3E;
+&#x3C;/form&#x3E;</pre>
+    <h4>Stacked</h4>
+    <p>To create a stacked form with input elements below their corresponding labels, use <code>form--stacked</code> class on the &#x3C;form&#x3E; element</p>
+    <h6>Demo:</h6>
+    <form class="form form--stacked">
+      <div class="form__group">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="john doe">
+      </div>
+      <div class="form__group">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="someone@something.com">
+      </div>
+      <button class="btn btn--primary" type="button">Submit</button>
+    </form>
+    <h6>Markup:</h6>
+<pre>&#x3C;form class=&#x22;form <mark>form--stacked</mark>&#x22;&#x3E;
+  &#x3C;div class=&#x22;<mark>form__group</mark>&#x22;&#x3E;
+    &#x3C;label for=&#x22;name&#x22;&#x3E;Name:&#x3C;/label&#x3E;
+    &#x3C;input id=&#x22;name&#x22; type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
+  &#x3C;/div&#x3E;
+  ...
+&#x3C;/form&#x3E;</pre>
+    <h4>Aligned</h4>
+    <p>For aligned forms there are three different alignments you can choose from (left, middle, and right). To create an aligned form, add the form--aligned-[version] class to the &#x3C;form&#x3E; element. On smaller screens the aligned forms will revert back to a stacked form for a better user experience.</p>
+    <h6>Demo: Aligned-left</h6>
+    <form class="form form--aligned-left">
+      <div class="form__group">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="john doe">
+      </div>
+      <div class="form__group">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="someone@something.com">
+      </div>
+      <div class="form__group">
+        <label for="address">A long label form element:</label>
+        <input id="address" type="text" placeholder="example">
+      </div>
+      <div class="form__group">
+        <label for="phone">Phone:</label>
+        <input id="phone" type="email" placeholder="(xxx)xxx-xxxx">
+      </div>
+      <button class="btn btn--primary" type="button">Submit</button>
+    </form>
+    <h6>Demo: Aligned-center</h6>
+    <form class="form form--aligned-center">
+      <div class="form__group">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="john doe">
+      </div>
+      <div class="form__group">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="someone@something.com">
+      </div>
+      <div class="form__group">
+        <label for="address">A long label form element:</label>
+        <input id="address" type="text" placeholder="example">
+      </div>
+      <div class="form__group">
+        <label for="phone">Phone:</label>
+        <input id="phone" type="email" placeholder="(xxx)xxx-xxxx">
+      </div>
+      <button class="btn btn--primary" type="button">Submit</button>
+    </form>
+    <h6>Demo: Aligned-right</h6>
+    <form class="form form--aligned-right">
+      <div class="form__group">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="john doe">
+      </div>
+      <div class="form__group">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="someone@something.com">
+      </div>
+      <div class="form__group">
+        <label for="address">A long label form element:</label>
+        <input id="address" type="text" placeholder="example">
+      </div>
+      <div class="form__group">
+        <label for="phone">Phone:</label>
+        <input id="phone" type="email" placeholder="(xxx)xxx-xxxx">
+      </div>
+      <button class="btn btn--primary" type="button">Submit</button>
+    </form>
+    <h6>Markup:</h6>
+<pre>&#x3C;form class=&#x22;form <mark>form--aligned-[center]</mark>&#x22;&#x3E;
+  &#x3C;div class=&#x22;form <mark>form__group</mark>&#x22;&#x3E;
+    &#x3C;label for=&#x22;name&#x22;&#x3E;Name:&#x3C;/label&#x3E;
+    &#x3C;input id=&#x22;name&#x22; type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
+  &#x3C;/div&#x3E;
+  ...
+&#x3C;/form&#x3E;</pre>
+    <h4>Legends</h4>
+    <p>Use a &#x3C;fieldset&#x3E; element to visually group together related form elements. An optional &#x3C;legend&#x3E; can be used to give the group a name.</p>
+    <h6>Demo:</h6>
+    <form class="form form--stacked">
+      <fieldset>
+        <legend>User</legend>
+          <div class="form__group">
+            <label>Username</label>
+            <input type="text" placeholder="username">
+          </div>
+          <div class="form__group">
+            <label>Password</label>
+            <input type="password" placeholder="password">
+          </div>
+          <button class="btn btn--primary" type="button">Submit</button>
+      </fieldset>
+    </form>
+    <h6>Markup:</h6>
+<pre>&#x3C;form class=&#x22;form form--stacked&#x22;&#x3E;
+  <mark>&#x3C;fieldset&#x3E;</mark>
+    <mark>&#x3C;legend&#x3E;User&#x3C;/legend&#x3E;</mark>
+      &#x3C;div class=&#x22;form__group&#x22;&#x3E;
+        &#x3C;label&#x3E;Username&#x3C;/label&#x3E;
+        &#x3C;input type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;form__group&#x22;&#x3E;
+        &#x3C;label&#x3E;Password&#x3C;/label&#x3E;
+        &#x3C;input type=&#x22;password&#x22; placeholder=&#x22;...&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;button class=&#x22;btn btn--primary&#x22; type=&#x22;button&#x22;&#x3E;Submit&#x3C;/button&#x3E;
+  <mark>&#x3C;/fieldset&#x3E;</mark>
+&#x3C;/form&#x3E;</pre>
+  </div>
+</section>

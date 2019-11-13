@@ -63,6 +63,8 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ToastComponent } from './components/toast/toast.component';
 
+import { FormsComponent } from './components/forms/forms.component';
+
 // module/layout section
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 
@@ -110,6 +112,7 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     DocumentationComponent,
     AccessabilityComponent,
     MobileNavComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,

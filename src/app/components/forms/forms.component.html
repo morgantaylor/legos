@@ -14,10 +14,14 @@
     <p>Our default forms make labels and inputs inline with eachother. By wrapping any form elements such as, inputs and labels, in a form element with the classname <code>.form</code> they will take on the correct styles.</p>
     <h6>Demo:</h6>
     <form class="form">
-      <label for="name">Name:</label>
-      <input id="name" type="text" placeholder="john doe">
-      <label for="email">Email:</label>
-      <input id="email" type="email" placeholder="someone@something.com">
+      <div class="form__group">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="john doe">
+      </div>
+      <div class="form__group">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="someone@something.com">
+      </div>
       <button class="btn btn--primary" type="button">Submit</button>
     </form>
     <h6>Markup:</h6>

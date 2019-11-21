@@ -16,10 +16,20 @@ export class NavigationComponent implements OnInit {
   componentitems = COMPONENTITEMS;
   introitems = INTRODUCTIONITEMS;
   startingitems = STARTINGITEMS;
+  accordionInput : object;
+  mobileNav : object;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleAccordion(e){
+    this.accordionInput = e.target.parentElement.parentElement.children[0];
+    this.mobileNav = document.getElementById('mobile-nav');
+
+    this.accordionInput.checked = false;
+    this.mobileNav.checked = false;
   }
 
 }

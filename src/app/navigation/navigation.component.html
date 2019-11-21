@@ -8,8 +8,9 @@
     <a *ngFor="let item of introitems" 
        routerLink="{{ item.link }}" 
        [ngClass]="{'divider': item.divider}"
-       class="{{ item.class }}">
-      <span>{{ item.name }}</span>
+       class="{{ item.class }}"
+       (click)="toggleAccordion($event)">
+       {{ item.name }}
     </a>
   </p>
 </div>
@@ -23,8 +24,9 @@
     <a *ngFor="let item of startingitems" 
        routerLink="{{ item.link }}" 
        [ngClass]="{'divider': item.divider}"
-       class="{{ item.class }}">
-       <span>{{ item.name }}</span>
+       class="{{ item.class }}"
+       (click)="toggleAccordion($event)">
+        {{ item.name }}
      </a>
   </p>
 </div>
@@ -38,8 +40,9 @@
     <a *ngFor="let item of baseitems" 
       routerLink="{{ item.link }}" 
       [ngClass]="{'divider': item.divider}"
-      class="{{ item.class }}">
-      <span>{{ item.name }}</span>
+      class="{{ item.class }}"
+       (click)="toggleAccordion($event)">
+       {{ item.name }}
     </a>
   </p>
 </div>
@@ -53,8 +56,9 @@
     <a *ngFor="let item of componentitems" 
        routerLink="{{ item.link }}" 
        [ngClass]="{'divider': item.divider}"
-       class="{{ item.class }}">
-       <span>{{ item.name }}</span>
+       class="{{ item.class }}"
+       (click)="toggleAccordion($event)">
+        {{ item.name }}
      </a>
   </p>
 </div>

@@ -16,26 +16,26 @@ export class NavigationComponent implements OnInit {
   componentitems = COMPONENTITEMS;
   introitems = INTRODUCTIONITEMS;
   startingitems = STARTINGITEMS;
-  accordionInput : object;
-  mobileNav : object;
+  // accordionInput : string;
+  // mobileNav : string;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  toggleAccordion(e){
-    this.accordionInput = e.target.parentElement.parentElement.children[0];
-    this.mobileNav = document.getElementById('mobile-nav');
+  // toggleAccordion(e){
+  //   this.accordionInput = e.target.parentElement.parentElement.children[0];
+  //   this.mobileNav = document.getElementById('mobile-nav');
 
-    console.log(this.accordionInput);
-    console.log(e.target.parentElement.parentElement.children[0]);
+  //   console.log(this.accordionInput);
+  //   console.log(e.target.parentElement.parentElement.children[0]);
 
-    // console.log(this.mobileNav);
-    // console.log(document.getElementById('mobile-nav').checked);
+  //   // console.log(this.mobileNav);
+  //   // console.log(document.getElementById('mobile-nav').checked);
 
-    this.accordionInput.checked = false;
-    // this.mobileNav = false;
-  }
+  //   this.accordionInput.checked = false;
+  //   // this.mobileNav = false;
+  // }
 
 }

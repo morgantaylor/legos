@@ -28,8 +28,14 @@ export class NavigationComponent implements OnInit {
     this.accordionInput = e.target.parentElement.parentElement.children[0];
     this.mobileNav = document.getElementById('mobile-nav');
 
+    console.log(this.accordionInput);
+    console.log(e.target.parentElement.parentElement.children[0]);
+
+    // console.log(this.mobileNav);
+    // console.log(document.getElementById('mobile-nav').checked);
+
     this.accordionInput.checked = false;
-    this.mobileNav.checked = false;
+    // this.mobileNav = false;
   }
 
 }

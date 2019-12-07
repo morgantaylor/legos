@@ -6,7 +6,6 @@ import { AppBaseComponent } from './app-base/app-base.component';
 // introduction Section
 import { IntroductionComponent } from './introduction/introduction.component';
 import { LegosComponent } from './introduction/legos/legos.component';
-import { AboutComponent } from './introduction/about/about.component';
 
 // getting started Section
 import { GettingStartedComponent } from './getting-started/getting-started.component';
@@ -60,8 +59,7 @@ const routes: Routes = [
   { path: '', component: AppBaseComponent },
   { path: 'introduction', component: IntroductionComponent, 
     children: [
-      { path: 'legos', component: LegosComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'legos', component: LegosComponent }
     ]
   },
   { path: 'getting-started', component: GettingStartedComponent, 

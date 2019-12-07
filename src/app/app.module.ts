@@ -13,12 +13,11 @@ import { NavigationComponent } from './navigation/navigation.component';
 // introduction Section
 import { IntroductionComponent } from './introduction/introduction.component';
 import { LegosComponent } from './introduction/legos/legos.component';
-import { AboutComponent } from './introduction/about/about.component';
-import { NamingComponent } from './introduction/naming/naming.component';
 
 // getting started Section
 import { GettingStartedComponent } from './getting-started/getting-started.component';
 import { IncludingComponent } from './getting-started/including/including.component';
+import { NamingComponent } from './introduction/naming/naming.component';
 import { DocumentationComponent } from './getting-started/documentation/documentation.component';
 import { AccessabilityComponent } from './getting-started/accessability/accessability.component';
 
@@ -104,7 +103,6 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     BaseComponent,
     ComponentsComponent,
     LegosComponent,
-    AboutComponent,
     NamingComponent,
     AppBaseComponent,
     GettingStartedComponent,

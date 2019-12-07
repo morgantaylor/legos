@@ -6,11 +6,5 @@ export const INTRODUCTIONITEMS: Item[] = [
     class: 'nav__item--nested',
     name: 'Legos',
     divider: false
-  },
-  {
-    link: 'introduction/about',
-    class: 'nav__item--nested',
-    name: 'About',
-    divider: false
   }
 ]

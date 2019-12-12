@@ -16,7 +16,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 // getting started Section
 import { GettingStartedComponent } from './getting-started/getting-started.component';
 import { IncludingComponent } from './getting-started/including/including.component';
-import { NamingComponent } from './introduction/naming/naming.component';
+import { NamingComponent } from './getting-started/naming/naming.component';
 import { DocumentationComponent } from './getting-started/documentation/documentation.component';
 import { AccessabilityComponent } from './getting-started/accessability/accessability.component';
 

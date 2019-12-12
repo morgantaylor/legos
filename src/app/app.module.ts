@@ -12,7 +12,6 @@ import { NavigationComponent } from './navigation/navigation.component';
 
 // introduction Section
 import { IntroductionComponent } from './introduction/introduction.component';
-import { LegosComponent } from './introduction/legos/legos.component';
 
 // getting started Section
 import { GettingStartedComponent } from './getting-started/getting-started.component';
@@ -102,7 +101,6 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     ToastComponent,
     BaseComponent,
     ComponentsComponent,
-    LegosComponent,
     NamingComponent,
     AppBaseComponent,
     GettingStartedComponent,

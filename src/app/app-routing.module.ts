@@ -5,7 +5,6 @@ import { AppBaseComponent } from './app-base/app-base.component';
 
 // introduction Section
 import { IntroductionComponent } from './introduction/introduction.component';
-import { LegosComponent } from './introduction/legos/legos.component';
 
 // getting started Section
 import { GettingStartedComponent } from './getting-started/getting-started.component';
@@ -57,11 +56,7 @@ import { FormsComponent } from './components/forms/forms.component';
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },  
   { path: '', component: AppBaseComponent },
-  { path: 'introduction', component: IntroductionComponent, 
-    children: [
-      { path: 'legos', component: LegosComponent }
-    ]
-  },
+  { path: 'introduction', component: IntroductionComponent },
   { path: 'getting-started', component: GettingStartedComponent, 
     children: [
       { path: 'including', component: IncludingComponent },

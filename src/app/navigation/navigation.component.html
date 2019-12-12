@@ -1,18 +1,4 @@
-<div class="accordion">
-  <input type="checkbox">
-  <i></i>
-  <div class="nav__item accordion__title">
-    Introduction
-  </div>
-  <p class="accordion__container">
-    <a *ngFor="let item of introitems" 
-       routerLink="{{ item.link }}" 
-       [ngClass]="{'divider': item.divider}"
-       class="{{ item.class }}">
-       {{ item.name }}
-    </a>
-  </p>
-</div>
+<div class="nav__item" routerLink="introduction">Introduction</div>
 <div class="accordion">
   <input type="checkbox">
   <i></i>

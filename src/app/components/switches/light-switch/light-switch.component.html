@@ -1,5 +1,5 @@
 <h4>Basic</h4>
-<p>By default the light switch component is a block element. The label is encosed within it so that will always be on the same line as its corresponding switch. The default switch is very much light a light switch, dark and gray when off and golden when on. Colors are customizeable along with the default skins that come with the element.</p>
+<p>The light switch component is a block element. The label is enclosed within it so that it will always be on the same line as its corresponding switch. The default switch resembles a light switch, dark and gray when off and golden when on. Colors are customizable along with the default skins that come with the element.</p>
 <h6>Demo:</h6>
 <div class="switch">
   <div class="switch__title">Light Switch</div>
@@ -21,7 +21,7 @@
   &#x3C;/span&#x3E;
 &#x3C;/div&#x3E;</pre>
 <h4>Inline</h4>
-<p>If you want a switch component to be inline with another element just use the <code>switch--inline</code> class instead.</p>
+<p>If you want a switch component to be inline with another element use <code>.switch--inline</code> class instead.</p>
 <h6>Demo:</h6>
 <div class="switch--inline">
   <div class="switch__title">Light Switch</div>
@@ -46,7 +46,7 @@
   ...
 &#x3C;/div&#x3E;</pre>
 <h4>Skins</h4>
-<p>Default skins colors availible:</p>
+<p>Default skins availible:</p>
 <h6>Demo: <code>switch--primary</code></h6>
 <div class="switch switch--primary">
   <div class="switch__title">Light Switch</div>
@@ -90,10 +90,10 @@
   ...
 &#x3C;/div&#x3E;</pre>
 <h4>Color Customization</h4>
-<p>If you want to customize your switch with a specific color that isn't part of our default skins I recomment making your own skin class, add your styles, to that, and add it alongside the <code>switch</code> element class.</p>
+<p>To customize a switch with a specific color that isn't part of our default skins I recommend creating a new skin class.</p>
 <pre>&#x3C;div class="switch <mark>custom-skin</mark>"&#x3E;</pre>
 <p>Inside your stylesheet target these elements:</p> 
 <ul>
-  <li><code>.switch input:checked + span</code> : targets the background color of the switch when its on</li>
-  <li><code>switch input:checked + span a</code> : targets the color of the circle when switch is on</li>
+  <li><code>.switch input:checked + span</code> : targets the background color of the switch when it's on</li>
+  <li><code>switch input:checked + span a</code> : targets the color of the circle when the switch is on</li>
 </ul>

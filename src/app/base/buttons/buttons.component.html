@@ -1,9 +1,9 @@
 <section class="paragraph">
   <h2 class="section__title" id="buttons">buttons</h2>
   <div class="container">
-    <p>When making a button please be sure to use a <code>button</code> or <code>a</code> tag for accessability purposes. There are three different type of buttons.</p>
+    <p>When creating a button please be sure to use a <code>&#x3C;button&#x3E;</code> or <code>&#x3C;a&#x3E;</code> tag for accessibility purposes. There are three different types of buttons.</p>
     <h4>Filled</h4>
-    <p>Filled buttons have colored borders and backgrounds with a white font color.</p>
+    <p>Filled buttons have colored borders and backgrounds with white font color.</p>
     <h6>Demo:</h6>
     <div>
       <button class="btn btn--primary">primary</button>
@@ -20,7 +20,7 @@
     <h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;<mark>btn btn--default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
     <h4>Outlined</h4>
-    <p>Outlined buttons only have colored text and borders, otherwise they are the exact same as filled buttons. Same rules apply.</p>
+    <p>Outlined buttons only have colored text and borders, otherwise, they are the same as filled buttons. The same rules apply.</p>
     <h6>Demo:</h6>
     <div>
       <button class="btn btn--outline-primary">outlined primary</button>
@@ -38,7 +38,7 @@
 <pre>&#x3C;button class=&#x22;<mark>btn btn--outline-default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
     <h4>Links</h4>
     <p>This element is not a <code>&#x3C;button&#x3E;</code> tag, it is infact <code>&#x3C;a&#x3E;</code> tag.</p>
-    <p>While not specifically a button, it does not get the <code>.btn</code> base, links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space. The link space takes up only the amount of what's inside of it, which is unlike buttons that have a set padding.</p>
+    <p>While not specifically a button (it does not get the <code>.btn</code> base) links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space.  A link takes up only the amount of space it needs for what's inside of it, which is unlike buttons that have set padding.</p>
     <h6>Demo:</h6>
     <div>
       <a class="link--primary link-demo">link primary / default</a>
@@ -65,9 +65,9 @@
       <li class="color-swatch"><code>--default</code><span class="swatch-default"></span></li>
     </ul>
     <h4>Block Buttons</h4>
-    <p>For block buttons that span the entire width of the parent container use <code>.btn--block</code>.</p>
+    <p>Block buttons span the entire width of their parent container.</p>
     <h6>Demo:</h6>
-    <div class="container" style="width: 400px; border: 1px solid #999; padding: 10px; border-radius: 6px; margin: 0;">
+    <div class="container" style="max-width: 400px; border: 1px solid #999; padding: 10px; border-radius: 6px; margin: 0;">
       <button class="btn btn--danger btn--block">Default Size</button>
       <button class="btn btn--outline-danger btn--block">Default Size</button>
     </div>

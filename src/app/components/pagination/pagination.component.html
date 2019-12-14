@@ -1,11 +1,11 @@
 <section class="paragraph">
   <h2 class="section__title" id="pagination">pagination</h2>
   <div class="container">
-    <p>For showing multiple pages of similar content.</p>
+    <p>For showing multiple pages of related content.</p>
     <p>Attribute: <code>aria-label=&#x22;&#x22;</code>, <code>role="menu"</code></p>
-    <h4>Accesability</h4>
-    <p>For accesability purposes the pagination component should be wrapped in a <code>&#x3C;nav&#x3E;</code> element to identify it as a navigation section. It is also possible and highly likely that a page may have more than one <code>&#x3C;nav&#x3E;</code> element already (such as the primary navigation in the header, or a sidebar navigation). Best practices dictate providing a descriptive <code>aria-label</code> for the <code>&#x3C;nav&#x3E;</code> element to signal to screen readers and other assistive technologies what the element really is.</p>
-    <p><strong>Example:</strong> If the pagination component is used to navigate between a set of pages in a sign up form, an appropriate label could be <code>aria-label="sign up form pages"</code>.</p>
+    <h4>Accessibility</h4>
+    <p>For accessibility purposes, the pagination component should be wrapped with the <code>&#x3C;nav&#x3E;</code> element to identify it as a navigation section. It is also possible and highly likely that a page may have more than one <code>&#x3C;nav&#x3E;</code> element already (such as the primary navigation in the header, or sidebar navigation). Best practice dictates providing a descriptive <code>aria-label</code> for the <code>&#x3C;nav&#x3E;</code> element signaling to screen readers and other assistive technologies what the element is.</p>
+    <p><strong>Example:</strong> If the pagination component is used to navigate between a set of pages in a signup form, an appropriate label could be <code>aria-label="sign up form pages"</code>.</p>
     <h6>Demo:</h6>
     <div class="flex-container">
       <nav class="pagination" role="menu">
@@ -55,7 +55,7 @@
   &#x3C;/li&#x3E;
 &#x3C;/nav&#x3E;</pre>
     <h4>Prev/Next Labels</h4>
-    <p>You can customize how you want to represent the previous/first and next/last items. You could choose to have all of them displayed, or just choose one set. Either way you can use words or symbols. The only thing that changes when you add <code>--first</code> or <code>--last</code> to <code>.pagination__item</code> is the spacing. The first and last buttons have a margin that seperate them from the inner set of buttons.</p>
+    <p>There are customizations for how to represent the previous/first and next/last items. Either choose to have all of them display, or just choose one set. Either way, both symbols, and words are allowed. The only thing that changes when you add <code>--first</code> or <code>--last</code> to <code>.pagination__item</code> is the spacing. The first and last buttons have a margin that separates them from the inner set of buttons.</p>
     <h6>Demo:</h6>
     <div class="flex-container">
       <nav class="pagination" role="menu">

@@ -1,20 +1,20 @@
 <section class="paragraph">
   <h2 class="section__title" id="alerts">alerts</h2>
   <div class="container">
-    <p>Normally alert banners are global notifications that are typically displayed as a thin banner at the top of the screen and are used to make user aware about a state change (like the system is down, planned maintenance, there's a new feature etc).</p>
-    <p>Alert banners get fixed to the top of the screen and usually staying till the user dismisses it with the close button. This is what differentiates it from a toast that fades away after a certain amount of time.</p>
+    <p>Normally alert banners are global notifications that are displayed as a banner at the top of a user's screen. They are used to make the user aware of a state change (like the system being down, planned maintenance, or a new feature, etc).</p>
+    <p>Alert banners get fixed to the top of the screen and usually stay till the user dismisses. This is what differentiates it from a toast element that fades away after a certain amount of time on screen.</p>
     <p>Attributes: <code>role="alert"</code>
     <h6>Demo:</h6>
     <div class="alert demo" role="alert">
       <div class="alert__body">This is the default alert banner</div>
     </div>
-    <p>For demonstration purposes this alert banner is inside the document for you to see instead of fixes to the top of the screen. It's really just a big rectangle till you add a skin indicating what type of alert it is.</p>
+    <p>For demonstration purposes, this alert banner is inside the document for you to see what it looks like instead of fixing it to the top of the screen where it would be. At its core, it is just a rectangle till you add a skin indicating what type of alert it is.</p>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;alert&#x22; role=&#x22;alert&#x22;&#x3E;
   &#x3C;div class=&#x22;alert__body&#x22;&#x3E;Alert text here&#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h4>Close (optional)</h4>
-    <p>In certain cases you might want the user to be able to dismiss the alert, awknowledging that they saw it. To do this just add a close button inside the alert after the <code>alert__body</code>.</p>
+    <p>In certain cases you might want the user to be able to dismiss the alert, acknowledging that they saw it. To do this just add a close button inside the alert after the <code>alert__body</code>.</p>
     <h6>Demo:</h6>
     <div class="alert demo" role="alert">
       <div class="alert__body">An alert banner with an optional close button</div>
@@ -36,7 +36,7 @@
       <li><code>alert--primary</code></li>
       <li><code>alert--warning</code></li>
     </ul>
-    <p>These colors control the alerts:</p> 
+    <p>The skin color controls:</p> 
     <ul>
       <li>Backgroud Color</li>
       <li>Font Color</li>

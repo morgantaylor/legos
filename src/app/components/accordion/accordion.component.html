@@ -1,9 +1,9 @@
 <section class="paragraph">
   <h2 class="section__title" id="accordion">accordion</h2>
   <div class="container">
-    <p>Our base accordion is very simple with a few enhancements that you can add depending on what you want to use it for. The accordion has a wrapper, meaning you can add several accordions to one containers for them to be grouped together. By default the accordion is in the closed state but with a slight modification you can switch it to open by defaul. They will take up the entire space of their parent container or you can add a max-width property to the wrapper element. There are also additional modification styles you can add on. I'll walk you through them below.</p>
+    <p>The accordion component is very simple with a few enhancements that you can add depending on what you want to use it for. By default, the accordion is in the closed state but with a slight modification, you can switch it to be open by default. The accordion will take up the entire space of its parent container or you can add a max-width property to the wrapper element. There are also additional modification styles you can add. See below for a list of them.</p>
     <h4>Basic</h4>
-    <p>The basic accordion has squared corners and has a white background.</p>
+    <p>The basic accordion has squared corners and white background.</p>
     <h6>Demo:</h6>
     <div class="accordion__wrapper acc-custom">
       <div class="accordion">
@@ -41,12 +41,12 @@
   &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h4>Panel</h4>
-    <p>To make your accordions look like panels just add these classes onto the base classess. Add <code>--panel</code> to the <code>accordion</code> class. That's it!</p>
-    <p>By changing your accordion to a panel it:</p>
+    <p>To make your accordion look like a panel add <code>--panel</code> to the accordion class. That's it!</p>
+    <p>By changing your accordion to a panel:</p>
     <ul>
-      <li>rounds the edges</li>
-      <li>adds a background color for the title</li>
-      <li>adds uniform padding to the accordion contents</li>
+      <li>It will round the edges</li>
+      <li>It adds a background color for the accordion title</li>
+      <li>It adds uniform padding to the accordion contents</li>
     </ul>
     <h6>Demo:</h6>
     <div class="accordion__wrapper">
@@ -77,10 +77,10 @@
 &#x3C;/div&#x3E;</pre>
     <h4>Other Modifications</h4>
     <ul>
-      <li>Add secondary text on title</li>
-      <li>Add icons inside the title</li>
-      <li>Round the edged of the accordion (can't see unless you have a skin on the basic version or a background color behind it)</li>
-      <li>Add skin colors</li>
+      <li>Add secondary text on the accordion title</li>
+      <li>Add icons inside the accordion title</li>
+      <li>Round the edges of the accordion (can't see unless you have a skin on the basic version or background color behind it)</li>
+      <li>Add skin color</li>
     </ul>
     <h6>Demo:</h6>
     <div class="accordion__wrapper">
@@ -124,8 +124,8 @@
   &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
     <h4>Skins</h4>
-    <p>We provide four different types of skins. They transform color, border-color, background-color, and arrow color. You have to put the skin color with the <code>accordion</code> class, inside the <code>accordion__wrapper</code> or it will not work. This only really useful for the <code>accordion--panel</code> because the default <code>accordion</code> was made to look like it was floating. The two different accordions have very different use cases.</p>
-    <p>Example: the floating navigation on the left side of the screen.</p>
+    <p>There are four skin colors you can add to an accordion. They change the color, border-color, background-color, and arrow color. You have to put the skin on the accordion element, inside the <code>.accordion__wrapper</code> or it will not work. This is only useful for the <code>.accordion--panel</code> because the default accordion was made to look like it was floating. The two accordions have very different use cases.</p>
+    <p>Example: the floating navigation on the left side of the screen</p>
     <h6>Demo:</h6>
     <div class="accordion__wrapper acc-custom">
       <div class="accordion--panel skin-green">

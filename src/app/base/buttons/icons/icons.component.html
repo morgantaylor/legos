@@ -1,18 +1,18 @@
 <h4>Buttons w/ Icons</h4>
-<p>Incorportate Font Awesome icons into your buttons or use an icon as a button.</p>
+<p>Incorporate <a href="http://fontawesome.io/icons/">Font Awesome</a> icons into your buttons or use an icon as a button. If you have a combination button that has an icon and a word wrap your text in a <code>&#x3C;span&#x3E;</code> to allow for sufficient padding between the icon and the word.</p>
+<h6>Demo:</h6>
 <button class="btn btn--primary">
   <i class="icon fas fa-cog"></i>
   <span>Settings</span>
 </button>
 <button class="btn btn--outline-primary"><i class="icon fas fa-cog"></i></button>
-<p>If you have a combination button that has an icon and a word make sure that you wrap your text in a <code>span</code> to allow the styles to give the icon padding from the word.</p>
+<h6>Markup:</h6>
 <pre>&#x3C;button class=&#x22;btn btn--primary&#x22;&#x3E;
   &#x3C;i class=&#x22;icon fas fa-cog&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;span&#x3E;Settings&#x3C;/span&#x3E;
 &#x3C;/button&#x3E;</pre>
 <h4>Upload Button</h4>
-<p>The upload button is a special case. We combine an input and a label to make this button. You can also add an icon inside if you wish.</p>
-<p>The <code>.btn-upload</code> class has the styles for the label that make it look like a button. You can add the normal button color classes ontop of it as well. Just note where the btn color class needs to go in the markup.</p>
+<p>The upload button is a special. We combine an <code>&#x3C;input&#x3E;</code> and <code>&#x3C;label&#x3E;</code> element. You can also add an icon inside. The <code>.btn-upload</code> class has the styles that make it look like a button. You can add the normal button color to it. Note where the button color class needs to go in the markup.</p>
 <h6>Demo:</h6>
 <div class="btn-upload-container">
   <input type="file" name="uploadFile" id="upload" class="inputfile" 

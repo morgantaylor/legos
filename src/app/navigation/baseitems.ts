@@ -23,6 +23,12 @@ export const BASEITEMS: Item[] = [
     link: 'base/typography',
     class: 'nav__item--nested',
     name: 'Typography',
+    divider: false
+  },
+  {
+    link: 'base/lists',
+    class: 'nav__item--nested',
+    name: 'Lists',
     divider: true
   },
   {

@@ -20,6 +20,7 @@ import { ColorsComponent } from './base/colors/colors.component';
 import { TypographyComponent } from './base/typography/typography.component';
 import { IconsComponent } from './base/icons/icons.component';
 import { ContainersComponent } from './base/containers/containers.component';
+import { ListComponent } from './base/list/list.component';
 
 import { ButtonsComponent } from './base/buttons/buttons.component';
 import { BtnIconsComponent } from './base/buttons/icons/icons.component';
@@ -71,6 +72,7 @@ const routes: Routes = [
       { path: 'typography', component: TypographyComponent },  
       { path: 'icons', component: IconsComponent },
       { path: 'containers', component: ContainersComponent },
+      { path: 'lists', component: ListComponent },
       { path: 'buttons', component: ButtonsComponent },
       { path: 'buttons/button-icons', component: BtnIconsComponent },
       { path: 'buttons/button-groups', component: GroupsComponent },

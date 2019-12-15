@@ -27,6 +27,7 @@ import { ColorsComponent } from './base/colors/colors.component';
 import { TypographyComponent } from './base/typography/typography.component';
 import { IconsComponent } from './base/icons/icons.component';
 import { ContainersComponent } from './base/containers/containers.component';
+import { ListComponent } from './base/list/list.component';
 
 import { ButtonsComponent } from './base/buttons/buttons.component';
 import { BtnIconsComponent } from './base/buttons/icons/icons.component';
@@ -109,6 +110,7 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     AccessabilityComponent,
     MobileNavComponent,
     FormsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

@@ -5,14 +5,16 @@
   <div class="nav__item accordion__title">
     Getting Started
   </div>
-  <p class="accordion__container">
-    <a *ngFor="let item of startingitems" 
-       routerLink="{{ item.link }}" 
-       [ngClass]="{'divider': item.divider}"
-       class="{{ item.class }}">
-        {{ item.name }}
-     </a>
-  </p>
+  <div class="accordion__container">
+    <ul class="list--nav">
+      <li *ngFor="let item of startingitems" 
+         routerLink="{{ item.link }}" 
+         [ngClass]="{'divider': item.divider}"
+         class="{{ item.class }}">
+          {{ item.name }}
+       </li>
+     </ul>
+  </div>
 </div>
 <div class="accordion">
   <input type="checkbox" title="opens base accordion">
@@ -20,14 +22,16 @@
   <div class="nav__item accordion__title">
     Base
   </div>
-  <p class="accordion__container">
-    <a *ngFor="let item of baseitems" 
-      routerLink="{{ item.link }}" 
-      [ngClass]="{'divider': item.divider}"
-      class="{{ item.class }}">
-       {{ item.name }}
-    </a>
-  </p>
+  <div class="accordion__container">
+    <ul class="list--nav">
+      <li *ngFor="let item of baseitems" 
+        routerLink="{{ item.link }}" 
+        [ngClass]="{'divider': item.divider}"
+        class="{{ item.class }}">
+         {{ item.name }}
+      </li>
+    </ul>
+  </div>
 </div>
 <div class="accordion">
   <input type="checkbox" title="opens components accordion">
@@ -35,12 +39,14 @@
   <div class="nav__item accordion__title">
     Components
   </div>
-  <p class="accordion__container">
-    <a *ngFor="let item of componentitems" 
-       routerLink="{{ item.link }}" 
-       [ngClass]="{'divider': item.divider}"
-       class="{{ item.class }}">
-        {{ item.name }}
-     </a>
-  </p>
+  <div class="accordion__container">
+    <ul class="list--nav">
+      <li *ngFor="let item of componentitems" 
+         routerLink="{{ item.link }}" 
+         [ngClass]="{'divider': item.divider}"
+         class="{{ item.class }}">
+          {{ item.name }}
+       </li>
+     </ul>
+  </div>
 </div>

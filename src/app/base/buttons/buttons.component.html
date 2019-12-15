@@ -2,58 +2,64 @@
   <h2 class="section__title" id="buttons">buttons</h2>
   <div class="container">
     <p>When creating a button please be sure to use a <code>&#x3C;button&#x3E;</code> or <code>&#x3C;a&#x3E;</code> tag for accessibility purposes. There are three different types of buttons.</p>
+    <h6>Attributes:</h6>
+    <ul class="list--unstyled">
+      <li><code>name</code></li>
+      <li><code>type</code> : <code>&#x22;submit&#x22;</code>, <code>&#x22;reset&#x22;</code>, <code>&#x22;button&#x22;</code></li>
+      <li><code>value</code></li>
+    </ul>
     <h4>Filled</h4>
     <p>Filled buttons have colored borders and backgrounds with white font color.</p>
     <h6>Demo:</h6>
     <div>
-      <button class="btn btn--primary">primary</button>
-      <button class="btn btn--success">success</button>
-      <button class="btn btn--danger">danger</button>
-      <button class="btn btn--default">default</button>
+      <button type="button" class="btn btn--primary">primary</button>
+      <button type="button" class="btn btn--success">success</button>
+      <button type="button" class="btn btn--danger">danger</button>
+      <button type="button" class="btn btn--default">default</button>
     </div>
     <div>
-      <button class="btn btn--primary" disabled>disabled primary</button>
-      <button class="btn btn--success" disabled>disabled success</button>
-      <button class="btn btn--danger" disabled>disabled danger</button>
-      <button class="btn btn--default" disabled>disabled default</button>
+      <button type="button" class="btn btn--primary" disabled>disabled primary</button>
+      <button type="button" class="btn btn--success" disabled>disabled success</button>
+      <button type="button" class="btn btn--danger" disabled>disabled danger</button>
+      <button type="button" class="btn btn--default" disabled>disabled default</button>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;button class=&#x22;<mark>btn btn--default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
+<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;<mark>btn btn--default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
     <h4>Outlined</h4>
     <p>Outlined buttons only have colored text and borders, otherwise, they are the same as filled buttons. The same rules apply.</p>
     <h6>Demo:</h6>
     <div>
-      <button class="btn btn--outline-primary">outlined primary</button>
-      <button class="btn btn--outline-success">outlined success</button>
-      <button class="btn btn--outline-danger">outlined danger</button>
-      <button class="btn btn--outline-default">outlined default</button>
+      <button type="button" class="btn btn--outline-primary">outlined primary</button>
+      <button type="button" class="btn btn--outline-success">outlined success</button>
+      <button type="button" class="btn btn--outline-danger">outlined danger</button>
+      <button type="button" class="btn btn--outline-default">outlined default</button>
     </div>
     <div>
-      <button class="btn btn--outline-primary" disabled>disabled outlined primary</button>
-      <button class="btn btn--outline-success" disabled>disabled outlined success</button>
-      <button class="btn btn--outline-danger" disabled>disabled outlined danger</button>
-      <button class="btn btn--outline-default" disabled>disabled outlined default</button>
+      <button type="button" class="btn btn--outline-primary" disabled>disabled outlined primary</button>
+      <button type="button" class="btn btn--outline-success" disabled>disabled outlined success</button>
+      <button type="button" class="btn btn--outline-danger" disabled>disabled outlined danger</button>
+      <button type="button" class="btn btn--outline-default" disabled>disabled outlined default</button>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;button class=&#x22;<mark>btn btn--outline-default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
+<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;<mark>btn btn--outline-default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
     <h4>Links</h4>
     <p>This element is not a <code>&#x3C;button&#x3E;</code> tag, it is infact <code>&#x3C;a&#x3E;</code> tag.</p>
     <p>While not specifically a button (it does not get the <code>.btn</code> base) links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space.  A link takes up only the amount of space it needs for what's inside of it, which is unlike buttons that have set padding.</p>
     <h6>Demo:</h6>
     <div>
-      <a class="link--primary link-demo">link primary / default</a>
-      <a class="link--success link-demo">link success</a>
-      <a class="link--danger link-demo">link danger</a>
-      <a class="link--gray link-demo">link gray</a>
-      <div class="custom-bg-dark link-demo"><a class="link--white">link white</a></div>
+      <a type="button" class="link--primary link-demo">link primary / default</a>
+      <a type="button" class="link--success link-demo">link success</a>
+      <a type="button" class="link--danger link-demo">link danger</a>
+      <a type="button" class="link--gray link-demo">link gray</a>
+      <div class="custom-bg-dark link-demo"><a type="button" class="link--white">link white</a></div>
     </div>
     <br>
     <div>
-      <a class="link--primary link-demo" disabled>disabled link primary / default</a>
-      <a class="link--success link-demo" disabled>disabled link success</a>
-      <a class="link--danger link-demo" disabled>disabled link danger</a>
-      <a class="link--gray link-demo" disabled>disabled link gray</a>
-      <div class="custom-bg-dark"><a class="link--white" disabled>link white</a></div>
+      <a type="button" class="link--primary link-demo" disabled>disabled link primary / default</a>
+      <a type="button" class="link--success link-demo" disabled>disabled link success</a>
+      <a type="button" class="link--danger link-demo" disabled>disabled link danger</a>
+      <a type="button" class="link--gray link-demo" disabled>disabled link gray</a>
+      <div class="custom-bg-dark"><a type="button" class="link--white" disabled>link white</a></div>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;a class=&#x22;<mark>link--default</mark>&#x22;&#x3E;...&#x3C;/a&#x3E;</pre>
@@ -68,11 +74,11 @@
     <p>Block buttons span the entire width of their parent container.</p>
     <h6>Demo:</h6>
     <div class="container" style="max-width: 400px; border: 1px solid #999; padding: 10px; border-radius: 6px; margin: 0;">
-      <button class="btn btn--danger btn--block">Default Size</button>
-      <button class="btn btn--outline-danger btn--block">Default Size</button>
+      <button type="button" class="btn btn--danger btn--block">Default Size</button>
+      <button type="button" class="btn btn--outline-danger btn--block">Default Size</button>
     </div>
     <h6>Markup:</h6>
-<pre>&#x3C;button class=&#x22;<mark>btn btn--danger btn--block</mark>&#x22;&#x3E;Default Size&#x3C;/button&#x3E;</pre>
+<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;<mark>btn btn--danger btn--block</mark>&#x22;&#x3E;Default Size&#x3C;/button&#x3E;</pre>
     <!-- <btn-icons></btn-icons>
     <groups></groups>
     <dropdowns></dropdowns> -->

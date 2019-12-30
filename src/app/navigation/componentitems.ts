@@ -54,11 +54,5 @@ export const COMPONENTITEMS: Item[] = [
     class: 'nav__item--nested',
     name: 'Tabs',
     divider: false
-  },
-  {
-    link: 'components/toast',
-    class: 'nav__item--nested',
-    name: 'Toast',
-    divider: false
   }
 ]

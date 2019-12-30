@@ -3,7 +3,11 @@
   <div class="container">
     <p>Normally alert banners are global notifications that are displayed as a banner at the top of a user's screen. They are used to make the user aware of a state change (like the system being down, planned maintenance, or a new feature, etc).</p>
     <p>Alert banners get fixed to the top of the screen and usually stay till the user dismisses. This is what differentiates it from a toast element that fades away after a certain amount of time on screen.</p>
-    <p>Attributes: <code>role="alert"</code>
+    <h6>Attributes:</h6>
+    <ul class="list--unstyled">
+      <li><code>role</code> : <code>'alert'</code></li>
+      <li><code>aria-label</code> : add to the close button, it is a button without content inside</li>
+    </ul>
     <h6>Demo:</h6>
     <div class="alert demo" role="alert">
       <div class="alert__body">This is the default alert banner</div>
@@ -18,14 +22,14 @@
     <h6>Demo:</h6>
     <div class="alert demo" role="alert">
       <div class="alert__body">An alert banner with an optional close button</div>
-      <button type="button" class="alert__close">
+      <button type="button" aria-label="alert close button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;alert role=&#x22;alert&#x22;&#x3E;
   &#x3C;div class=&#x22;alert__body&#x22;&#x3E;Alert text here&#x3C;/div&#x3E;
-  <mark>&#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;</mark>
+  <mark>&#x3C;button type=&#x22;button&#x22; aria-label=&#x22;alert close button&#x22; class=&#x22;alert__close&#x22;&#x3E;</mark>
     <mark>&#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;</mark>
   <mark>&#x3C;/button&#x3E;</mark>
 &#x3C;/div&#x3E;</pre>
@@ -65,32 +69,32 @@
     <h6>Demo:</h6>
     <div class="alert demo alert--danger--border" role="alert">
       <div class="alert__body">This is a danger alert with a border</div>
-      <button type="button" class="alert__close">
+      <button type="button" aria-label="alert close button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <div class="alert demo alert--success--border">
       <div class="alert__body">This is a success alert with a border</div>
-      <button type="button" class="alert__close">
+      <button type="button" aria-label="alert close button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <div class="alert demo alert--primary--border">
       <div class="alert__body">This is a primary alert with a border</div>
-      <button type="button" class="alert__close">
+      <button type="button" aria-label="alert close button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <div class="alert demo alert--warning--border">
       <div class="alert__body">This is a warning alert with a border</div>
-      <button type="button" class="alert__close">
+      <button type="button" aria-label="alert close button" class="alert__close">
         <i class="icon fas fa-times" aria-hidden="true"></i>
       </button>
     </div>
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;alert alert--danger<mark>--border</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
   &#x3C;div class="alert__body"&#x3E;Alert text here&#x3C;/div&#x3E;
-  &#x3C;button type=&#x22;button&#x22; class=&#x22;alert__close&#x22;&#x3E;
+  &#x3C;button type=&#x22;button&#x22; aria-label=&#x22;alert close button&#x22;class=&#x22;alert__close&#x22;&#x3E;
     &#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;/button&#x3E;
 &#x3C;/div&#x3E;</pre>

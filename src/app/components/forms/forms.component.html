@@ -2,26 +2,34 @@
   <h2 class="section__title">form</h2>
   <div class="container">
     <p>We spend a lot of our online time filling out forms. Whether we are creating a contact form, a shopping cart, or a survey form elements and how they all fit together cohesively are critical to web design. Hopefully these classes can help simplify the process.</p>
-    <p>Attributes: <code>for=&#x22;&#x22;</code>, <code>id=&#x22;&#x22;</code>, <code>type=&#x22;&#x22;</code>, <code>placeholder=&#x22;&#x22;</code></p>
+    <h6>Attributes<sup>*</sup>:</h6>
+    <ul class="list--unstyled">
+      <li role="listitem"><code>for</code> : <code>label</code> element</li>
+      <li role="listitem"><code>id</code> : <code>input</code> element</li>
+      <li role="listitem"><code>type</code> : <code>input</code> element</li>
+      <li role="listitem"><code>placeholder</code> : <code>input</code> element</li>
+      <li role="listitem"><code>aria-label</code> : <code>input</code> element, defines a label for the element (only used when label text not visible on screen)</li>
+      <li role="listitem"><code>type</code> : <code>button</code> element</li>
+      <li role="listitem"><code>title</code> : <code>button</code> element, when the button is just an icon and there is no inner content</li>
+    </ul>
+    <p><sup>*</sup> These are used on form element items, not the form element itself.</p>
     <h4>Accessibility</h4>
     <p>Forms are made of inputs, labels, and buttons. Make sure to match labels with their corresponding input using <code>for=&#x22;&#x22;</code> and <code>id=&#x22;&#x22;</code> attributes. Use the <code>placeholder=&#x22;&#x22;</code> attribute to give your users a hint as to how you want them to fill in certain input elements.</p>
     <p>Associated classes: <code>.form__group</code>.</p>
     <p>This class groups together <code>&#x3C;label&#x3E;</code> and <code>&#x3C;input&#x3E;</code> elements so that they don't stray from each other. This is not needed for small inline forms, more so for stacked and aligned forms.</p>
     <h4>Labels</h4>
     <p>It is recommend that you use <code>&#x3C;label&#x3E;</code> elements in a form and not <code>&#x3C;div&#x3E;</code> or <code>&#x3C;p&#x3E;</code> elements. The <code>.form__label</code> styles will override even the <code>&#x3C;p&#x3E;</code> tag styles but it is better to write semantic code from the beginning.</p>
-    <h6>Demo:</h6>
-    <h6>Markup:</h6>
     <h4>Default</h4>
     <p>Our default forms make labels and inputs inline with eachother. By wrapping any form elements such as, inputs and labels, in a form element with the classname <code>.form</code> they will take on the correct styles.</p>
     <h6>Demo:</h6>
     <form class="form">
       <div class="form__group">
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="john doe">
+        <input id="name" type="text" aria-label="name input field" placeholder="john doe">
       </div>
       <div class="form__group">
         <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="someone@something.com">
+        <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
       </div>
       <button class="btn btn--primary" type="submit">Submit</button>
     </form>
@@ -39,11 +47,11 @@
     <form class="form form--stacked">
       <div class="form__group">
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="john doe">
+        <input id="name" type="text" aria-label="name input field" placeholder="john doe">
       </div>
       <div class="form__group">
         <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="someone@something.com">
+        <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
       </div>
       <button class="btn btn--primary" type="submit">Submit</button>
     </form>
@@ -61,19 +69,19 @@
     <form class="form form--aligned-left">
       <div class="form__group">
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="john doe">
+        <input id="name" type="text" aria-label="name input field" placeholder="john doe">
       </div>
       <div class="form__group">
         <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="someone@something.com">
+        <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
       </div>
       <div class="form__group">
         <label for="address">A long label form element:</label>
-        <input id="address" type="text" placeholder="example">
+        <input id="address" type="text" aria-label="example input field" placeholder="example">
       </div>
       <div class="form__group">
         <label for="phone">Phone:</label>
-        <input id="phone" type="email" placeholder="(xxx)xxx-xxxx">
+        <input id="phone" type="phone" aria-label="phone input field" placeholder="(xxx)xxx-xxxx">
       </div>
       <button class="btn btn--primary" type="submit">Submit</button>
     </form>
@@ -81,19 +89,19 @@
     <form class="form form--aligned-center">
       <div class="form__group">
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="john doe">
+        <input id="name" type="text" aria-label="name input field" placeholder="john doe">
       </div>
       <div class="form__group">
         <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="someone@something.com">
+        <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
       </div>
       <div class="form__group">
         <label for="address">A long label form element:</label>
-        <input id="address" type="text" placeholder="example">
+        <input id="address" type="text" aria-label="text input field" placeholder="example">
       </div>
       <div class="form__group">
         <label for="phone">Phone:</label>
-        <input id="phone" type="email" placeholder="(xxx)xxx-xxxx">
+        <input id="phone" type="phone" aria-label="phone input field" placeholder="(xxx)xxx-xxxx">
       </div>
       <button class="btn btn--primary" type="submit">Submit</button>
     </form>
@@ -101,19 +109,19 @@
     <form class="form form--aligned-right">
       <div class="form__group">
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="john doe">
+        <input id="name" type="text" aria-label="name input field" placeholder="john doe">
       </div>
       <div class="form__group">
         <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="someone@something.com">
+        <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
       </div>
       <div class="form__group">
         <label for="address">A long label form element:</label>
-        <input id="address" type="text" placeholder="example">
+        <input id="address" type="text" aria-label="text input field" placeholder="example">
       </div>
       <div class="form__group">
         <label for="phone">Phone:</label>
-        <input id="phone" type="email" placeholder="(xxx)xxx-xxxx">
+        <input id="phone" type="phone" aria-label="phone input field" placeholder="(xxx)xxx-xxxx">
       </div>
       <button class="btn btn--primary" type="submit">Submit</button>
     </form>
@@ -133,11 +141,11 @@
         <legend>User</legend>
           <div class="form__group">
             <label>Username</label>
-            <input type="text" placeholder="username">
+            <input type="text" aria-label="username input field" placeholder="username">
           </div>
           <div class="form__group">
             <label>Password</label>
-            <input type="password" placeholder="password">
+            <input type="password" aria-label="password input field" placeholder="password">
           </div>
           <button class="btn btn--primary" type="submit">Submit</button>
       </fieldset>

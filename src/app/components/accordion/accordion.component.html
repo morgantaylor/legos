@@ -2,12 +2,16 @@
   <h2 class="section__title">accordion</h2>
   <div class="container">
     <p>The accordion component is very simple with a few enhancements that you can add depending on what you want to use it for. By default, the accordion is in the closed state but with a slight modification, you can switch it to be open by default. The accordion will take up the entire space of its parent container or you can add a max-width property to the wrapper element. There are also additional modification styles you can add. See below for a list of them.</p>
+    <h6>Attributes:</h6>
+    <ul class="list--unstyled">
+      <li><code>aria-label</code> : The accordion toggle input will never have a corresponding label, be sure to have an aria-label on it</li>
+    </ul>
     <h4>Basic</h4>
     <p>The basic accordion has squared corners and white background.</p>
     <h6>Demo:</h6>
     <div class="accordion__wrapper acc-custom">
       <div class="accordion">
-        <input type="checkbox" class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
           Accordion 1
@@ -17,7 +21,7 @@
         </div>
       </div>
       <div class="accordion">
-        <input type="checkbox" class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
           Accordion 2
@@ -30,7 +34,7 @@
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>accordion__wrapper</mark>&#x22;&#x3E;
   &#x3C;div class=&#x22;<mark>accordion</mark>&#x22;&#x3E;
-    &#x3C;input type=&#x22;checkbox&#x22; class&#x22;<mark>accordion__toggle</mark>&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; <mark>aria-label=&#x22;accordion toggle&#x22;</mark> class&#x22;<mark>accordion__toggle</mark>&#x22;&#x3E;
     &#x3C;i&#x3E;&#x3C;/i&#x3E;
     &#x3C;div class=&#x22;<mark>accordion__title</mark>&#x22;&#x3E;
       Header 1
@@ -51,7 +55,7 @@
     <h6>Demo:</h6>
     <div class="accordion__wrapper">
       <div class="accordion--panel">
-        <input type="checkbox"  class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
           Header 1
@@ -64,7 +68,7 @@
     <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
   &#x3C;div class=&#x22;<mark>accordion--panel</mark>&#x22;&#x3E;
-    &#x3C;input type=&#x22;checkbox&#x22; class&#x22;accordion__toggle&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; aria-label=&#x22;accordion toggle&#x22; class&#x22;accordion__toggle&#x22;&#x3E;
     &#x3C;i&#x3E;&#x3C;/i&#x3E;
     &#x3C;div class=&#x22;accordion__title&#x22;&#x3E;
       Header 2
@@ -85,7 +89,7 @@
     <h6>Demo:</h6>
     <div class="accordion__wrapper">
       <div class="accordion">
-        <input type="checkbox" class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
           Header 1
@@ -96,7 +100,7 @@
         </p>
       </div>
       <div class="accordion--panel">
-        <input type="checkbox" class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
           Header 2 w/ icon
@@ -129,7 +133,7 @@
     <h6>Demo:</h6>
     <div class="accordion__wrapper acc-custom">
       <div class="accordion--panel skin-green">
-        <input type="checkbox" class="accordion__toggle" checked>
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle" checked>
         <i></i>
         <div class="accordion__title">
           Panel Green Accordion
@@ -143,7 +147,7 @@
         </div>
       </div>
       <div class="accordion--panel skin-gray">
-        <input type="checkbox" class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
          Panel Gray Accordion
@@ -157,7 +161,7 @@
         </div>
       </div>
       <div class="accordion--panel skin-red">
-        <input type="checkbox" class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
           Panel Red Accordion
@@ -171,7 +175,7 @@
         </div>
       </div>
       <div class="accordion--panel skin-blue">
-        <input type="checkbox" class="accordion__toggle">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
         <i></i>
         <div class="accordion__title">
           Panel Blue Accordion

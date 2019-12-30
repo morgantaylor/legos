@@ -1,22 +1,31 @@
 <section class="container">
-	<h2 class="section__title">accessibility</h2>
-	<p>In compliance with <a href="http://www.w3.org/TR/WCAG20/" target="_blank" rel="noreferrer"> Web Content Accessibility Guidelines (WCAG), 2.0</a> our components strive to be completely accessible to assistive technologies as well as promoting best practices for developers.</p>
-	<h5>Images</h5>
-	<p>Always provide alternative text for images. The <code>alt</code> attribute is not the only use for assistive technologies like screen readers. It is also useful if the user has a slow internet connection and cannot view the image, if there is an error or in the <code>src</code>.</p>
+  <h2 class="section__title">accessibility</h2>
+  <p>In compliance with <a href="http://www.w3.org/TR/WCAG20/" target="_blank" rel="noreferrer"> Web Content Accessibility Guidelines (WCAG), 2.0</a> our components strive to be completely accessible to assistive technologies as well as promoting best practices for developers.</p>
+  <h5>ARIA: Roles, states, and properties</h5>
+  <p>Being ARIA compliant for assistive technologies has become the standard. This includes having the corrent value for <code>role, aria-label</code> attributes along side standard element attributes like <code>id, for, type, title, name, value</code>.</p>
+  <ul>
+    <li><a href="https://a11yproject.com/posts/getting-started-aria/" target="_blank" rel="noreferrer">The A11Y Project - All you need to get started with ARIA</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles" target="_blank" rel="noreferrer">Using ARIA</a></li>
+    <li><a href="https://a11yproject.com/posts/getting-started-aria/" target="_blank" rel="noreferrer">WAI-ARIA Roles</a></li>
+    <li><a href="https://a11yproject.com/posts/ARIA-properties/" target="_blank" rel="noreferrer">ARIA properties</a></li>
+    <li><a href="http://web-accessibility.carnegiemuseums.org/foundations/aria/" target="_blank" rel="noreferrer">Web Accessibility Guidelines v1.0Foundations - Overview</a></li>
+  </ul>
+  <h5>Images</h5>
+  <p>Always provide alternative text for images. The <code>alt</code> attribute is not the only use for assistive technologies like screen readers. It is also useful if the user has a slow internet connection and cannot view the image, if there is an error or in the <code>src</code>.</p>
 <pre>&#x3C;img src=&#x22;cat.png&#x22; alt=&#x22;A picture of a orange cat sleeping on a brown chair&#x22;&#x3E;</pre>
-	<h5>Colors</h5>
-	<p>Colors are a very important part of website design. There are several different impairments that a user can have. We need to not only accommodate those who are blind but those who have partial impairments, and different types of color blindness. Apart from visual impairments, it is also best practice to endure that there is a good amount of contrast between the text and background color. There are several free tools available that will scan your page and compare text and background colors.</p>
-	<ul>
-		<li><a href="https://www.toptal.com/designers/colorfilter" target="_blank" rel="noreferrer" alt="Colorblind Web Page Filter">Colorblind Web Page Filter</a> - examples of different levels of colorblindness</li>
-		<li><a href="https://www.toptal.com/designers/colorfilter" target="_blank" rel="noreferrer" alt="Color Contrast Accessibility Validator">Color Contrast Accessibility Validator</a> - scans websites to verify the contrast and ensure better accessibility</li>
-	</ul>
-	<h5>Links</h5>
-	<p>Just like with images it is important to add an <code>alt</code> attribute where the link goes. If you are linking to a document, for example, a PDF, be sure to say that in the description. Users want to know what they will be opening ahead of time. Best practice always dictates that you check all your links before your site goes live to make sure they are all working. You would not want a user to click a dead link that goes nowhere.</p>
+  <h5>Colors</h5>
+  <p>Colors are a very important part of website design. There are several different impairments that a user can have. We need to not only accommodate those who are blind but those who have partial impairments, and different types of color blindness. Apart from visual impairments, it is also best practice to endure that there is a good amount of contrast between the text and background color. There are several free tools available that will scan your page and compare text and background colors.</p>
+  <ul>
+    <li><a href="https://www.toptal.com/designers/colorfilter" target="_blank" rel="noreferrer" alt="Colorblind Web Page Filter">Colorblind Web Page Filter</a> - examples of different levels of colorblindness</li>
+    <li><a href="https://www.toptal.com/designers/colorfilter" target="_blank" rel="noreferrer" alt="Color Contrast Accessibility Validator">Color Contrast Accessibility Validator</a> - scans websites to verify the contrast and ensure better accessibility</li>
+  </ul>
+  <h5>Links</h5>
+  <p>Just like with images it is important to add an <code>alt</code> attribute where the link goes. If you are linking to a document, for example, a PDF, be sure to say that in the description. Users want to know what they will be opening ahead of time. Best practice always dictates that you check all your links before your site goes live to make sure they are all working. You would not want a user to click a dead link that goes nowhere.</p>
 <pre>&#x3C;a href=&#x22;http://wwww.gosomewhere.com&#x22; alt=&#x22;A link to a new page&#x22; rel=&#x22;noreferrer&#x22;&#x3E;</pre>
-	<h5>Additional Resources</h5>
-	<ul>
-		<li><a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl" target="_blank" rel="noreferrer">NoCoffee Chrome extension</a> - simulates visual impairments in the browser</li>
-		<li><a href="https://github.com/squizlabs/HTML_CodeSniffer" target="_blank" rel="noreferrer">HTML Codesniffer</a> - identifies accessibility issues on your website</li>
-		<li><a href="http://www.visionaustralia.org.au/info.aspx?page=628" target="_black" rel="noreferrer">Colour Contrast Analyser</a> - tests the contrast of your site</li>
-	</ul>
+  <h5>Additional Resources</h5>
+  <ul>
+    <li><a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl" target="_blank" rel="noreferrer">NoCoffee Chrome extension</a> - simulates visual impairments in the browser</li>
+    <li><a href="https://github.com/squizlabs/HTML_CodeSniffer" target="_blank" rel="noreferrer">HTML Codesniffer</a> - identifies accessibility issues on your website</li>
+    <li><a href="http://www.visionaustralia.org.au/info.aspx?page=628" target="_black" rel="noreferrer">Colour Contrast Analyser</a> - tests the contrast of your site</li>
+  </ul>
 </section>

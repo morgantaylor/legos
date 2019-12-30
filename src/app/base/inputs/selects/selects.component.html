@@ -5,16 +5,17 @@
     <p>Note that many native select menus—namely in Safari and Chrome—are not customizable. They have rounded corners that cannot be modified via the border-radius property. With our custom select element, we can customize whether you want rounded or squared corners.</p>
     <h6>Attributes:</h6>
     <ul class="list--unstyled" role="group">
-      <li role="groupitem"><code>name</code> : <code>&#x3C;select&#x3E;</code> specifies the name of the control group</li>
-      <li role="groupitem"><code>multiple</code> : <code>&#x3C;select&#x3E;</code> indicates whether more than option is allowed to be selected</li>
-      <li role="groupitem"><code>label</code> : <code>&#x3C;option&#x3E;</code> if there is not label present then the value becomes the label text</li>
-      <li role="groupitem"><code>value</code> : <code>&#x3C;option&#x3E;</code> the value to be submitted with the form</li>
+      <li role="listitem"><code>name</code> : <code>select</code> element, specifies the name of the control group</li>
+      <li role="listitem"><code>multiple</code> : <code>select</code> element, indicates whether more than option is allowed to be selected</li>
+      <li role="listitem"><code>label</code> : <code>option</code> element, if there is not label present then the value becomes the label text</li>
+      <li role="listitem"><code>value</code> : <code>option</code> element, the value to be submitted with the form</li>
+      <li role="listitem"><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
     </ul>
     <h4>Block Level</h4>
     <p>When you want the select element to take up its entire parent container or span the entire line.</p>
     <h6>Demo:</h6>
     <div class="select">
-      <select name="selectExample" id="selectExample">
+      <select name="selectExample" id="selectExample" aria-label="select example">
         <option>Choose</option>
         <option value="1">Pure CSS</option>
         <option value="2">No JS</option>
@@ -33,9 +34,9 @@
     <h4>Inline</h4>
     <p>If you want to put a <code>&#x3C;select&#x3E;</code> element next to another <code>&#x3C;input&#x3E;</code> element or <code>&#x3C;button&#x3E;</code> use the <code>.select--inline</code> class.</p>
     <h6>Demo:</h6>
-    <input type="email">
+    <input type="email" aria-label="email input">
     <div class="select--inline">
-      <select name="selectExample" id="selectExample">
+      <select name="selectExample" id="selectExample" aria-label="inline select example">
         <option>Choose</option>
         <option value="1">Pure CSS</option>
         <option value="2">No JS</option>
@@ -53,7 +54,7 @@
     <p>To change the corners of the <code>&#x3C;select&#x3E;</code> element to be squared add the <code>.select--squared</code> class to the <code>&#x3C;select&#x3E;</code> wrapper.</p>
     <h6>Demo:</h6>
     <div class="select--inline select--squared">
-      <select name="selectExample" id="selectExample">
+      <select name="selectExample" id="selectExample" aria-label="squared corners select example">
         <option>Choose</option>
         <option value="1">Pure CSS</option>
         <option value="2">No JS</option>
@@ -70,7 +71,7 @@
     <p>Just like buttons, you can customize a select to have a skin color. To do this add the skin class to the <code>.select</code> wrapper.</p>
     <h6>Demo:</h6>
     <div class="select skin-blue">
-      <select name="selectExample" id="selectExample">
+      <select name="selectExample" id="selectExample" aria-label="select skin example">
         <option>Choose</option>
         <option value="1">Pure CSS</option>
         <option value="2">No JS</option>

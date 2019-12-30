@@ -3,6 +3,11 @@
   <div class="container">
     <p>Switches (toggle), are a UI element that you can use instead of two radio buttons or a single checkbox to allow users to choose between two opposite states. Toggles should only be used when there is a clear (yes or no) or (on or off) decision to be made.</p>
     <p>Example: When I wake up in the morning I turn my light switch on and the lights immediately turn on. I don't need to do anything extra and as effortlessly as they came on I can hit the switch again and turn them back off. There are only two choices, off or on. That is how you should view and make use of switches.</p>
+    <h6>Attributes:</h6>
+    <ul class="list--unstyled">
+      <li role="listitem"><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
+    </ul>
+    <p>The light switch is created with a hidden checkbox input therfore we need to add an <code>aria-label</code> on it to tell screen readers this is the toogle for the switch.</p>
     <light-switch></light-switch>
   </div>
 </section>

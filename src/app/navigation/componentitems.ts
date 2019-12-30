@@ -4,37 +4,37 @@ export const COMPONENTITEMS: Item[] = [
   {
     link: 'components/accordions',
     class: 'nav__item--nested',
-    name: 'Accordions',
+    name: 'Accordion',
     divider: false
   },
   {
     link: 'components/alerts',
     class: 'nav__item--nested',
-    name: 'Alerts',
+    name: 'Alert',
     divider: false
   },
   {
     link: 'components/breadcrumbs',
     class: 'nav__item--nested',
-    name: 'Breadcrumbs',
+    name: 'Breadcrumb',
     divider: false
   },
   {
     link: 'components/cards',
     class: 'nav__item--nested',
-    name: 'Cards',
+    name: 'Card',
     divider: false
   },
   {
     link: 'components/chips',
     class: 'nav__item--nested',
-    name: 'Chips',
+    name: 'Chip',
     divider: false
   },
    {
     link: 'components/forms',
     class: 'nav__item--nested',
-    name: 'Forms',
+    name: 'Form',
     divider: false
   },
   {
@@ -46,13 +46,13 @@ export const COMPONENTITEMS: Item[] = [
   {
     link: 'components/switches',
     class: 'nav__item--nested',
-    name: 'Switches',
+    name: 'Switch',
     divider: false
   },
   {
     link: 'components/tabs',
     class: 'nav__item--nested',
-    name: 'Tabs',
+    name: 'Tab',
     divider: false
   }
 ]

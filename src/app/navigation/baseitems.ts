@@ -4,19 +4,19 @@ export const BASEITEMS: Item[] = [
   {
     link: 'base/containers',
     class: 'nav__item--nested',
-    name: 'Containers',
+    name: 'Container',
     divider: false
   },
   {
     link: 'base/colors',
     class: 'nav__item--nested',
-    name: 'Colors',
+    name: 'Color',
     divider: false
   },
   {
     link: 'base/icons',
     class: 'nav__item--nested',
-    name: 'Icons',
+    name: 'Icon',
     divider: false
   },
   {
@@ -28,25 +28,25 @@ export const BASEITEMS: Item[] = [
   {
     link: 'base/lists',
     class: 'nav__item--nested',
-    name: 'Lists',
+    name: 'List',
     divider: true
   },
   {
     link: 'base/buttons',
     class: 'nav__item--nested',
-    name: 'Buttons',
+    name: 'Button',
     divider: false
   },
   {
     link: 'base/buttons/button-icons',
     class: 'nav__item--nested',
-    name: 'Button Icons',
+    name: 'Button Icon',
     divider: false
   },
   {
     link: 'base/buttons/button-groups',
     class: 'nav__item--nested',
-    name: 'Button Groups',
+    name: 'Button Group',
     divider: false
   },
   {
@@ -58,37 +58,37 @@ export const BASEITEMS: Item[] = [
   {
     link: 'base/inputs',
     class: 'nav__item--nested',
-    name: 'Inputs',
+    name: 'Input',
     divider: false
   },
   {
     link: 'base/inputs/selects',
     class: 'nav__item--nested',
-    name: 'Selects',
+    name: 'Select',
     divider: false
   },
   {
     link: 'base/inputs/input-groups',
     class: 'nav__item--nested',
-    name: 'Input Groups',
+    name: 'Input Group',
     divider: false
   },
   {
     link: 'base/inputs/checkboxes',
     class: 'nav__item--nested',
-    name: 'Checkboxes',
+    name: 'Checkbox',
     divider: false
   },
   {
     link: 'base/inputs/radios',
     class: 'nav__item--nested',
-    name: 'Radios',
+    name: 'Radio',
     divider: true
   },
   {
     link: 'base/tables',
     class: 'nav__item--nested',
-    name: 'Tables',
+    name: 'Table',
     divider: false
   }
 ]

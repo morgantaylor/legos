@@ -8,9 +8,11 @@
       <li role="listitem"><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
     </ul>
     <p><sup>*</sup> Role needs to be used for the <code>nav</code> as well as the list items inside. There are many differnt roles that you can use, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques" target="_blank" rel="noreferrer">see here for a list</a>. For this component we will use the <code>role="button"</code> because all of our list items are buttons.</p>
+    <hr>
     <h4>Accessibility</h4>
     <p>For accessibility purposes, the pagination component should be wrapped with the <code>&#x3C;nav&#x3E;</code> element to identify it as a navigation section. It is also possible and highly likely that a page may have more than one <code>&#x3C;nav&#x3E;</code> element already (such as the primary navigation in the header, or sidebar navigation). Best practice dictates providing a descriptive <code>aria-label</code> for the <code>&#x3C;nav&#x3E;</code> element signaling to screen readers and other assistive technologies what the element is.</p>
     <p><strong>Example:</strong> If the pagination component is used to navigate between a set of pages in a signup form, an appropriate label could be <code>aria-label="sign up form pages"</code>.</p>
+    <hr>
     <h6>Demo:</h6>
     <div class="flex-container">
       <nav class="pagination" role="navigation" aria-label="Pagination Navigation">
@@ -59,6 +61,7 @@
     &#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
 &#x3C;/nav&#x3E;</pre>
+    <hr>
     <h4>Prev/Next Labels</h4>
     <p>There are customizations for how to represent the previous/first and next/last items. Either choose to have all of them display, or just choose one set. Either way, both symbols, and words are allowed. The only thing that changes when you add <code>--first</code> or <code>--last</code> to <code>.pagination__item</code> is the spacing. The first and last buttons have a margin that separates them from the inner set of buttons.</p>
     <h6>Demo:</h6>
@@ -115,6 +118,7 @@
     &#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
 &#x3C;/nav&#x3E;</pre>
+    <hr>
     <h4>Skins</h4>
     <h6>Demo: <code>pagination--green</code></h6>
     <div class="flex-container">

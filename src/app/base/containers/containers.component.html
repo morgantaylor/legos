@@ -1,29 +1,27 @@
-<section class="paragraph">
-  <h2 class="section__title">container</h2>
-  <div class="container">
-    <p>Three classes can quickly address the layout of content. These are intended to be used for simple base layouts. For more complex containers you may need to add more specific CSS of your own.</p>
-    <hr>
-    <h4>Base Container</h4>
-    <p>The <code>.container</code> class creates a responsive box and adds space to the bottom of each container.</p>
-<p><em>* Note:</em> If you nest a <code>.container</code> inside of another 25px of padding will be added to the left side of the container. This is to be used as indenting subsections of text or dividing parts of a form, as an example.</p>
-    <h6>Markup:</h6>
+<h1>Container</h1>
+<section class="container">
+  <p>Three classes can quickly address the layout of content. These are intended to be used for simple base layouts. For more complex containers you may need to add more specific CSS of your own.</p>
+  <hr>
+  <h4>Base Container</h4>
+  <p>The <code>.container</code> class creates a responsive box and adds space to the bottom of each container.</p>
+  <p><em>* Note:</em> If you nest a <code>.container</code> inside of another 25px of padding will be added to the left side of the container. This is to be used as indenting subsections of text or dividing parts of a form, as an example.</p>
+  <h6>Markup:</h6>
 <pre>position&#58; relative
 margin&#58; 0 auto 20px auto
 padding&#58; 0
 width&#58; 100%</pre>
-    <hr>
-    <h4>Flex Row</h4>
-    <p>Use the <code>.flex-container</code> class as it's own flex container (default row), alongside the base container class to turn that container into a flex parent. This flex container uses the styles below.</p>
-    <h6>Markup:</h6>
+  <hr>
+  <h4>Flex Row</h4>
+  <p>Use the <code>.flex-container</code> class as it's own flex container (default row), alongside the base container class to turn that container into a flex parent. This flex container uses the styles below.</p>
+  <h6>Markup:</h6>
 <pre>display&#58; flex
 flex-wrap&#58; wrap
 justify-content&#58; flex-start
 align-items&#58; center</pre>
-    <hr>
-    <h4>Flex Column</h4>
-    <p>Use the <code>.flex-column</code> class as it's own flex container with a column direction. It does not share styles with the <code>.flex-container</code> class. Like the <code>.flex-container</code> this can be used with or without the base <code>.container</code> class. This flex container uses the styles below.</p>
-    <h6>Markup:</h6>
+  <hr>
+  <h4>Flex Column</h4>
+  <p>Use the <code>.flex-column</code> class as it's own flex container with a column direction. It does not share styles with the <code>.flex-container</code> class. Like the <code>.flex-container</code> this can be used with or without the base <code>.container</code> class. This flex container uses the styles below.</p>
+  <h6>Markup:</h6>
 <pre>display&#58; flex
 flex-direction&#58; column</pre>
-  </div>
 </section>

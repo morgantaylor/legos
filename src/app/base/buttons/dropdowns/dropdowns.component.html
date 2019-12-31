@@ -1,36 +1,35 @@
-<section class="paragraph">
-  <h2 class="section__title">dropdown</h2>
-  <div class="container">
-    <p>Our dropdowns are solely built with CSS without any need for Javascript. Under the hood, they are activated with an invisible input checkbox. Because of this if the dropdown is open you need to click it again to close it. Clicking outside of it will not close it, but you could add some custom javascript if that's your thing.</p>
-    <hr>
-    <h6>Demo:</h6>
-    <div class="dropdown">
-      <input type="checkbox" class="dropdown__toggle" aria-label="dropdown__toggle">
-      <button type="button" class="dropdown__btn btn btn--primary">
-        <span>Dropdown Menu</span>
-        <i class="icon fas fa-caret-down" aria-hidden="true"></i>
-      </button>
-      <ul class="dropdown__container">
-        <li class="dropdown__item"><a href="#">A Link</a></li>
-        <li class="dropdown__item"><a href="#">Another Link</a></li>
-        <li class="dropdown__item"><a href="#">Sign off</a></li>
-        <li class="dropdown__item"><a href="#">A Link</a></li>
-        <li class="dropdown__item"><a href="#">Another Link</a></li>
-      </ul>
-    </div>
-    <div class="dropdown disabled">
-      <input type="checkbox" class="dropdown__toggle" aria-label="dropdown__toggle" disabled>
-      <button type="button" class="dropdown__btn btn btn--outline-primary" disabled>
-        <span>Dropdown Menu</span>
-        <i class="icon fas fa-caret-down" aria-hidden="true"></i>
-      </button>
-      <ul class="dropdown__container">
-        <li class="dropdown__item"><a href="#">A Link</a></li>
-        <li class="dropdown__item"><a href="#">Another Link</a></li>
-        <li class="dropdown__item"><a href="#">Sign off</a></li>
-      </ul>
-    </div>
-    <h6>Markup:</h6>
+<h1>Dropdown</h1>
+<section class="container">
+  <p>Our dropdowns are solely built with CSS without any need for Javascript. Under the hood, they are activated with an invisible input checkbox. Because of this if the dropdown is open you need to click it again to close it. Clicking outside of it will not close it, but you could add some custom javascript if that's your thing.</p>
+  <hr>
+  <h6>Demo:</h6>
+  <div class="dropdown">
+    <input type="checkbox" class="dropdown__toggle" aria-label="dropdown__toggle">
+    <button type="button" class="dropdown__btn btn btn--primary">
+      <span>Dropdown Menu</span>
+      <i class="icon fas fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <ul class="dropdown__container">
+      <li class="dropdown__item"><a href="#">A Link</a></li>
+      <li class="dropdown__item"><a href="#">Another Link</a></li>
+      <li class="dropdown__item"><a href="#">Sign off</a></li>
+      <li class="dropdown__item"><a href="#">A Link</a></li>
+      <li class="dropdown__item"><a href="#">Another Link</a></li>
+    </ul>
+  </div>
+  <div class="dropdown disabled">
+    <input type="checkbox" class="dropdown__toggle" aria-label="dropdown__toggle" disabled>
+    <button type="button" class="dropdown__btn btn btn--outline-primary" disabled>
+      <span>Dropdown Menu</span>
+      <i class="icon fas fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <ul class="dropdown__container">
+      <li class="dropdown__item"><a href="#">A Link</a></li>
+      <li class="dropdown__item"><a href="#">Another Link</a></li>
+      <li class="dropdown__item"><a href="#">Sign off</a></li>
+    </ul>
+  </div>
+  <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>dropdown</mark>&#x22;&#x3E;
   &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;dropdown__toggle&#x22; aria-label=&#x22;dropdown__toggle&#x22;&#x3E;
   &#x3C;button type=&#x22;button&#x22; class=&#x22;dropdown__btn btn <mark>btn--outline-primary</mark>&#x22;&#x3E;
@@ -41,5 +40,4 @@
     &#x3C;li class=&#x22;dropdown__item&#x22;&#x3E;...&#x3C;/li&#x3E;
   &#x3C;/ul&#x3E;
 &#x3C;/div&#x3E;</pre>
-  </div>
 </section>

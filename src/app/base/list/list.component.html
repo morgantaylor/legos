@@ -1,54 +1,52 @@
-<section class="paragraph">
-  <h2 class="section__title">list</h2>
-  <div class="container">
-    <p>There are a few different ways to style a list. The default list is a bulleted with only slight padding on the left.</p>
-    <p>For more information about accessability and WAI-ARIA have a look at what the W3C says about it, <a href="https://w3c.github.io/aria/#introroles" title="Website for the W3C on WAI-ARIA Roles">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a>.
-    <h6>ARIA Roles:</h6>
-    <p>directory, group, listbox, menu, menubar, radiogroup, tablist, toolbar, tree, presentation</p>
-    <hr>
-    <h4>Unstyled</h4>
-    <p>For when you want your list without a style but still want some spacial seperation from the left side.</p>
-    <h6>Demo:</h6>
-    <ul class="list--unstyled" role="group">
-      <li role="listitem">unstyled list item 1</li>
-      <li role="listitem">unstyled list item 2</li>
-      <li role="listitem">unstyled list item 3</li>
-    </ul>
-    <h6>Markup:</h6>
+<h1>List</h1>
+<section class="container">
+  <p>There are a few different ways to style a list. The default list is a bulleted with only slight padding on the left.</p>
+  <p>For more information about accessability and WAI-ARIA have a look at what the W3C says about it, <a href="https://w3c.github.io/aria/#introroles" title="Website for the W3C on WAI-ARIA Roles">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a>.
+  <h6>ARIA Roles:</h6>
+  <p>directory, group, listbox, menu, menubar, radiogroup, tablist, toolbar, tree, presentation</p>
+  <hr>
+  <h4>Unstyled</h4>
+  <p>For when you want your list without a style but still want some spacial seperation from the left side.</p>
+  <h6>Demo:</h6>
+  <ul class="list--unstyled" role="group">
+    <li role="listitem">unstyled list item 1</li>
+    <li role="listitem">unstyled list item 2</li>
+    <li role="listitem">unstyled list item 3</li>
+  </ul>
+  <h6>Markup:</h6>
 <pre>&#x3C;ul class=&#x22;<mark>list--unstyled</mark>&#x22; role=&#x22;group&#x22;&#x3E;
   &#x3C;li role=&#x22;listitem&#x22;&#x3E;unstyled list item 1&#x3C;/li&#x3E;
   &#x3C;li role=&#x22;listitem&#x22;&#x3E;unstyled list item 2&#x3C;/li&#x3E;
   &#x3C;li role=&#x22;listitem&#x22;&#x3E;unstyled list item 3&#x3C;/li&#x3E;
 &#x3C;/ul&#x3E;</pre>
-    <hr>
-    <h4>Numbered</h4>
-    <p>For when you need a list when the order matters and you want your user to know it matters.</p>
-    <h6>Demo:</h6>
-    <ol class="list--numbered" role="group">
-      <li role="listitem">numbered list item 1</li>
-      <li role="listitem">numbered list item 2</li>
-      <li role="listitem">numbered list item 3</li>
-    </ol>
-    <h6>Markup:</h6>
+  <hr>
+  <h4>Numbered</h4>
+  <p>For when you need a list when the order matters and you want your user to know it matters.</p>
+  <h6>Demo:</h6>
+  <ol class="list--numbered" role="group">
+    <li role="listitem">numbered list item 1</li>
+    <li role="listitem">numbered list item 2</li>
+    <li role="listitem">numbered list item 3</li>
+  </ol>
+  <h6>Markup:</h6>
 <pre>&#x3C;ol class=&#x22;<mark>list--numbered</mark>&#x22; role=&#x22;group&#x22;&#x3E;
   &#x3C;li role=&#x22;listitem&#x22;&#x3E;numbered list item 1&#x3C;/li&#x3E;
   &#x3C;li role=&#x22;listitem&#x22;&#x3E;numbered list item 2&#x3C;/li&#x3E;
   &#x3C;li role=&#x22;listitem&#x22;&#x3E;numbered list item 3&#x3C;/li&#x3E;
 &#x3C;/ol&#x3E;</pre>
-    <hr>
-    <h4>Part of navigation</h4>
-    <p>This type of list is used for most navigations. As you can see also indicated by the <code>role</code> attribute.</p>
-    <h6>Demo:</h6>
-    <ul class="list--nav" role="menu">
-      <li role="menuitem">nav list item 1</li>
-      <li role="menuitem">nav list item 2</li>
-      <li role="menuitem">nav list item 3</li>
-    </ul>
-    <h6>Markup:</h6>
+  <hr>
+  <h4>Part of navigation</h4>
+  <p>This type of list is used for most navigations. As you can see also indicated by the <code>role</code> attribute.</p>
+  <h6>Demo:</h6>
+  <ul class="list--nav" role="menu">
+    <li role="menuitem">nav list item 1</li>
+    <li role="menuitem">nav list item 2</li>
+    <li role="menuitem">nav list item 3</li>
+  </ul>
+  <h6>Markup:</h6>
 <pre>&#x3C;ul class=&#x22;<mark>list--nav</mark>&#x22; role=&#x22;menu&#x22;&#x3E;
   &#x3C;li role=&#x22;menuitem&#x22;&#x3E;nav list item 1&#x3C;/li&#x3E;
   &#x3C;li role=&#x22;menuitem&#x22;&#x3E;nav list item 2&#x3C;/li&#x3E;
   &#x3C;li role=&#x22;menuitem&#x22;&#x3E;nav list item 3&#x3C;/li&#x3E;
 &#x3C;/ul&#x3E;</pre>
-  </div>
 </section>

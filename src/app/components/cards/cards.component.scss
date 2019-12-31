@@ -1,5 +1,9 @@
+.card-demo {
+  max-width: 650px;
+}
+
 .img-demo {
-	background-image: url('/src/assets/card-demo.png');
+  background-image: url('/src/assets/card-demo.png');
 }
 
 .bg-dark {
@@ -7,5 +11,5 @@
 }
 
 .cards-container {
-	align-items: flex-start;
+   align-items: flex-start;
 }

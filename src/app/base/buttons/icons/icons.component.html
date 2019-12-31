@@ -1,20 +1,19 @@
-<section class="paragraph">
-  <h2 class="section__title">button with icon</h2>
-  <div class="container">
-    <p>Incorporate <a href="http://fontawesome.io/icons/">Font Awesome</a> icons into your buttons or use an icon as a button. If you have a combination button that has an icon and a word wrap your text in a <code>&#x3C;span&#x3E;</code> to allow for sufficient padding between the icon and the word.</p>
-    <h6>Attributes:</h6>
-    <ul class="list--unstyled">
-      <li><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
-    </ul>
-    <p>When using an icon as the only content in a button add one of the above <code>button-name</code> rules to assist screen reader users in discerning the purpose of the button.</p>
-    <hr>
-    <h6>Demo:</h6>
-    <button type="button" class="btn btn--primary">
-      <i class="icon fas fa-cog"></i>
-      <span>Settings</span>
-    </button>
-    <button type="button" class="btn btn--outline-primary" aria-label="settings button"><i class="icon fas fa-cog"></i></button>
-    <h6>Markup:</h6>
+<h1>Button Icon</h1>
+<section class="container">
+  <p>Incorporate <a href="http://fontawesome.io/icons/">Font Awesome</a> icons into your buttons or use an icon as a button. If you have a combination button that has an icon and a word wrap your text in a <code>&#x3C;span&#x3E;</code> to allow for sufficient padding between the icon and the word.</p>
+  <h6>Attributes:</h6>
+  <ul class="list--unstyled">
+    <li><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
+  </ul>
+  <p>When using an icon as the only content in a button add one of the above <code>button-name</code> rules to assist screen reader users in discerning the purpose of the button.</p>
+  <hr>
+  <h6>Demo:</h6>
+  <button type="button" class="btn btn--primary">
+    <i class="icon fas fa-cog"></i>
+    <span>Settings</span>
+  </button>
+  <button type="button" class="btn btn--outline-primary" aria-label="settings button"><i class="icon fas fa-cog"></i></button>
+  <h6>Markup:</h6>
 <pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn--primary&#x22;&#x3E;
   &#x3C;i class=&#x22;icon fas fa-cog&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;span&#x3E;Settings&#x3C;/span&#x3E;
@@ -22,23 +21,23 @@
 <pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn--primary&#x22; aria-label=&#x22;settings button&#x22;&#x3E;
   &#x3C;i class=&#x22;icon fas fa-cog&#x22;&#x3E;&#x3C;/i&#x3E;
 &#x3C;/button&#x3E;</pre>
-    <hr>
-    <h4>Upload Button</h4>
-    <p>The upload button is special. We combine an <code>&#x3C;input&#x3E;</code> and <code>&#x3C;label&#x3E;</code> element. You can also add an icon inside. The <code>.btn-upload</code> class has the styles that make it look like a button. You can add the normal button color to it. Note where the button color class needs to go in the markup.</p>
-    <h6>Demo:</h6>
-    <div class="btn-upload-container">
-      <input type="file" name="uploadFile" id="upload" class="inputfile" 
-        tabindex="0" 
-        accept=".xlsx" 
-        required="required" 
-        aria-required="true" 
-        aria-invalid="true">
-      <label for="upload" class="btn-upload btn--primary">
-        <i class="icon fas fa-upload"></i>
-        <span>Choose a file</span>
-      </label>
-    </div>
-    <h6>Markup:</h6>
+  <hr>
+  <h4>Upload Button</h4>
+  <p>The upload button is special. We combine an <code>&#x3C;input&#x3E;</code> and <code>&#x3C;label&#x3E;</code> element. You can also add an icon inside. The <code>.btn-upload</code> class has the styles that make it look like a button. You can add the normal button color to it. Note where the button color class needs to go in the markup.</p>
+  <h6>Demo:</h6>
+  <div class="btn-upload-container">
+    <input type="file" name="uploadFile" id="upload" class="inputfile" 
+      tabindex="0" 
+      accept=".xlsx" 
+      required="required" 
+      aria-required="true" 
+      aria-invalid="true">
+    <label for="upload" class="btn-upload btn--primary">
+      <i class="icon fas fa-upload"></i>
+      <span>Choose a file</span>
+    </label>
+  </div>
+  <h6>Markup:</h6>
 <pre>&#x3C;div type=&#x22;button&#x22; class=&#x22;<mark>btn-upload-container</mark>&#x22;&#x3E;
   &#x3C;input type=&#x22;file&#x22; name=&#x22;uploadFile&#x22; id=&#x22;upload&#x22; class=&#x22;inputfile&#x22; 
     tabindex=&#x22;0&#x22; 
@@ -51,5 +50,4 @@
     &#x3C;span&#x3E;Choose a file&#x3C;/span&#x3E;
   &#x3C;/label&#x3E;
 &#x3C;/div&#x3E;</pre>
-  </div>
 </section>

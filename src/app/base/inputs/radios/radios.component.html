@@ -2,32 +2,62 @@
 <h1>Radio</h1>
 <section class="container">
   <p>Radio elements, by default, are wrapped with a <code>label</code> element and a <code>.radio</code> class. Be sure to add <code>type="radio"</code> as an attribute.</p>
+  <p>A basic radio has an input wrapped by a label.</p>
   <h6>Demo:</h6>
-  <label class="radio">
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Label 1
+  <label for="optionsRadios1" class="radio">
+    <input type="radio" class="radio" name="radiodemo1" id="optionsRadios1" checked>
+    Radio 1
   </label>
-  <label class="radio">
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Label 2
+  <label for="optionsRadios2" class="radio">
+    <input type="radio" name="radiodemo1" id="optionsRadios2">
+    Radio 2
   </label>
   <h6>Markup:</h6>
-<pre>&#x3C;label class=&#x22;<mark>radio</mark>&#x22;&#x3E;
-  &#x3C;input type=&#x22;radio&#x22; name=&#x22;&#x22; id=&#x22;&#x22; value=&#x22;&#x22; checked&#x3E;Label 1
+<pre>&#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
+  &#x3C;input type=&#x22;<mark>radio</mark>&#x22; name=&#x22;&#x22; id=&#x22;&#x22; checked&#x3E;Label 1
 &#x3C;/label&#x3E;</pre>
   <hr>
-  <h4>Radio Inline</h4>
-  <p>To modify the radio elements to be inline with eachother add <code>--inline</code> to the radio class on the <code>label</code> element.</p>
+  <h4>Radio Group Inline</h4>
+  <p>It is best practice to enclose radio inputs inside of a <code>input-group</code> element. Wrapping the radios keeps the corresponding question inline with the <code>radio</code> elements.</p>
   <h6>Demo:</h6>
-  <label class="radio--inline">
-      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Label 1
-  </label>
-  <label class="radio--inline">
-      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Label 2
-  </label>
+  <div class="input-group">
+    <label aria-label="question for radio1">The question for radio:</label>
+    <label class="radio" for="optionsRadios5">
+      <input type="radio" name="radiodemo3" id="optionsRadios5" checked>Radio 1
+    </label>
+    <label class="radio" for="optionsRadios6">
+      <input type="radio" name="radiodemo3" id="optionsRadios6">Radio 2
+    </label>
+  </div>
   <h6>Markup:</h6>
-<pre>&#x3C;label class=&#x22;<mark>radio--inline</mark>&#x22;&#x3E;
-  &#x3C;input type=&#x22;radio&#x22; name=&#x22;&#x22; id=&#x22;&#x22; value=&#x22;&#x22;&#x3E;Label 1
-&#x3C;/label&#x3E;
-&#x3C;label class=&#x22;<mark>radio--inline</mark>&#x22;&#x3E;
-  &#x3C;input type=&#x22;radio&#x22; name=&#x22;&#x22; id=&#x22;&#x22; value=&#x22;&#x22;&#x3E;Label 2
-&#x3C;/label&#x3E;</pre>
+<pre>&#x3C;div class=&#x22;<mark>input-group</mark>&#x22;&#x3E;
+  &#x3C;label aria-label=&#x22;&#x22;>The question for radio:&#x3C;/label&#x3E;
+  &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
+    &#x3C;input type=&#x22;<mark>radio</mark>&#x22; name=&#x22;&#x22; id=&#x22;&#x22; checked&#x3E;Radio 1
+  &#x3C;/label&#x3E;
+  &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
+    &#x3C;input type=&#x22;<mark>radio</mark>&#x22; name=&#x22;&#x22; id=&#x22;&#x22; checked&#x3E;Radio 2
+  &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;</pre>
+  <hr>
+  <h4>Radio Group Stacked</h4>
+  <p>If you'd like to use this in a form or with a label for a question it is wrap each section in a <code>input-group</code> and put the question <code>label</code> inside. The radio inputs are already wrapped by their <code>label</code>.</p>
+  <div class="input-group--stacked">
+    <label aria-label="question for radio2">The question for radio:</label>
+    <label for="optionsRadios3" class="radio">
+      <input type="radio" name="radiodemo2" id="optionsRadios3" checked>Radio 1
+    </label>
+    <label for="optionsRadios4" class="radio">
+      <input type="radio" name="radiodemo2" id="optionsRadios4">Radio 2
+    </label>
+  </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>input-group--stacked</mark>&#x22;&#x3E;
+  &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
+    &#x3C;input type=&#x22;<mark>radio</mark>&#x22; name=&#x22;&#x22; id=&#x22;&#x22; checked&#x3E;Radio 1
+  &#x3C;/label&#x3E;
+  &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
+    &#x3C;input type=&#x22;<mark>radio</mark>&#x22; name=&#x22;&#x22; id=&#x22;&#x22; checked&#x3E;Radio 2
+  &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;</pre>
 </section>

@@ -42,15 +42,24 @@
   <p>You may want to allow the user to remove chips. Add the <code>--removable</code> modifier to the <code>.chip</code> class and add the icon element after your chip text. This will add the "x" icon to the end of the chip and allow the user to delete the chip.</p>
   <h6>Demo:</h6>
   <div class="chips">
-    <span class="chip--removable skin-outline-gray">Hockey<i class="icon fas fa-times chip__close-btn"></i></span>
-    <span class="chip--removable skin-green ">Lacrosse<i class="icon fas fa-times chip__close-btn"></i></span>
-    <span class="chip--removable skin-outline-blue">Baseball<i class="icon fas fa-times chip__close-btn"></i></span>
+    <span class="chip--removable skin-outline-gray">
+      Hockey
+      <i class="icon fas fa-times chip__close-btn" aria-hidden="true" aria-label="remove hockey chip"></i>
+    </span>
+    <span class="chip--removable skin-green ">
+      Lacrosse
+      <i class="icon fas fa-times chip__close-btn" aria-hidden="true" aria-label="remove lacrosse chip"></i>
+    </span>
+    <span class="chip--removable skin-outline-blue">
+      Baseball
+      <i class="icon fas fa-times chip__close-btn" aria-hidden="true" aria-label="remove baseball chip"></i>
+    </span>
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;chips&#x22;&#x3E;
   &#x3C;span class=&#x22;chip--<mark>removable</mark>&#x22;&#x3E;
     Hockey
-    <mark>&#x3C;i class=&#x22;icon fas fa-times chip__close-btn&#x22;&#x3E;&#x3C;/i&#x3E;</mark>
+    <mark>&#x3C;i class=&#x22;icon fas fa-times chip__close-btn&#x22; aria-hidden=&#x22;true&#x22; aria-label=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;</mark>
   &#x3C;/span&#x3E;
 &#x3C;/div&#x3E;</pre>
 </section>

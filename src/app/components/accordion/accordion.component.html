@@ -3,7 +3,7 @@
   <p>The accordion component is very simple with a few enhancements that you can add depending on what you want to use it for. By default, the accordion is in the closed state but with a slight modification, you can switch it to be open by default. The accordion will take up the entire space of its parent container or you can add a max-width property to the wrapper element. There are also additional modification styles you can add. See below for a list of them.</p>
   <h6>Attributes:</h6>
   <ul class="list--unstyled">
-    <li><code>aria-label</code> : The accordion toggle input will never have a corresponding label, be sure to have an aria-label on it</li>
+    <li><code>aria-label</code> : the toggle <code>input</code> will never have a corresponding label, be sure to have an aria-label on it. The <code>i</code> element is used to animate the arrow current state. This icon, even though it is not front Font Awesome, is semantic. Without it the user would not know that this component has a toggle to change states.</li>
   </ul>
   <hr>
   <h4>Basic</h4>
@@ -12,7 +12,7 @@
   <div class="accordion__wrapper acc-custom">
     <div class="accordion">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" class="icon fas" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Accordion 1
       </div>
@@ -22,7 +22,7 @@
     </div>
     <div class="accordion">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Accordion 2
       </div>
@@ -34,8 +34,8 @@
   <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>accordion__wrapper</mark>&#x22;&#x3E;
   &#x3C;div class=&#x22;<mark>accordion</mark>&#x22;&#x3E;
-    &#x3C;input type=&#x22;checkbox&#x22; <mark>aria-label=&#x22;accordion toggle&#x22;</mark> class&#x22;<mark>accordion__toggle</mark>&#x22;&#x3E;
-    &#x3C;i&#x3E;&#x3C;/i&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; <mark>aria-label=&#x22;&#x22;</mark> class&#x22;<mark>accordion__toggle</mark>&#x22;&#x22;&#x3E;
+    &#x3C;i aria-hidden=&#x22;true&#x22; aria-label=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;
     &#x3C;div class=&#x22;<mark>accordion__title</mark>&#x22;&#x3E;
       Header 1
     &#x3C;/div&#x3E;
@@ -57,7 +57,7 @@
   <div class="accordion__wrapper">
     <div class="accordion--panel">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Header 1
       </div>
@@ -69,8 +69,8 @@
   <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
   &#x3C;div class=&#x22;<mark>accordion--panel</mark>&#x22;&#x3E;
-    &#x3C;input type=&#x22;checkbox&#x22; aria-label=&#x22;accordion toggle&#x22; class&#x22;accordion__toggle&#x22;&#x3E;
-    &#x3C;i&#x3E;&#x3C;/i&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; aria-label=&#x22;&#x22; class&#x22;accordion__toggle&#x22;&#x3E;
+    &#x3C;i aria-hidden=&#x22;true&#x22; aria-label=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;
     &#x3C;div class=&#x22;accordion__title&#x22;&#x3E;
       Header 2
     &#x3C;/span&#x3E;
@@ -92,7 +92,7 @@
   <div class="accordion__wrapper">
     <div class="accordion">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Header 1
         <span class="accordion__title--secondary">secondary text</span>
@@ -103,7 +103,7 @@
     </div>
     <div class="accordion--panel">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Header 2 w/ icon
         <span class="accordion__title--secondary"><span class="icon fas fa-info-circle" aria-hidden="true"></span></span>
@@ -117,7 +117,7 @@
 <pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
   &#x3C;div class=&#x22;accordion--panel&#x22;&#x3E;
     &#x3C;input type=&#x22;checkbox&#x22; class&#x22;accordion__toggle&#x22;&#x3E;
-    &#x3C;i&#x3E;&#x3C;/i&#x3E;
+    &#x3C;i aria-hidden=&#x22;true&#x22; aria-label=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;
     &#x3C;div class=&#x22;accordion__title&#x22;&#x3E;
       Header 2
       <mark>&#x3C;span class=&#x22;accordion__title--secondary&#x22;&#x3E;secondary text&#x3C;/span&#x3E;</mark>
@@ -137,7 +137,7 @@
   <div class="accordion__wrapper acc-custom">
     <div class="accordion--panel skin-green">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle" checked>
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Panel Green Accordion
       </div>
@@ -151,7 +151,7 @@
     </div>
     <div class="accordion--panel skin-gray">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
        Panel Gray Accordion
       </div>
@@ -165,7 +165,7 @@
     </div>
     <div class="accordion--panel skin-red">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Panel Red Accordion
       </div>
@@ -179,7 +179,7 @@
     </div>
     <div class="accordion--panel skin-blue">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i></i>
+      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Panel Blue Accordion
       </div>

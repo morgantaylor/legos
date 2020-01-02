@@ -1,27 +1,31 @@
 <h1>Tab</h1>
 <section class="container">
-  <p>Usually, tabs are created with Javascript via a framework like Angular or React, taking advantage of <code>ng-show</code>, <code>ng-hide</code>, and <code>ng-if</code> but if you're looking for a pure CSS version it is possible. The default style of our tabs has no visual container around them. There are no borders, just a bottom border on the tab that is currently selected.</p>
+  <p>Usually, tabs are created with Javascript via a framework like Angular or React, taking advantage of <code>ng-show</code>, <code>ng-hide</code>, and <code>ng-if</code> but if you're looking for a pure CSS version here's a solution. The default style has no visual container, just a bottom border on the tab that is currently selected.</p>
+  <p>The <code>tab</code> component uses the <code>input</code> and <code>section</code>'s <code>id</code> attribute to make the tabs dynamically show and hide the current tab content.</p>
   <p>You can choose where the blue line is, either top or bottom by putting  <code>--top</code> or <code>--bottom</code> on the label element.</p>
   <hr>
   <h6>Demo:</h6>
   <div class="tab">
-    <input id="tab-1" type="radio" name="tabs1" checked>
+    <input id="tab-1" type="radio" name="tabs1" aria-label="Thing 1 tab" checked>
     <label class="border--bottom" for="tab-1">
-      <i class="icon fas fa-code"></i><span>Thing 1</span>
+      <i class="icon fas fa-code" aria-hidden="true"></i>
+      <span>Thing 1</span>
     </label>
-
-    <input id="tab-2" type="radio" name="tabs1">
-    <label class="border--bottom" for="tab-2"><i class="icon fas fa-code"></i><span>Thing 2</span></label>
-
-    <input id="tab-3" type="radio" name="tabs1">
-    <label class="border--bottom" for="tab-3"><i class="icon fas fa-code"></i><span>Thing 3</span></label>
-
-    <input id="tab-4" type="radio" name="tabs1">
-    <label class="border--bottom" for="tab-4"><i class="icon fas fa-code"></i><span>Thing 4</span></label>
-
-    <input id="tab-5" type="radio" name="tabs1">
-    <label class="border--bottom" for="tab-5"><i class="icon fas fa-code"></i><span>Thing 5</span></label>
-
+    <input id="tab-2" type="radio" name="tabs1" aria-label="Thing 2 tab">
+    <label class="border--bottom" for="tab-2">
+      <i class="icon fas fa-code" aria-hidden="true"></i>
+      <span>Thing 2</span>
+    </label>
+    <input id="tab-3" type="radio" name="tabs1" aria-label="Thing 3 tab">
+    <label class="border--bottom" for="tab-3">
+      <i class="icon fas fa-code" aria-hidden="true"></i>
+      <span>Thing 3</span>
+    </label>
+    <input id="tab-4" type="radio" name="tabs1" aria-label="Thing 4 tab">
+    <label class="border--bottom" for="tab-4">
+      <i class="icon fas fa-code" aria-hidden="true"></i>
+      <span>Thing 4</span>
+    </label>
     <section id="content-1" class="tab__content">
       <h3>Headline 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -45,22 +49,16 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </section>
-    <section id="content-5" class="tab__content">
-      <h3>Headline 5</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-    </section>
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>tab</mark>&#x22;&#x3E;
-  &#x3C;input id=&#x22;tab-1&#x22; type=&#x22;radio&#x22; name=&#x22;tabs&#x22; checked&#x3E;
+  &#x3C;input <mark>id=&#x22;tab-1&#x22;</mark> type=&#x22;radio&#x22; name=&#x22;&#x22; aria-label=&#x22;&#x22; checked&#x3E;
   &#x3C;label for=&#x22;tab-1&#x22; class=&#x22;<mark>border--bottom</mark>&#x22;&#x3E;
-    &#x3C;i class=&#x22;icon fas fa-code&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;i class=&#x22;icon fas fa-code&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
     &#x3C;span&#x3E;Tab Title&#x3C;/span&#x3E;
   &#x3C;/label&#x3E;
   ... more tabs here
-  &#x3C;section id=&#x22;content-1&#x22; class=&#x22;<mark>tabs__content</mark>&#x22;&#x3E;
+  &#x3C;section <mark>id=&#x22;content-1&#x22;</mark> class=&#x22;<mark>tabs__content</mark>&#x22;&#x3E;
     &#x3C;h3&#x3E;Headline 1&#x3C;/h3&#x3E;
     &#x3C;p&#x3E;Content goes here...&#x3C;/p&#x3E;
   &#x3C;/section&#x3E;
@@ -71,28 +69,34 @@
   <p>If you want the tabs to have a border enclosing it, a box, add <code>--bordered</code> to the <code>.tabs</code> class.</p>
   <h6>Demo:</h6>
   <div class="tab--bordered">
-    <input id="tab-6" type="radio" name="tabs2" checked>
-    <label class="border--bottom" for="tab-6"><i class="icon fas fa-code"></i><span>Thing 1</span></label>
-
-    <input id="tab-7" type="radio" name="tabs2">
-    <label class="border--bottom" for="tab-7"><i class="icon fas fa-code"></i><span>Thing 2</span></label>
-
-    <input id="tab-8" type="radio" name="tabs2">
-    <label class="border--bottom" for="tab-8"><i class="icon fas fa-code"></i><span>Thing 3</span></label>
-
-    <section id="content-6" class="tab__content">
+    <input id="tab-5" type="radio" name="tabs5" aria-label="Thing 5 tab" checked>
+    <label class="border--bottom" for="tab-5">
+      <i class="icon fas fa-code" aria-hidden="true"></i>
+      <span>Thing 1</span>
+    </label>
+    <input id="tab-6" type="radio" name="tabs6" aria-label="Thing 6 tab">
+    <label class="border--bottom" for="tab-6">
+      <i class="icon fas fa-code" aria-hidden="true"></i>
+      <span>Thing 2</span>
+    </label>
+    <input id="tab-7" type="radio" name="tabs7" aria-label="Thing 7 tab">
+    <label class="border--bottom" for="tab-7">
+      <i class="icon fas fa-code" aria-hidden="true"></i>
+      <span>Thing 3</span>
+    </label>
+    <section id="content-5" class="tab__content">
       <h3>Headline 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
       cillum dolore eu fugiat nulla pariatur.</p>
     </section>
-    <section id="content-7" class="tab__content">
+    <section id="content-6" class="tab__content">
       <h3>Headline 2</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
     </section>
-    <section id="content-8" class="tab__content">
+    <section id="content-7" class="tab__content">
       <h3>Headline 3</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -100,9 +104,7 @@
     </section>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>tab--bordered</mark>&#x22;&#x3E;
-  ...
-&#x3C;/div&#x3E;</pre>
+<pre>&#x3C;div class=&#x22;<mark>tab--bordered</mark>&#x22;&#x3E;...&#x3C;/div&#x3E;</pre>
   <hr>
   <h4>Tab Amount</h4>
   <p>Depending on how many tabs are needed you might want to customize your CSS. By default three tabs are generated for use but if you need more than that add the below code to your Sass file to generate more.</p>

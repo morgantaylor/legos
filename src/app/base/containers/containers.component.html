@@ -1,22 +1,22 @@
 <h1>Container</h1>
 <section class="container">
-  <p>Three classes can quickly address the layout of content. These are intended to be used for simple base layouts. For more complex containers you may need to add more specific CSS of your own.</p>
+  <p>Three classes can quickly address the layout of your content. These are intended to be used for simple base layouts. For more complex containers you may need to add more specific CSS of your own.</p>
   <hr>
   <h4>Base Container</h4>
-  <p>The <code>.container</code> class creates a responsive box and adds space to the bottom of each container.</p>
-  <p><em>* Note:</em> If you nest a <code>.container</code> inside of another 25px of padding will be added to the left side of the container. This is to be used as indenting subsections of text or dividing parts of a form, as an example.</p>
+  <p>The <code>.container</code> class creates a responsive box with space on the bottom. The <code>max-width</code> of these containers is <code>600px</code>. That width is a good length for paragraph width to keep text readable.</p>
+  <p><em>* Note:</em> If you nest a <code>.container</code> inside of another, <code>25px</code> of padding will be added to the left side of the inner container. This is intended to be used for indenting subsections of text or dividing parts of a form.</p>
   <h6>Markup:</h6>
 <pre>position&#58; relative
 margin&#58; 0 auto 20px auto
 padding&#58; 0
-width&#58; 100%</pre>
+width&#58; 100%
+max-width&#58; 600px</pre>
   <hr>
   <h4>Flex Row</h4>
   <p>Use the <code>.flex-container</code> class as it's own flex container (default row), alongside the base container class to turn that container into a flex parent. This flex container uses the styles below.</p>
   <h6>Markup:</h6>
 <pre>display&#58; flex
 flex-wrap&#58; wrap
-justify-content&#58; flex-start
 align-items&#58; center</pre>
   <hr>
   <h4>Flex Column</h4>

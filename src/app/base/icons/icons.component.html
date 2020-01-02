@@ -1,44 +1,82 @@
 <h1>Icon</h1>
 <section class="container" ng-app="iconApp">
-  <p>LegoCSS uses <a href="http://fontawesome.io/icons/">Font Awesome</a> for icons. Visit the website to see all available icons.</p>
-  <p>You can use the icons anywhere using the <code>&lt;span&gt;</code> tag. By default, the icons have a height of 14px. If you would like to customize the sizing there are additional class options that you can add on.</p>
+  <p>LegoCSS uses <a href="http://fontawesome.io/icons/">Font Awesome</a> icons. Visit the website to see all icons that are available.</p>
+  <p>You can use the icons anywhere using a <code>span</code> or <code>i</code> elements. By default, the icons have a height of 14px.</p>
   <p>You can customize the sizing of your icon with the additional size classes below.</p>
+  <h6>Attributes:</h6>
+  <ul class="list--unstyled">
+    <li><code>aria-hidden</code> : <code>'true'</code></li>
+    <li><code>title</code> : it is best practice to add a title which provides a tooltip for sighted mouse users</li>
+  </ul>
   <hr>
+  <h6>Demo:</h6>
+  <i class="icon fas fa-shower" aria-hidden="true"></i>
+  <h6>Markup:</h6>
+<pre>&#x3C;i class=&#x22;<mark>icon fas</mark> fa-shower&#x22;&#x3E;&#x3C;/i&#x3E;</pre>
+  <hr>
+  <h4>Popular:</h4>
+  <div class="flex-container icons-container">
+    <p><i class="icon fas fa-bookmark" aria-hidden="true" title="fa-bookmark"></i><span>fa-bookmark</span></p>
+    <p><i class="icon fas fa-check" aria-hidden="true" title="fa-check"></i><span>fa-check</span></p>
+    <p><i class="icon fas fa-times" aria-hidden="true" title="fa-times"></i><span>fa-times</span></p>
+    <p><i class="icon fas fa-clone" aria-hidden="true" title="fa-clone"></i><span>fa-clone</span></p>
+    <p><i class="icon fas fa-eye" aria-hidden="true" title="fa-eye"></i><span>fa-eye</span></p>
+    <p><i class="icon fas fa-flag" aria-hidden="true" title="fa-flag"></i><span>fa-flag</span></p>
+    <p><i class="icon fas fa-cog" aria-hidden="true" title="fa-cog"></i><span>fa-cog</span></p>
+    <p><i class="icon fas fa-info-circle" aria-hidden="true" title="fa-info-circle"></i><span>fa-info-circle</span></p>
+    <p><i class="icon fas fa-pencil-alt" aria-hidden="true" title="fa-pencil-alt"></i><span>fa-pencil-alt</span></p>
+    <p><i class="icon fas fa-plus-circle" aria-hidden="true" title="fa-plus-circle"></i><span>fa-plus-circle</span></p>
+    <p><i class="icon fas fa-sync-alt" aria-hidden="true" title="fa-sync-alt"></i><span>fa-sync-alt</span></p>
+    <p><i class="icon fas fa-search" aria-hidden="true" title="fa-search"></i><span>fa-search</span></p>
+    <p><i class="icon fas fa-sort-down" aria-hidden="true" title="fa-sort-down"></i><span>fa-sort-down</span></p>
+    <p><i class="icon fas fa-sort-up" aria-hidden="true" title="fa-sort-up"></i><span>fa-sort-up</span></p>
+    <p><i class="icon fas fa-exclamation-triangle" aria-hidden="true" title="fa-exclamation-triangle"></i><span>fa-exclamation-triangle</span></p>
+  </div>
+  <hr>
+  <h4>Decorative:</h4>
+  <p>If the icon you are using is purely decorative, has no functional purpose, and will not effect a users interacts then the icon is decorative. In this case add an <code>aria-hidden</code> attribute to the icons so screen readers don't waste time trying to read what it is.</p>
+  <h6>Demo:</h6>
+  <i class="icon fas fa-shower" aria-hidden="true"></i>
+  <h6>Markup:</h6>
+<pre>&#x3C;i class=&#x22;icon fas fa-shower&#x22; <mark>aria-hidden=&#x22;true&#x22;</mark>&#x3E;&#x3C;/i&#x3E;</pre>
+  <hr>
+  <h4>Semantic:</h4>
+  <p>If an icon is being used to convey meaning, such as an button icon with no text associated with it, it is a semantic icon. There are a few things you need to do to make sure this icon is accessible for assisitive technologies.</p>
+  <p>If the icon is wrapped by another element such as a <code>button</code> or an <code>anchor</code> element then adding the <code>aria-label</code> to the outer element is suffiecient.</p>
+  <h6>Attributes:</h6>
+  <ul class="list--unstyled">
+    <li><code>aria-label</code> : adding a description to the element will provide an accessible alternative name for the element</li>
+  </ul>
+  <h6>Demo:</h6>
+  <button type="button" class="btn btn--outline-primary" aria-label="settings button" title="settings button">
+    <i class="icon fas fa-cog" aria-hidden="true"></i>
+  </button>
+  <i class="icon fas fa-cog" aria-hidden="true" aria-label="Icon for settings button" title="settings button"></i>
+  <h6>Markup:</h6>
+<pre>&#x3C;button ... <mark>aria-label</mark>=&#x22;&#x22; title=&#x22;&#x22;&#x3E;
+  &#x3C;i ... <mark>aria-hidden=&#x22;true&#x22;</mark>&#x3E;&#x3C;/i&#x3E;
+&#x3C;/button&#x3E;</pre>
+<p>OR</p>
+<pre>&#x3C;i ... <mark>aria-hidden=&#x22;true&#x22; aria-label=&#x22;&#x22; title=&#x22;&#x22;</mark>&#x3E;&#x3C;/i&#x3E;</pre>
+  <hr>
+  <h4>Size Classes:</h4>
+  <p>Icons come with basic size classes. See demo below for example sizes.</p>
   <h6>Demo:</h6>
   <div class="column">
     <p>
-      <i class="icon fas fa-shower" aria-hidden="true"></i>
-      <i class="icon fas fa-shower fa-lg" aria-hidden="true"></i>
-      <i class="icon fas fa-shower fa-2x" aria-hidden="true"></i>
-      <i class="icon fas fa-shower fa-3x" aria-hidden="true"></i>
-      <i class="icon fas fa-shower fa-4x" aria-hidden="true"></i>
-      <i class="icon fas fa-shower fa-5x" aria-hidden="true"></i>
+      <i class="icon fas fa-shower" aria-hidden="true" title="shower icon normal"></i>
+      <i class="icon fas fa-shower fa-lg" aria-hidden="true" title="shower icon large"></i>
+      <i class="icon fas fa-shower fa-2x" aria-hidden="true" title="shower icon 2x"></i>
+      <i class="icon fas fa-shower fa-3x" aria-hidden="true" title="shower icon 3x"></i>
+      <i class="icon fas fa-shower fa-4x" aria-hidden="true" title="shower icon 4x"></i>
+      <i class="icon fas fa-shower fa-5x" aria-hidden="true" title="shower icon 5x"></i>
     </p>
-  </div> 
-  <h6>Markup:</h6>
-<pre>&lt;i class="icon fas fa-shower" aria-hidden="true"&gt;&lt;/i&gt;
-&lt;i class="icon fas fa-shower fa-lg" aria-hidden="true"&gt;&lt;/i&gt;
-&lt;i class="icon fas fa-shower fa-2x" aria-hidden="true"&gt;&lt;/i&gt;
-&lt;i class="icon fas fa-shower fa-3x" aria-hidden="true"&gt;&lt;/i&gt;
-&lt;i class="icon fas fa-shower fa-4x" aria-hidden="true"&gt;&lt;/i&gt;
-&lt;i class="icon fas fa-shower fa-5x" aria-hidden="true"&gt;&lt;/i&gt;</pre>
-  <hr>
-  <h4>Most used icons:</h4>
-  <div class="flex-container icons-container">
-    <p><i class="icon fas fa-bookmark" aria-hidden="true"></i><span>fa-bookmark</span></p>
-    <p><i class="icon fas fa-check" aria-hidden="true"></i><span>fa-check</span></p>
-    <p><i class="icon fas fa-times" aria-hidden="true"></i><span>fa-times</span></p>
-    <p><i class="icon fas fa-clone" aria-hidden="true"></i><span>fa-clone</span></p>
-    <p><i class="icon fas fa-exclamation-triangle" aria-hidden="true"></i><span>fa-exclamation-triangle</span></p>
-    <p><i class="icon fas fa-eye" aria-hidden="true"></i><span>fa-eye</span></p>
-    <p><i class="icon fas fa-flag" aria-hidden="true"></i><span>fa-flag</span></p>
-    <p><i class="icon fas fa-cog" aria-hidden="true"></i><span>fa-cog</span></p>
-    <p><i class="icon fas fa-info-circle" aria-hidden="true"></i><span>fa-info-circle</span></p>
-    <p><i class="icon fas fa-pencil-alt" aria-hidden="true"></i><span>fa-pencil-alt</span></p>
-    <p><i class="icon fas fa-plus-circle" aria-hidden="true"></i><span>fa-plus-circle</span></p>
-    <p><i class="icon fas fa-sync-alt" aria-hidden="true"></i><span>fa-sync-alt</span></p>
-    <p><i class="icon fas fa-search" aria-hidden="true"></i><span>fa-search</span></p>
-    <p><i class="icon fas fa-sort-down" aria-hidden="true"></i><span>fa-sort-down</span></p>
-    <p><i class="icon fas fa-sort-up" aria-hidden="true"></i><span>fa-sort-up</span></p>
   </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;i class=&#x22;icon fas fa-shower&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;i class=&#x22;icon fas fa-shower <mark>fa-lg</mark>&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;i class=&#x22;icon fas fa-shower <mark>fa-2x</mark>&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;i class=&#x22;icon fas fa-shower <mark>fa-3x</mark>&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;i class=&#x22;icon fas fa-shower <mark>fa-4x</mark>&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;i class=&#x22;icon fas fa-shower <mark>fa-5x</mark>&#x22;&#x3E;&#x3C;/i&#x3E;</pre>
 </section>

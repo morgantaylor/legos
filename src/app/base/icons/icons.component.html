@@ -15,21 +15,7 @@
   <hr>
   <h4>Popular:</h4>
   <div class="flex-container icons-container">
-    <p><fa-icon icon="bookmark" class="icon" aria-hidden="true" title="fa-bookmark"></fa-icon><span>fa-bookmark</span></p>
-    <p><fa-icon icon="check" class="icon" aria-hidden="true" title="fa-check"></fa-icon><span>fa-check</span></p>
-    <p><fa-icon icon="times" class="icon" aria-hidden="true" title="fa-times"></fa-icon><span>fa-times</span></p>
-    <p><fa-icon icon="clone" class="icon" aria-hidden="true" title="fa-clone"></fa-icon><span>fa-clone</span></p>
-    <p><fa-icon icon="eye" class="icon" aria-hidden="true" title="fa-eye"></fa-icon><span>fa-eye</span></p>
-    <p><fa-icon icon="flag" class="icon" aria-hidden="true" title="fa-flag"></fa-icon><span>fa-flag</span></p>
-    <p><fa-icon icon="cog" class="icon" aria-hidden="true" title="fa-cog"></fa-icon><span>fa-cog</span></p>
-    <p><fa-icon icon="info-circle" class="icon" aria-hidden="true" title="fa-info-circle"></fa-icon><span>fa-info-circle</span></p>
-    <p><fa-icon icon="pencil-alt" class="icon" aria-hidden="true" title="fa-pencil-alt"></fa-icon><span>fa-pencil-alt</span></p>
-    <p><fa-icon icon="plus-circle" class="icon" aria-hidden="true" title="fa-plus-circle"></fa-icon><span>fa-plus-circle</span></p>
-    <p><fa-icon icon="sync-alt" class="icon" aria-hidden="true" title="fa-sync-alt"></fa-icon><span>fa-sync-alt</span></p>
-    <p><fa-icon icon="search" class="icon" aria-hidden="true" title="fa-search"></fa-icon><span>fa-search</span></p>
-    <p><fa-icon icon="sort-down" class="icon" aria-hidden="true" title="fa-sort-down"></fa-icon><span>fa-sort-down</span></p>
-    <p><fa-icon icon="sort-up" class="icon" aria-hidden="true" title="fa-sort-up"></fa-icon><span>fa-sort-up</span></p>
-    <p><fa-icon icon="exclamation-triangle" class="icon" aria-hidden="true" title="fa-exclamation-triangle"></fa-icon><span>fa-exclamation-triangle</span></p>
+    <p *ngFor="let popularIcon of popularIcons"><fa-icon icon="{{ popularIcon }}" class="icon" aria-hidden="true" title="fa-{{ popularIcon }}"></fa-icon><span>fa-{{ popularIcon }}</span></p>
   </div>
   <hr>
   <h4>Decorative:</h4>
@@ -64,11 +50,7 @@
   <div class="column">
     <p>
       <fa-icon icon="shower" class="icon" aria-hidden="true" title="shower icon normal"></fa-icon>
-      <fa-icon icon="shower" class="icon fa-lg" aria-hidden="true" title="shower icon large"></fa-icon>
-      <fa-icon icon="shower" class="icon fa-2x" aria-hidden="true" title="shower icon 2x"></fa-icon>
-      <fa-icon icon="shower" class="icon fa-3x" aria-hidden="true" title="shower icon 3x"></fa-icon>
-      <fa-icon icon="shower" class="icon fa-4x" aria-hidden="true" title="shower icon 4x"></fa-icon>
-      <fa-icon icon="shower" class="icon fa-5x" aria-hidden="true" title="shower icon 5x"></fa-icon>
+      <fa-icon *ngFor="let sizeIcon of sizeIcons" icon="shower" class="icon {{ sizeIcon }}" aria-hidden="true" title="shower icon {{ sizeIcon }}"></fa-icon>
     </p>
   </div>
   <h6>Markup:</h6>

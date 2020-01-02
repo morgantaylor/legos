@@ -37,10 +37,7 @@
   <hr>
   <h4>Skins</h4>
   <ul>
-    <li><code>alert--danger</code></li>
-    <li><code>alert--success</code></li>
-    <li><code>alert--primary</code></li>
-    <li><code>alert--warning</code></li>
+    <li *ngFor="let alertColor of alertColors"><code>alert--{{ alertColor }}</code></li>
   </ul>
   <p>The skin color controls:</p> 
   <ul>
@@ -50,17 +47,8 @@
     <li>Border Color (optional add-on)</li>
   </ul>
   <h6>Demo:</h6>
-  <div class="alert demo alert--danger" role="alert">
-    <div class="alert__body">This is a danger alert</div>
-  </div>
-  <div class="alert demo alert--success">
-    <div class="alert__body">This is a success alert</div>
-  </div>
-  <div class="alert demo alert--border alert--primary">
-    <div class="alert__body">This is a primary alert</div>
-  </div>
-  <div class="alert demo alert--border alert--warning">
-    <div class="alert__body">This is a warning alert</div>
+  <div *ngFor="let alertColor of alertColors" class="alert demo alert--{{ alertColor }}" role="alert">
+    <div class="alert__body">This is a {{ alertColor }} alert</div>
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;alert <mark>alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
@@ -70,26 +58,8 @@
   <h4>Border</h4>
   <p>If you would like to add a border around your alert add the <code>--border</code> modifier to the skin class.</p>
   <h6>Demo:</h6>
-  <div class="alert demo alert--danger--border" role="alert">
-    <div class="alert__body">This is a danger alert with a border</div>
-    <button type="button" aria-label="alert close button" class="alert__close">
-      <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
-    </button>
-  </div>
-  <div class="alert demo alert--success--border">
-    <div class="alert__body">This is a success alert with a border</div>
-    <button type="button" aria-label="alert close button" class="alert__close">
-      <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
-    </button>
-  </div>
-  <div class="alert demo alert--primary--border">
-    <div class="alert__body">This is a primary alert with a border</div>
-    <button type="button" aria-label="alert close button" class="alert__close">
-      <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
-    </button>
-  </div>
-  <div class="alert demo alert--warning--border">
-    <div class="alert__body">This is a warning alert with a border</div>
+  <div class="alert demo alert--{{ alertColor }}--border" role="alert" *ngFor="let alertColor of alertColors">
+    <div class="alert__body">This is a {{ alertColor }} alert with a border</div>
     <button type="button" aria-label="alert close button" class="alert__close">
       <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
     </button>

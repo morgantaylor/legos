@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginationComponent implements OnInit {
 
+  skins = [
+    'green',
+    'red',
+    'blue'
+  ]
+
   constructor() { }
 
   ngOnInit() {

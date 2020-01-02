@@ -15,49 +15,9 @@
   <p>All form elements, such as <code>input</code> elements, should always have associated labels.</p>
   <table id="documentation-table">
     <tbody>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;checkbox&#x22;&#x3E;</code></td>
-        <td><input type="checkbox" aria-label="checkbox input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;color&#x22;&#x3E;</code></td>
-        <td><input type="color" aria-label="color input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;date&#x22;&#x3E;</code></td>
-        <td><input type="date" aria-label="date input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;email&#x22;&#x3E;</code></td>
-        <td><input type="email" aria-label="email input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;number&#x22;&#x3E;</code></td>
-        <td><input type="number" aria-label="number input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;password&#x22;&#x3E;</code></td>
-        <td><input type="password" aria-label="password input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;radio&#x22;&#x3E;</code></td>
-        <td><input type="radio" aria-label="radio input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;range&#x22;&#x3E;</code></td>
-        <td><input type="range" aria-label="rangle input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;search&#x22;&#x3E;</code></td>
-        <td><input type="search" aria-label="search input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;text&#x22;&#x3E;</code></td>
-        <td><input type="text" aria-label="text input example"></td>
-      </tr>
-      <tr>
-        <td><code>&#x3C;input type=&#x22;time&#x22;&#x3E;</code></td>
-        <td><input type="time" aria-label="time input example"></td>
+      <tr *ngFor="let inputType of inputTypes">
+        <td><code>&#x3C;input type=&#x22;{{ inputType }}&#x22;&#x3E;</code></td>
+        <td><input type="{{ inputType }}" title="{{ inputType }} input example"></td>
       </tr>
       <tr>
         <td><code>&#x3C;progress&#x3E;&#x3C;/progress&#x3E;</code></td>

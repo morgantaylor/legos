@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputsComponent implements OnInit {
 
+  inputTypes = [
+    'checkbox',
+    'radio',
+    'color',
+    'date',
+    'email',
+    'number',
+    'password',
+    'range',
+    'search',
+    'text',
+    'time'
+  ]
+
   constructor() { }
 
   ngOnInit() {

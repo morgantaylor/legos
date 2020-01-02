@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChipsComponent implements OnInit {
 
+  chips = [
+    ['green', 'Hockey'],
+    ['gray', 'Lacrosse'],
+    ['red', 'Baseball'],
+    ['blue', 'Football']
+  ]
+  
   constructor() { }
 
   ngOnInit() {

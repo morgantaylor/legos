@@ -134,58 +134,16 @@
   <p>There are four skin colors you can add to an accordion. They change the color, border-color, background-color, and arrow color. You have to put the skin on the accordion element, inside the <code>.accordion__wrapper</code> or it will not work. This is only useful for the <code>.accordion--panel</code> because the default accordion was made to look like it was floating. The two accordions have very different use cases.</p>
   <p>Example: the floating navigation on the left side of the screen</p>
   <h6>Demo:</h6>
-  <div class="accordion__wrapper acc-custom">
-    <div class="accordion--panel skin-green">
+  <div class="accordion__wrapper acc-custom" *ngFor="let accordionSkin of accordionSkins">
+    <div class="accordion--panel skin-{{ accordionSkin }}">
       <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle" checked>
       <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
-        Panel Green Accordion
+        panel {{ accordionSkin }} accordion
       </div>
       <div class="accordion__container">
 <pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
-  &#x3C;div class=&#x22;accordion--panel <mark>skin-green</mark>&#x22;&#x3E;
-    ...
-  &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</pre>
-      </div>
-    </div>
-    <div class="accordion--panel skin-gray">
-      <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
-      <div class="accordion__title">
-       Panel Gray Accordion
-      </div>
-      <div class="accordion__container">
-<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
-  &#x3C;div class=&#x22;accordion--panel <mark>skin-gray</mark>&#x22;&#x3E;
-    ...
-  &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</pre>
-      </div>
-    </div>
-    <div class="accordion--panel skin-red">
-      <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
-      <div class="accordion__title">
-        Panel Red Accordion
-      </div>
-      <div class="accordion__container">
-<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
-  &#x3C;div class=&#x22;accordion--panel <mark>skin-red</mark>&#x22;&#x3E;
-    ...
-  &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</pre>
-      </div>
-    </div>
-    <div class="accordion--panel skin-blue">
-      <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
-      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
-      <div class="accordion__title">
-        Panel Blue Accordion
-      </div>
-      <div class="accordion__container">
-<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
-  &#x3C;div class=&#x22;accordion--panel <mark>skin-blue</mark>&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion--panel <mark>skin-{{ accordionSkin }}</mark>&#x22;&#x3E;
     ...
   &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>

@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccordionComponent implements OnInit {
 
+  accordionSkins = [
+    'green',
+    'gray',
+    'red',
+    'blue'
+  ]
+
   constructor() { }
 
   ngOnInit() {

@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertsComponent implements OnInit {
 
+  alertColors = [
+    'danger',
+    'success',
+    'primary',
+    'warning'
+  ]
+
   constructor() { }
 
   ngOnInit() {

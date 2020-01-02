@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LightSwitchComponent implements OnInit {
 
+  skins = [
+    'primary',
+    'success',
+    'danger'
+  ]
+
   constructor() { }
 
   ngOnInit() {

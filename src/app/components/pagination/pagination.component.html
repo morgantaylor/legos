@@ -119,76 +119,30 @@
 &#x3C;/nav&#x3E;</pre>
   <hr>
   <h4>Skins</h4>
-  <h6>Demo: <code>pagination--green</code></h6>
-  <div class="flex-container">
-    <nav class="pagination pagination--green" role="navigation" aria-label="Pagination Navigation">
-      <span class="pagination__item--first disabled" role="button">
-        <a aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </span>
-      <span class="pagination__item active" role="button"><a>1</a></span>
-      <span class="pagination__item" role="button"><a>2</a></span>
-      <span class="pagination__item" role="button"><a>3</a></span>
-      <span class="pagination__item" role="button"><a>4</a></span>
-      <span class="pagination__item" role="button"><a>5</a></span>
-      <span class="pagination__item--last" role="button">
-        <a aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </span>
-    </nav>
-  </div>
-  <h6>Markup:</h6>
+  <div *ngFor="let skin of skins">
+    <h6>Demo: <code>pagination--{{ skin }}</code></h6>
+    <div class="flex-container">
+      <nav class="pagination pagination--{{ skin }}" role="navigation" aria-label="Pagination Navigation">
+        <span class="pagination__item--first disabled" role="button">
+          <a aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </span>
+        <span class="pagination__item active" role="button"><a>1</a></span>
+        <span class="pagination__item" role="button"><a>2</a></span>
+        <span class="pagination__item" role="button"><a>3</a></span>
+        <span class="pagination__item" role="button"><a>4</a></span>
+        <span class="pagination__item" role="button"><a>5</a></span>
+        <span class="pagination__item--last" role="button">
+          <a aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </span>
+      </nav>
+    </div>
+    <h6>Markup:</h6>
 <pre>&#x3C;nav class=&#x22;pagination <mark>pagination--green</mark>&#x22; role=&#x22;navigation&#x22;&#x3E;
   ...
 &#x3C;/nav&#x3E;</pre>
-  <h6>Demo: <code>pagination--red</code></h6>
-  <div class="flex-container">
-    <nav class="pagination pagination--red" role="navigation" aria-label="Pagination Navigation">
-      <span class="pagination__item--first disabled" role="button">
-        <a aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </span>
-      <span class="pagination__item active" role="button"><a>1</a></span>
-      <span class="pagination__item" role="button"><a>2</a></span>
-      <span class="pagination__item" role="button"><a>3</a></span>
-      <span class="pagination__item" role="button"><a>4</a></span>
-      <span class="pagination__item" role="button"><a>5</a></span>
-      <span class="pagination__item--last" role="button">
-        <a aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </span>
-    </nav>
   </div>
-  <h6>Markup:</h6>
-<pre>&#x3C;nav class=&#x22;pagination <mark>pagination--red</mark>&#x22; role=&#x22;navigation&#x22;&#x3E;
-  ...
-&#x3C;/nav&#x3E;</pre>
-  <h6>Demo: <code>pagination--blue</code></h6>
-  <div class="flex-container">
-    <nav class="pagination pagination--blue" role="navigation" aria-label="Pagination Navigation">
-      <span class="pagination__item--first disabled" role="button">
-        <a aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </span>
-      <span class="pagination__item active" role="button"><a>1</a></span>
-      <span class="pagination__item" role="button"><a>2</a></span>
-      <span class="pagination__item" role="button"><a>3</a></span>
-      <span class="pagination__item" role="button"><a>4</a></span>
-      <span class="pagination__item" role="button"><a>5</a></span>
-      <span class="pagination__item--last" role="button">
-        <a aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </span>
-    </nav>
-  </div>
-  <h6>Markup:</h6>
-<pre>&#x3C;nav class=&#x22;pagination <mark>pagination--blue</mark>&#x22; role=&#x22;navigation&#x22;&#x3E;
-  ...
-&#x3C;/nav&#x3E;</pre>
 </section>

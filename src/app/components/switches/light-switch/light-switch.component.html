@@ -48,48 +48,22 @@
 <hr>
 <h4>Skins</h4>
 <p>Default skins availible:</p>
-<h6>Demo: <code>switch--primary</code></h6>
-<div class="switch switch--primary">
-  <div class="switch__title">Light Switch</div>
-  <input type="checkbox" aria-label="light switch toggle" checked>
-  <span>
-    <span>Off</span>
-    <span>On</span>
-    <a></a>
-  </span>
-</div>
-<h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>switch switch--primary</mark>&#x22;&#x3E;
+<div *ngFor="let skin of skins">
+  <h6>Demo: <code>switch--{{ skin }}</code></h6>
+  <div class="switch switch--{{ skin }}">
+    <div class="switch__title">Light Switch</div>
+    <input type="checkbox" aria-label="light switch toggle" checked>
+    <span>
+      <span>Off</span>
+      <span>On</span>
+      <a></a>
+    </span>
+  </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;<mark>switch switch--{{ skin }}</mark>&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;</pre>
-<h6>Demo: <code>switch--success</code></h6>
-<div class="switch switch--success">
-  <div class="switch__title">Light Switch</div>
-  <input type="checkbox" aria-label="light switch toggle" checked>
-  <span>
-    <span>Off</span>
-    <span>On</span>
-    <a></a>
-  </span>
 </div>
-<h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>switch switch--success</mark>&#x22;&#x3E;
-  ...
-&#x3C;/div&#x3E;</pre>
-<h6>Demo: <code>switch--danger</code></h6>
-<div class="switch switch--danger">
-  <div class="switch__title">Light Switch</div>
-  <input type="checkbox" aria-label="light switch toggle" checked>
-  <span>
-    <span>Off</span>
-    <span>On</span>
-    <a></a>
-  </span>
-</div>
-<h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>switch switch--danger</mark>&#x22;&#x3E;
-  ...
-&#x3C;/div&#x3E;</pre>
 <hr>
 <h4>Color Customization</h4>
 <p>To customize a switch with a specific color that isn't part of our default skins I recommend creating a new skin class.</p>

@@ -5,9 +5,7 @@
   <hr>
   <h6>Demo:</h6>
   <div class="chips">
-    <span class="chip">Hockey</span>
-    <span class="chip">Lacrosse</span>
-    <span class="chip">Baseball</span>
+    <span *ngFor="let chip of chips" class="chip">{{ chip[1] }}</span>
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>chips</mark>&#x22;&#x3E;
@@ -19,17 +17,11 @@
   <h6>Demo:</h6>
   <div class="chips">
     <span class="chip">No Skin</span>
-    <span class="chip skin-green">Hockey</span>
-    <span class="chip skin-gray">Lacrosse</span>
-    <span class="chip skin-red">Baseball</span>
-    <span class="chip skin-blue">Football</span>
+    <span *ngFor="let chip of chips" class="chip skin-{{ chip[0] }}">{{ chip[1] }}</span>
   </div>
   <div class="chips">
     <span class="chip">No Skin</span>
-    <span class="chip skin-outline-green">Hockey</span>
-    <span class="chip skin-outline-gray">Lacrosse</span>
-    <span class="chip skin-outline-red">Baseball</span>
-    <span class="chip skin-outline-blue">Football</span>
+    <span *ngFor="let chip of chips" class="chip skin-outline-{{ chip[0] }}">{{ chip[1] }}</span>
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;div class&#x22;chips&#x22;&#x3E;
@@ -42,17 +34,9 @@
   <p>You may want to allow the user to remove chips. Add the <code>--removable</code> modifier to the <code>.chip</code> class and add the icon element after your chip text. This will add the "x" icon to the end of the chip and allow the user to delete the chip.</p>
   <h6>Demo:</h6>
   <div class="chips">
-    <span class="chip--removable skin-outline-gray">
-      Hockey
-      <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true" aria-label="remove hockey chip"></fa-icon>
-    </span>
-    <span class="chip--removable skin-green ">
-      Lacrosse
-      <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true" aria-label="remove lacrosse chip"></fa-icon>
-    </span>
-    <span class="chip--removable skin-outline-blue">
-      Baseball
-      <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true" aria-label="remove baseball chip"></fa-icon>
+    <span *ngFor="let chip of chips" class="chip--removable skin-{{ chip[0] }}">
+      {{ chip[1] }}
+      <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true"></fa-icon>
     </span>
   </div>
   <h6>Markup:</h6>

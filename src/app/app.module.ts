@@ -29,6 +29,7 @@ import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 // only for documentation not the component
 import { NavigationComponent } from './navigation/navigation.component';
@@ -164,6 +165,7 @@ export class AppModule {
     faExclamationTriangle,
     faCaretDown,
     faUpload,
-    faCode);
+    faCode,
+    faBars);
   }
 }

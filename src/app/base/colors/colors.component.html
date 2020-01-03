@@ -16,7 +16,7 @@
   <h4>Action Colors</h4>
   <div class="flex-container">
     <div class="card card--colors" *ngFor="let actionColor of actionColors">
-      <div class="card__display--top bg-primary" [ngStyle]="{'background':  actionColor[0] }"></div>
+      <div class="card__display--top" [ngStyle]="{'background':  actionColor[0] }"></div>
       <div class="card__body">
         <span class="card__title">Hex:</span>
         <span class="card__text">{{ actionColor[0] }}</span>

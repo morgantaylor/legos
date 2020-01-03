@@ -17,7 +17,7 @@ export const BASEITEMS: Item[] = [
     link: 'base/skins',
     class: 'nav__item--nested',
     name: 'Skin',
-    divider: true
+    divider: false
   },
   {
     link: 'base/typography',
@@ -29,12 +29,6 @@ export const BASEITEMS: Item[] = [
     link: 'base/containers',
     class: 'nav__item--nested',
     name: 'Container',
-    divider: false
-  },
-  {
-    link: 'base/lists',
-    class: 'nav__item--nested',
-    name: 'List',
     divider: true
   },
   {

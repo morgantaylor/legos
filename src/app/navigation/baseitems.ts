@@ -2,12 +2,6 @@ import { Item } from '../navigation/item';
 
 export const BASEITEMS: Item[] = [
   {
-    link: 'base/containers',
-    class: 'nav__item--nested',
-    name: 'Container',
-    divider: false
-  },
-  {
     link: 'base/colors',
     class: 'nav__item--nested',
     name: 'Color',
@@ -20,9 +14,21 @@ export const BASEITEMS: Item[] = [
     divider: false
   },
   {
+    link: 'base/skins',
+    class: 'nav__item--nested',
+    name: 'Skin',
+    divider: true
+  },
+  {
     link: 'base/typography',
     class: 'nav__item--nested',
     name: 'Typography',
+    divider: false
+  },
+  {
+    link: 'base/containers',
+    class: 'nav__item--nested',
+    name: 'Container',
     divider: false
   },
   {

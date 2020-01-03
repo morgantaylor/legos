@@ -1,0 +1,32 @@
+<h1>Skin</h1>
+<section class="container">
+  <p>Skins are global classes that can be added to many of the components in the LegoCSS library. Visit the component page to see how to implement each skin.</p>
+  <h4>Colors</h4>
+  <ul>
+    <li *ngFor="let color of colors" class="color-swatch"><code>skin-{{ color }}</code><span class="swatch {{ color }}"></span></li>
+  </ul>
+  <hr>
+  <h4>Skins control:</h4> 
+  <ul>
+    <li>Backgroud Color</li>
+    <li>Font Color</li>
+    <li>Border Color (optional add-on)</li>
+  </ul>
+  <hr>
+  <h4>Components</h4>
+  <ul>
+    <li>Select Input</li>
+    <li>Accordion</li>
+    <li>Breadcrumb</li>
+    <li>Chips</li>
+    <li>Switch</li>
+  </ul>
+  <hr>
+  <h4>Not Availible For:</h4>
+  <p>Some components can not use the global skins as they need more specific styles for their skins. The below components have their own skin classes specific to their components. See their pages for more information.</p>
+  <ul>
+    <li>Button</li>
+    <li>Alert</li>
+    <li>Pagination</li>
+  </ul>
+</section>

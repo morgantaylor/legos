@@ -17,8 +17,10 @@ import { AccessabilityComponent } from './getting-started/accessability/accessab
 import { BaseComponent } from './base/base.component';
 
 import { ColorsComponent } from './base/colors/colors.component';
-import { TypographyComponent } from './base/typography/typography.component';
+import { SkinsComponent } from './base/skins/skins.component';
 import { IconsComponent } from './base/icons/icons.component';
+import { TypographyComponent } from './base/typography/typography.component';
+
 import { ContainersComponent } from './base/containers/containers.component';
 import { ListComponent } from './base/list/list.component';
 
@@ -68,9 +70,10 @@ const routes: Routes = [
   },
   { path: 'base', component: BaseComponent, 
     children: [
-      { path: 'colors', component: ColorsComponent },
-      { path: 'typography', component: TypographyComponent },  
+      { path: 'colors', component: ColorsComponent },  
       { path: 'icons', component: IconsComponent },
+      { path: 'skins', component: SkinsComponent },
+      { path: 'typography', component: TypographyComponent },
       { path: 'containers', component: ContainersComponent },
       { path: 'lists', component: ListComponent },
       { path: 'buttons', component: ButtonsComponent },

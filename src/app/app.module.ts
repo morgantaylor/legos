@@ -48,8 +48,10 @@ import { AccessabilityComponent } from './getting-started/accessability/accessab
 import { BaseComponent } from './base/base.component';
 
 import { ColorsComponent } from './base/colors/colors.component';
-import { TypographyComponent } from './base/typography/typography.component';
+import { SkinsComponent } from './base/skins/skins.component';
 import { IconsComponent } from './base/icons/icons.component';
+import { TypographyComponent } from './base/typography/typography.component';
+
 import { ContainersComponent } from './base/containers/containers.component';
 import { ListComponent } from './base/list/list.component';
 
@@ -134,7 +136,8 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     AccessabilityComponent,
     MobileNavComponent,
     FormsComponent,
-    ListComponent
+    ListComponent,
+    SkinsComponent
   ],
   imports: [
     BrowserModule,

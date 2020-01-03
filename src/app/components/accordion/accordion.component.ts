@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AccordionComponent implements OnInit {
 
   accordionSkins = [
+    'blue',
     'green',
-    'gray',
     'red',
-    'blue'
+    'orange',
+    'gray'
   ]
 
   constructor() { }

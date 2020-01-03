@@ -35,40 +35,34 @@
   <mark>&#x3C;/button&#x3E;</mark>
 &#x3C;/div&#x3E;</pre>
   <hr>
-  <h4>Skins</h4>
-  <ul>
-    <li *ngFor="let alertColor of alertColors"><code>alert--{{ alertColor }}</code></li>
-  </ul>
-  <p>The skin color controls:</p> 
-  <ul>
-    <li>Backgroud Color</li>
-    <li>Font Color</li>
-    <li>Close Button Color (optional add-on)</li>
-    <li>Border Color (optional add-on)</li>
-  </ul>
-  <h6>Demo:</h6>
-  <div *ngFor="let alertColor of alertColors" class="alert demo alert--{{ alertColor }}" role="alert">
-    <div class="alert__body">This is a {{ alertColor }} alert</div>
-  </div>
-  <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert <mark>alert--danger</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
-  &#x3C;div class="alert__body"&#x3E;Alert text here&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</pre>
-  <hr>
   <h4>Border</h4>
   <p>If you would like to add a border around your alert add the <code>--border</code> modifier to the skin class.</p>
   <h6>Demo:</h6>
-  <div class="alert demo alert--{{ alertColor }}--border" role="alert" *ngFor="let alertColor of alertColors">
-    <div class="alert__body">This is a {{ alertColor }} alert with a border</div>
+  <div class="alert demo alert--{{ color }}--border" role="alert" *ngFor="let color of colors">
+    <div class="alert__body">This is a {{ color }} alert with a border</div>
     <button type="button" aria-label="alert close button" class="alert__close">
       <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
     </button>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;alert alert--danger<mark>--border</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;alert alert--red<mark>--border</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
   &#x3C;div class="alert__body"&#x3E;Alert text here&#x3C;/div&#x3E;
   &#x3C;button type=&#x22;button&#x22; aria-label=&#x22;alert close button&#x22;class=&#x22;alert__close&#x22;&#x3E;
     &#x3C;i class=&#x22;fas fa-times close&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
   &#x3C;/button&#x3E;
+&#x3C;/div&#x3E;</pre>
+  <hr>
+  <h4>Skins</h4>
+  <p>Alerts have their own specific skin styles. They are very similar to the global skins but with additional styles just for them. The skin class controls background color, font color, close button color (optional), border color (optional).</p>
+  <ul>
+    <li *ngFor="let color of colors" class="color-swatch"><code>alert--{{ color }}</code><span class="swatch {{ color }}"></span></li>
+  </ul>
+  <h6>Demo:</h6>
+  <div *ngFor="let color of colors" class="alert demo alert--{{ color }}" role="alert">
+    <div class="alert__body">This is a {{ color }} alert</div>
+  </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;alert <mark>alert--red</mark>&#x22; role=&#x22;alert&#x22;&#x3E;
+  &#x3C;div class="alert__body"&#x3E;Alert text here&#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
 </section>

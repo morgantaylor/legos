@@ -56,7 +56,7 @@
   <h6>Demo:</h6>
   <div class="select--inline select--squared">
     <select name="selectExample" id="selectExample" aria-label="squared corners select example">
-      <option>Choose</option>
+      <option>Select and option</option>
       <option value="1">Pure CSS</option>
       <option value="2">No JS</option>
       <option value="3">Nice!</option>
@@ -69,21 +69,19 @@
   &#x3C;/select&#x3E;
 &#x3C;/div&#x3E;</pre>
   <hr>
-  <h4>Select Skins</h4>
-  <p>Just like buttons, you can customize a select to have a skin color. To do this add the skin class to the <code>.select</code> wrapper.</p>
-  <h6>Demo:</h6>
-  <div class="select skin-blue">
-    <select name="selectExample" id="selectExample" aria-label="select skin example">
-      <option>Choose</option>
-      <option value="1">Pure CSS</option>
-      <option value="2">No JS</option>
-      <option value="3">Nice!</option>
-    </select>
+  <h4>Skins</h4>
+  <p>All basic skins are available for this component.</p>
+  <div *ngFor="let color of colors">
+    <h6>Demo: <code>skin-{{ color }}</code></h6>
+    <div class="select skin-{{ color }}">
+      <select name="selectExample" id="selectExample" aria-label="select skin example">
+        <option>Choose</option>
+        <option value="1">Pure CSS</option>
+        <option value="2">No JS</option>
+        <option value="3">Nice!</option>
+      </select>
+    </div>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;select <mark>skin-blue</mark>&#x22;&#x3E;
-  &#x3C;select name=&#x22;name&#x22; id=&#x22;ID&#x22;&#x3E;
-    ...
-  &#x3C;/select&#x3E;
-&#x3C;/div&#x3E;</pre>
+<pre>&#x3C;div class=&#x22;select <mark>skin-{{ '{' }}{{ '{' }} color {{ '}' }}{{ '}' }}</mark>&#x22;&#x3E;...&#x3C;/div&#x3E;</pre>
 </section>

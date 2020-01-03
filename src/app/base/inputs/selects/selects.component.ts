@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectsComponent implements OnInit {
 
+  colors = [
+  	'blue',
+  	'outline-blue',
+  	'green',
+  	'outline-red'
+  ]
+
   constructor() { }
 
   ngOnInit() {

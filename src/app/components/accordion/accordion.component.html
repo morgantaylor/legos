@@ -1,5 +1,7 @@
 <h1>Accordion</h1>
 <section class="container">
+  <p>There are two types of accordions, <code>accordion</code> and <code>accordion--panel</code>. They have very different use cases.</p>
+  <p>Example: the floating navigation on the left side of the screen</p>
   <p>The accordion component is very simple with a few enhancements that you can add depending on what you want to use it for. By default, the accordion is in the closed state but with a slight modification, you can switch it to be open by default. The accordion will take up the entire space of its parent container or you can add a max-width property to the wrapper element. There are also additional modification styles you can add. See below for a list of them.</p>
   <h6>Attributes:</h6>
   <ul class="list--unstyled">
@@ -106,7 +108,7 @@
       <i aria-hidden="true" aria-label="accordion toggle icon"></i>
       <div class="accordion__title">
         Header 2 w/ icon
-        <span class="accordion__title--secondary"><span class="icon fas fa-info-circle" aria-hidden="true"></span></span>
+        <span class="accordion__title--secondary"><fa-icon icon="info-circle" class="icon" aria-hidden="true"></fa-icon></span>
       </div>
       <p class="accordion__container">
         <span>This is something in the container</span>
@@ -121,7 +123,7 @@
     &#x3C;div class=&#x22;accordion__title&#x22;&#x3E;
       Header 2
       <mark>&#x3C;span class=&#x22;accordion__title--secondary&#x22;&#x3E;secondary text&#x3C;/span&#x3E;</mark>
-      <mark>&#x3C;span class=&#x22;icon fas fa-info-circle&#x22; aria-hidden=&#x22;true&#x22;&#x3E;</mark>
+      <mark>&#x3C;fa-icon icon=&#x22;info-circle&#x22; class=&#x22;icon&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/fa-icon&#x3E;</mark>
     &#x3C;/span&#x3E;
     &#x3C;/div&#x3E;
     &#x3C;p class=&#x22;accordion__container&#x22;&#x3E;
@@ -131,23 +133,23 @@
 &#x3C;/div&#x3E;</pre>
   <hr>
   <h4>Skins</h4>
-  <p>There are four skin colors you can add to an accordion. They change the color, border-color, background-color, and arrow color. You have to put the skin on the accordion element, inside the <code>.accordion__wrapper</code> or it will not work. This is only useful for the <code>.accordion--panel</code> because the default accordion was made to look like it was floating. The two accordions have very different use cases.</p>
-  <p>Example: the floating navigation on the left side of the screen</p>
+  <p>All basic skins are available for this component.</p>
+  <p>Put the skin on the accordion element, inside the <code>.accordion__wrapper</code> or it will not work. This is only useful for the panel accordions because the default accordion was made to look like it was floating.</p>
   <h6>Demo:</h6>
-  <div class="accordion__wrapper acc-custom" *ngFor="let accordionSkin of accordionSkins">
-    <div class="accordion--panel skin-{{ accordionSkin }}">
-      <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle" checked>
-      <i aria-hidden="true" aria-label="accordion toggle icon"></i>
-      <div class="accordion__title">
-        panel {{ accordionSkin }} accordion
-      </div>
-      <div class="accordion__container">
-<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
-  &#x3C;div class=&#x22;accordion--panel <mark>skin-{{ accordionSkin }}</mark>&#x22;&#x3E;
-    ...
-  &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</pre>
+  <div *ngFor="let accordionSkin of accordionSkins">
+    <div class="accordion__wrapper acc-custom">
+      <div class="accordion--panel skin-{{ accordionSkin }}">
+        <input type="checkbox" aria-label="accordion toggle" class="accordion__toggle">
+        <i aria-hidden="true" aria-label="accordion toggle icon"></i>
+        <div class="accordion__title">
+          panel {{ accordionSkin }} accordion
+        </div>
+        <div class="accordion__container">a {{ accordionSkin }} accordion</div>
       </div>
     </div>
   </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;accordion__wrapper&#x22;&#x3E;
+  &#x3C;div class=&#x22;accordion--panel <mark>skin-{{ '{' }}{{ '{' }} color {{ '}' }}{{ '}' }}</mark>&#x22;&#x3E;...&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
 </section>

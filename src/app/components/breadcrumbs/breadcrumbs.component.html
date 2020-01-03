@@ -23,14 +23,16 @@
 &#x3C;/ol&#x3E;</pre>
   <hr>
   <h4>Skins</h4>
-  <p>The basic skins are available for this component. Add <code>.breadcrumb--{{ '{' }}color{{ '}' }}</code> with <code>.breadcrumb</code> class. This will alter the color used for the active <code>breadcrumb__item</code>.</p>
+  <p>All basic skins are available for this component.</p>
   <p>* NOTE: There is no gray color because the default color for previous breadcrumb links is already gray.</p>
-  <h6>Demo:</h6>
-  <ol *ngFor="let color of colors" class="breadcrumb breadcrumb--{{ color }}">
-    <li class="breadcrumb__item"><a href="#">Home</a></li>
-    <li class="breadcrumb__item"><a href="#">Exercises</a></li>
-    <li class="breadcrumb__item active">{{ color }}</li>
-  </ol>
-  <h6>Markup:</h6>
-<pre *ngFor="let color of colors">&#x3C;ol class=&#x22;<mark>breadcrumb breadcrumb--{{ color }}</mark>&#x22;&#x3E;...&#x3C;/ol&#x3E;</pre>
+  <div *ngFor="let color of colors" class="breadcrumb skin--{{ color }}">
+    <h6>Demo:</h6>
+    <ol>
+      <li class="breadcrumb__item"><a href="#">Home</a></li>
+      <li class="breadcrumb__item"><a href="#">Exercises</a></li>
+      <li class="breadcrumb__item active">{{ color }}</li>
+    </ol>
+    <h6>Markup:</h6>
+<pre>&#x3C;ol class=&#x22;breadcrumb <mark>skin-{{ '{' }}{{ '{' }} color {{ '}' }}{{ '}' }}</mark>&#x22;&#x3E;...&#x3C;/ol&#x3E;</pre>
+  </div>
 </section>

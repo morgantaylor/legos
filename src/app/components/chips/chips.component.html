@@ -12,29 +12,15 @@
   &#x3C;span class=&#x22;<mark>chip</mark>&#x22;&#x3E;Hockey&#x3C;/span&#x3E;
 &#x3C;/div&#x3E;</pre>
   <hr>
-  <h4>Skins</h4>
-  <p>Add a skin to the <code>.chip</code> element. The skin will alter the background color, font color, border color, and if the chips are removable the close icon color as well. There are two options for skins that can be applied. Just like other elements, there is a filled skin and an outlined skin. See below for examples.</p>
-  <h6>Demo:</h6>
-  <div class="chips">
-    <span class="chip">No Skin</span>
-    <span *ngFor="let chip of chips" class="chip skin-{{ chip[0] }}">{{ chip[1] }}</span>
-  </div>
-  <div class="chips">
-    <span class="chip">No Skin</span>
-    <span *ngFor="let chip of chips" class="chip skin-outline-{{ chip[0] }}">{{ chip[1] }}</span>
-  </div>
-  <h6>Markup:</h6>
-<pre>&#x3C;div class&#x22;chips&#x22;&#x3E;
-  &#x3C;span class=&#x22;chip <mark>skin-green</mark>&#x22;&#x3E;Hockey&#x3C;/span&#x3E;
-  &#x3C;span class=&#x22;chip <mark>skin-outline-blue</mark>&#x22;&#x3E;Lacrosse&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;chip <mark>skin-red</mark>&#x22;&#x3E;Baseball&#x3C;/span&#x3E;
-&#x3C;div/&#x3E;</pre>
-  <hr>
   <h4>Removable (Optional)</h4>
   <p>You may want to allow the user to remove chips. Add the <code>--removable</code> modifier to the <code>.chip</code> class and add the icon element after your chip text. This will add the "x" icon to the end of the chip and allow the user to delete the chip.</p>
   <h6>Demo:</h6>
   <div class="chips">
-    <span *ngFor="let chip of chips" class="chip--removable skin-{{ chip[0] }}">
+    <span *ngFor="let chip of chips" class="chip--removable chip--{{ chip[0] }}">
+      {{ chip[1] }}
+      <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true"></fa-icon>
+    </span>
+    <span *ngFor="let chip of chips" class="chip--removable chip--outline-{{ chip[0] }}">
       {{ chip[1] }}
       <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true"></fa-icon>
     </span>
@@ -46,4 +32,18 @@
     <mark>&#x3C;i class=&#x22;icon fas fa-times chip__close-btn&#x22; aria-hidden=&#x22;true&#x22; aria-label=&#x22;&#x22;&#x3E;&#x3C;/i&#x3E;</mark>
   &#x3C;/span&#x3E;
 &#x3C;/div&#x3E;</pre>
+  <hr>
+  <h4>Skins</h4>
+  <p>Chips have their own specific skin styles. They are very similar to the global skins but with additional styles just for them. The skin class controls background color, font color, shadow color, border color, close button color (optional).</p>
+  <p>Add a skin to the <code>.chip</code> element. The skin will also alter the close icon color if present and shadow on the chip.</p>
+  <h6>Demo:</h6>
+  <div class="chips" *ngFor="let chip of chips">
+    <span class="chip chip--{{ chip[0] }}">chip--{{ chip[0] }}</span>
+    <span class="chip chip--outline-{{ chip[0] }}">chip--outlined-{{ chip[0] }}</span>
+  </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;div class&#x22;chips&#x22;&#x3E;
+  &#x3C;span class=&#x22;chip <mark>chip--green</mark>&#x22;&#x3E;Hockey&#x3C;/span&#x3E;
+  &#x3C;span class=&#x22;chip <mark>chip--outline-blue</mark>&#x22;&#x3E;Lacrosse&#x3C;/span&#x3E;
+&#x3C;div/&#x3E;</pre>
 </section>

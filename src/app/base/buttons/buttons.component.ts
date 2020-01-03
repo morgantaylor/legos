@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
+  colors = [
+    'blue',
+    'green',
+    'red',
+    'orange',
+    'gray'
+  ]
+
   constructor() { }
 
   ngOnInit() {

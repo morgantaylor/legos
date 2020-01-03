@@ -11,8 +11,8 @@
 </div>
 <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>switch</mark>&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; <mark>aria-label</mark>=&#x22;light switch toggle&#x22;&#x3E;
-  &#x3C;div class=&#x22;switch__title&#x22;&#x3E;label text here&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;<mark>switch__title</mark>&#x22;&#x3E;Label&#x3C;/div&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; <mark>aria-label</mark>=&#x22;&#x22;&#x3E;
   &#x3C;span&#x3E;
     &#x3C;span&#x3E;Off&#x3C;/span&#x3E;
     &#x3C;span&#x3E;On&#x3C;/span&#x3E;
@@ -42,32 +42,33 @@
   </span>
 </div>
 <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>switch--inline</mark>&#x22;&#x3E;
-  ...
-&#x3C;/div&#x3E;</pre>
+<pre>&#x3C;div class=&#x22;<mark>switch--inline</mark>&#x22;&#x3E;...&#x3C;/div&#x3E;</pre>
 <hr>
 <h4>Skins</h4>
-<p>Default skins availible:</p>
-<div *ngFor="let skin of skins">
-  <h6>Demo: <code>switch--{{ skin }}</code></h6>
-  <div class="switch switch--{{ skin }}">
+<p>All basic skins are available for this component.</p>
+<p>Add the skin class to the input element inside the switch for the class to take affect.</p>
+<div *ngFor="let color of colors">
+  <h6>Demo: <code>switch--{{ color }}</code></h6>
+  <div class="switch">
     <div class="switch__title">Light Switch</div>
-    <input type="checkbox" aria-label="light switch toggle" checked>
+    <input type="checkbox" class="skin-{{ color }}" aria-label="light switch toggle" checked>
     <span>
       <span>Off</span>
       <span>On</span>
       <a></a>
     </span>
   </div>
-  <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>switch switch--{{ skin }}</mark>&#x22;&#x3E;
+</div>
+<h6>Markup:</h6>
+<pre>&#x3C;div class=&#x22;switch&#x22;&#x3E;
+  &#x3C;div class=&#x22;switch__title&#x22;&#x3E;Label&#x3C;/div&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;<mark>skin-{{ '{' }}{{ '{' }} color {{ '}' }}{{ '}' }}</mark>&#x22; aria-label=&#x22;&#x22;&#x3E;
   ...
 &#x3C;/div&#x3E;</pre>
-</div>
 <hr>
 <h4>Color Customization</h4>
 <p>To customize a switch with a specific color that isn't part of our default skins I recommend creating a new skin class.</p>
-<pre>&#x3C;div class="switch <mark>custom-skin</mark>"&#x3E;</pre>
+<pre>&#x3C;div class=&#x22;switch custom-skin&#x22;&#x3E;</pre>
 <p>Inside your stylesheet target these elements:</p> 
 <ul>
   <li><code>.switch input:checked + span</code> : targets the background color of the switch when it's on</li>

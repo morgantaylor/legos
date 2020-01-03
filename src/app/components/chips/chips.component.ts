@@ -9,9 +9,10 @@ export class ChipsComponent implements OnInit {
 
   chips = [
     ['green', 'Hockey'],
-    ['gray', 'Lacrosse'],
+    ['blue', 'Football'],
     ['red', 'Baseball'],
-    ['blue', 'Football']
+    ['orange', 'Rugby'],
+    ['gray', 'Lacrosse']
   ]
   
   constructor() { }

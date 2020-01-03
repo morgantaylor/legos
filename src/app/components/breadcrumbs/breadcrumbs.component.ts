@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class BreadcrumbsComponent implements OnInit {
 
   colors = [
+    'blue',
     'green',
-    'red',
-    'blue'
+    'red'
   ]
 
   constructor() { }

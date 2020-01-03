@@ -119,10 +119,12 @@
 &#x3C;/nav&#x3E;</pre>
   <hr>
   <h4>Skins</h4>
-  <div *ngFor="let skin of skins">
-    <h6>Demo: <code>pagination--{{ skin }}</code></h6>
+  <p>All basic skins are available for this component.</p>
+  <p>Add the skin class to the main pagination element for the class to take affect.</p>
+  <div *ngFor="let color of colors">
+    <h6>Demo: <code>pagination--{{ color }}</code></h6>
     <div class="flex-container">
-      <nav class="pagination pagination--{{ skin }}" role="navigation" aria-label="Pagination Navigation">
+      <nav class="pagination pagination--{{ color }}" role="navigation" aria-label="Pagination Navigation">
         <span class="pagination__item--first disabled" role="button">
           <a aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
@@ -140,9 +142,7 @@
         </span>
       </nav>
     </div>
-    <h6>Markup:</h6>
-<pre>&#x3C;nav class=&#x22;pagination <mark>pagination--green</mark>&#x22; role=&#x22;navigation&#x22;&#x3E;
-  ...
-&#x3C;/nav&#x3E;</pre>
   </div>
+  <h6>Markup:</h6>
+<pre>&#x3C;nav class=&#x22;pagination <mark>pagination--{{ '{' }}{{ '{' }} color {{ '}' }}{{ '}' }}</mark>&#x22; role=&#x22;navigation&#x22;&#x3E;</pre>
 </section>

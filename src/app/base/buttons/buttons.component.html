@@ -9,79 +9,58 @@
     <li><code>value</code></li>
   </ul>
   <hr>
-  <h4>Colors</h4>
+  <h4>Skin</h4>
+  <p>Buttons have their own specific skin styles. They are very similar to the global skins but with additional styles just for them.</p>
   <ul>
-    <li class="color-swatch"><code>--primary</code><span class="swatch-primary"></span></li>
-    <li class="color-swatch"><code>--success</code><span class="swatch-success"></span></li>
-    <li class="color-swatch"><code>--danger </code><span class="swatch-danger"></span></li>
-    <li class="color-swatch"><code>--default</code><span class="swatch-default"></span></li>
+    <li *ngFor="let color of colors" class="color-swatch"><code>btn--{{ color }}</code><span class="swatch {{ color }}"></span></li>
+    <li *ngFor="let color of colors" class="color-swatch"><code>btn--outline-{{ color }}</code><span class="swatch outline-{{ color }}"></span></li>
   </ul>
   <hr>
   <h4>Filled</h4>
   <p>Filled buttons have colored borders and backgrounds with white font color.</p>
   <h6>Demo:</h6>
-  <div>
-    <button type="button" class="btn btn--primary">primary</button>
-    <button type="button" class="btn btn--success">success</button>
-    <button type="button" class="btn btn--danger">danger</button>
-    <button type="button" class="btn btn--default">default</button>
-  </div>
-  <div>
-    <button type="button" class="btn btn--primary" disabled>disabled primary</button>
-    <button type="button" class="btn btn--success" disabled>disabled success</button>
-    <button type="button" class="btn btn--danger" disabled>disabled danger</button>
-    <button type="button" class="btn btn--default" disabled>disabled default</button>
+  <div *ngFor="let color of colors">
+    <button type="button" class="btn btn--{{ color }}">{{ color }}</button>
+    <button type="button" class="btn btn--{{ color }}" disabled>disabled {{ color }}</button>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;<mark>btn btn--default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
+<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;btn <mark>btn--blue</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn <mark>btn--green</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
   <hr>
   <h4>Outlined</h4>
   <p>Outlined buttons only have colored text and borders, otherwise, they are the same as filled buttons. The same rules apply.</p>
   <h6>Demo:</h6>
-  <div>
-    <button type="button" class="btn btn--outline-primary">outlined primary</button>
-    <button type="button" class="btn btn--outline-success">outlined success</button>
-    <button type="button" class="btn btn--outline-danger">outlined danger</button>
-    <button type="button" class="btn btn--outline-default">outlined default</button>
-  </div>
-  <div>
-    <button type="button" class="btn btn--outline-primary" disabled>disabled outlined primary</button>
-    <button type="button" class="btn btn--outline-success" disabled>disabled outlined success</button>
-    <button type="button" class="btn btn--outline-danger" disabled>disabled outlined danger</button>
-    <button type="button" class="btn btn--outline-default" disabled>disabled outlined default</button>
+  <div *ngFor="let color of colors">
+    <button type="button" class="btn btn--{{ color }}">outlined {{ color }}</button>
+    <button type="button" class="btn btn--outline-{{ color }}" disabled>outlined {{ color }}</button>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;<mark>btn btn--outline-default</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
+<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;btn <mark>btn--outline-red</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn <mark>btn--outline-orange</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
   <hr>
   <h4>Links</h4>
-  <p>This element is not a <code>&#x3C;button&#x3E;</code> tag, it is infact <code>&#x3C;a&#x3E;</code> tag.</p>
+  <p>This element is not a <code>&#x3C;button&#x3E;</code> element, it is infact an <code>&#x3C;a&#x3E;</code> element.</p>
   <p>While not specifically a button (it does not get the <code>.btn</code> base) links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space.  A link takes up only the amount of space it needs for what's inside of it, which is unlike buttons that have set padding.</p>
+  <p>Links do not have outline skins like buttons do.</p>
+  <p><sup>*</sup>Note: Anchor tags do not have a <code>:disabled</code> state. Use the <code>aria-disabled=&#x22;true&#x22;</code> attribute to style a disabled anchor element the same way a disabled <code>button</code> is styles.</p>
   <h6>Demo:</h6>
   <div>
-    <a type="button" class="link--primary link-demo">link primary / default</a>
-    <a type="button" class="link--success link-demo">link success</a>
-    <a type="button" class="link--danger link-demo">link danger</a>
-    <a type="button" class="link--gray link-demo">link gray</a>
-    <div class="custom-bg-dark link-demo"><a type="button" class="link--white">link white</a></div>
-  </div>
-  <br>
-  <div>
-    <a type="button" class="link--primary link-demo" disabled>disabled link primary / default</a>
-    <a type="button" class="link--success link-demo" disabled>disabled link success</a>
-    <a type="button" class="link--danger link-demo" disabled>disabled link danger</a>
-    <a type="button" class="link--gray link-demo" disabled>disabled link gray</a>
-    <div class="custom-bg-dark"><a type="button" class="link--white" disabled>link white</a></div>
+    <div *ngFor="let color of colors">
+      <a type="button" class="link--{{ color }} link-demo">link {{ color }}</a>
+      <a type="button" class="link--{{ color }} link-demo" aria-disabled="true">disabled link {{ color }}</a>
+    </div>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;a class=&#x22;<mark>link--default</mark>&#x22;&#x3E;...&#x3C;/a&#x3E;</pre>
+<pre>&#x3C;a class=&#x22;<mark>link--blue</mark>&#x22;&#x3E;...&#x3C;/a&#x3E;
+&#x3C;a class=&#x22;<mark>link--green</mark>&#x22; <mark>aria-disabled=&#x22;true&#x22;</mark>&#x3E;...&#x3C;/a&#x3E;</pre>
   <hr>
   <h4>Block Buttons</h4>
   <p>Block buttons span the entire width of their parent container.</p>
   <h6>Demo:</h6>
   <div class="container" style="max-width: 400px; border: 1px solid #999; padding: 10px; border-radius: 6px; margin: 0;">
-    <button type="button" class="btn btn--danger btn--block">Default Size</button>
-    <button type="button" class="btn btn--outline-danger btn--block">Default Size</button>
+    <button type="button" class="btn btn--red btn--block">Default Size</button>
+    <button type="button" class="btn btn--outline-red btn--block">Default Size</button>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;<mark>btn btn--danger btn--block</mark>&#x22;&#x3E;Default Size&#x3C;/button&#x3E;</pre>
+<pre>&#x3C;button type=&#x22;button&#x22; class=&#x22;btn <mark>btn--block</mark>&#x22;&#x3E;Default Size&#x3C;/button&#x3E;</pre>
 </section>

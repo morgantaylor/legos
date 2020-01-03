@@ -106,6 +106,37 @@
   <h6>Markup:</h6>
 <pre>&#x3C;div class=&#x22;<mark>tab--bordered</mark>&#x22;&#x3E;...&#x3C;/div&#x3E;</pre>
   <hr>
+  <h4>Skins</h4>
+  <p>Skins have their own specific skin styles. They are very similar to the global skins but with additional styles just for them.</p>
+  <p>Add a skin to the <code>.chip</code> element. The skin will also alter the close icon color if present and shadow on the chip.</p>
+  <h6>Demo:</h6>
+  <div class="tab--bordered tab--green">
+    <input id="tab-8" type="radio" name="tabs8" aria-label="Thing 5 tab" checked>
+    <label class="border--bottom" for="tab-8">
+      <fa-icon icon="code" class="icon" aria-hidden="true"></fa-icon>
+      <span>Thing 1</span>
+    </label>
+    <input id="tab-9" type="radio" name="tabs9" aria-label="Thing 6 tab">
+    <label class="border--bottom" for="tab-9">
+      <fa-icon icon="code" class="icon" aria-hidden="true"></fa-icon>
+      <span>Thing 2</span>
+    </label>
+    <section id="content-8" class="tab__content">
+      <h3>Headline 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+      cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+    <section id="content-9" class="tab__content">
+      <h3>Headline 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    </section>
+  </div>
+  <h6>Markup:</h6>
+  <pre>&#x3C;div class=&#x22;tab--bordered <mark>tab--green</mark>&#x22;&#x3E;...&#x3C;/div&#x3E;</pre>
+  <hr>
   <h4>Tab Amount</h4>
   <p>Depending on how many tabs are needed you might want to customize your CSS. By default three tabs are generated for use but if you need more than that add the below code to your Sass file to generate more.</p>
   <p><code>$tabCount</code> designates how many tabs you're going to need and how many should be generated in your CSS file.</p>

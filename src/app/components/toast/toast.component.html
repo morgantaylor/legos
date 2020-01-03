@@ -37,51 +37,17 @@
   &#x3C;/div&#x3E;
   &#x3C;div class=&#x22;toast__body&#x22;&#x3E;A toast with an optional dismiss&#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
-  <h4>Colors</h4>
-  <ul>
-    <li><code>toast--danger</code></li>
-    <li><code>toast--success</code></li>
-    <li><code>toast--primary</code></li>
-    <li><code>toast--warning</code></li>
-  </ul>
-  <p>Skins control:</p> 
-  <ul>
-    <li>Background Color</li>
-    <li>Font Color</li>
-    <li>Border Color</li>
-    <li>Close Button Color (optional add-on)</li>
-  </ul>
+  <h4>Skin</h4>
+  <p>All basic skins are available for this component.</p>
+  <p>Put the skin on the <code>toast</code> element.</p>
   <h6>Demo:</h6>
-  <div class="toast demo toast--danger" role="toast">
-    <div class="toast__body">This is a danger toast
-      <button type="button" class="toast__close" aria-label="close danger toast">
-        <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
-      </button>
-    </div>
-  </div>
-  <div class="toast demo toast--success">
-    <div class="toast__body">This is a success toast
-      <button type="button" class="toast__close" aria-label="close danger toast">
-        <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
-      </button>
-    </div>
-  </div>
-  <div class="toast demo toast--primary">
-    <div class="toast__body">This is a primary toast
-      <button type="button" class="toast__close" aria-label="close primary toast">
-        <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
-      </button>
-    </div>
-  </div>
-  <div class="toast demo toast--warning">
-    <div class="toast__body">This is a warning toast
-      <button type="button" class="toast__close" aria-label="close warning toast">
+  <div *ngFor="let color of colors" class="toast demo skin-{{ color }}" role="toast">
+    <div class="toast__body">This is a {{ color }} toast
+      <button type="button" class="toast__close" aria-label="close toast">
         <fa-icon icon="times" class="icon" aria-hidden="true"></fa-icon>
       </button>
     </div>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;toast <mark>toast--success</mark>&#x22; role=&#x22;toast&#x22;&#x3E;
-  ...
-&#x3C;/div&#x3E;</pre>
+<pre>&#x3C;div class=&#x22;toast <mark>skin-green</mark>&#x22; role=&#x22;toast&#x22;&#x3E;...&#x3C;/div&#x3E;</pre>
 </section>

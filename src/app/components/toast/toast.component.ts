@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToastComponent implements OnInit {
 
+  colors = [
+    'blue',
+    'green',
+    'red',
+    'orange'
+  ]
+
   constructor() { }
 
   ngOnInit() {

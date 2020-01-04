@@ -8,12 +8,6 @@ export const COMPONENTITEMS: Item[] = [
     divider: false
   },
   {
-    link: 'components/alerts',
-    class: 'nav__item--nested',
-    name: 'Alert',
-    divider: false
-  },
-  {
     link: 'components/breadcrumbs',
     class: 'nav__item--nested',
     name: 'Breadcrumb',

@@ -6,7 +6,7 @@
     <li role="listitem"><code>role</code><sup>*</sup> : <code>'navigation'</code></li>
     <li role="listitem"><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
   </ul>
-  <p><sup>*</sup> Role needs to be used for the <code>nav</code> as well as the list items inside. There are many differnt roles that you can use, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques" target="_blank" rel="noreferrer">see here for a list</a>. For this component we will use the <code>role="button"</code> because all of our list items are buttons.</p>
+  <p><sup>*</sup> Role needs to be used for the <code>nav</code> as well as the list items inside. There are many different roles that you can use, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques" target="_blank" rel="noreferrer">see here for a list</a>. For this component we will use the <code>role="button"</code> because all of our list items are buttons.</p>
   <hr>
   <h4>Accessibility</h4>
   <p>For accessibility purposes, the pagination component should be wrapped with the <code>&#x3C;nav&#x3E;</code> element to identify it as a navigation section. It is also possible and highly likely that a page may have more than one <code>&#x3C;nav&#x3E;</code> element already (such as the primary navigation in the header, or sidebar navigation). Best practice dictates providing a descriptive <code>aria-label</code> for the <code>&#x3C;nav&#x3E;</code> element signaling to screen readers and other assistive technologies what the element is.</p>
@@ -15,7 +15,7 @@
   <h6>Demo:</h6>
   <div class="flex-container">
     <nav class="pagination" role="navigation" aria-label="Pagination Navigation">
-      <span class="pagination__item--first disabled" role="button">
+      <span class="pagination__item pagination__item--first disabled" role="button">
         <a aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
         </a>
@@ -25,7 +25,7 @@
       <span class="pagination__item" role="button"><a>3</a></span>
       <span class="pagination__item" role="button"><a>4</a></span>
       <span class="pagination__item" role="button"><a>5</a></span>
-      <span class="pagination__item--last" role="button">
+      <span class="pagination__item pagination__item--last" role="button">
         <a aria-label="Next">
           <span aria-hidden="true">&raquo;</span>
         </a>
@@ -34,10 +34,8 @@
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;nav class=&#x22;<mark>pagination</mark>&#x22; <mark>role=&#x22;navigation&#x22;</mark> <mark>aria-label</mark>=&#x22;Pagination Navigation&#x22;&#x3E;
-  &#x3C;span class=&#x22;<mark>pagination__item--first</mark> [ifDisabled]&#x22; <mark>role</mark>=&#x22;button&#x22;&#x3E;
-    &#x3C;a href=&#x22;&#x22; <mark>aria-label</mark>=&#x22;[Previous or < symbol]&#x22;&#x3E;
-      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;First&#x3C;/span&#x3E;
-    &#x3C;/a&#x3E;
+  &#x3C;span class=&#x22;<mark>pagination__item pagination__item--first</mark> [ifDisabled]&#x22; <mark>role</mark>=&#x22;button&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22; <mark>aria-label</mark>=&#x22;[Previous or < symbol]&#x22;&#x3E;First&#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
   &#x3C;span class=&#x22;<mark>pagination__item</mark>&#x22; <mark>role</mark>=&#x22;button&#x22;&#x3E;
     &#x3C;a href=&#x22;&#x22;&#x3E;&amp;#60;&#x3C;/a&#x3E;
@@ -54,10 +52,8 @@
   &#x3C;span class=&#x22;<mark>pagination__item</mark>&#x22; <mark>role</mark>=&#x22;button&#x22;&#x3E;
     &#x3C;a href=&#x22;&#x22;&#x3E;&amp;#62;&#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
-  &#x3C;span class&#x22;<mark>pagination__item--last</mark>&#x22; <mark>role</mark>=&#x22;button&#x22;&#x3E;
-    &#x3C;a href=&#x22;&#x22; <mark>aria-label</mark>=&#x22;[Next or > symbol]&#x22;&#x3E;
-      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;Last&#x3C;/span&#x3E;
-    &#x3C;/a&#x3E;
+  &#x3C;span class&#x22;<mark>pagination__item pagination__item--last</mark>&#x22; <mark>role</mark>=&#x22;button&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22; <mark>aria-label</mark>=&#x22;[Next or > symbol]&#x22;&#x3E;Last&#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
 &#x3C;/nav&#x3E;</pre>
   <hr>
@@ -66,15 +62,11 @@
   <h6>Demo:</h6>
   <div class="flex-container">
     <nav class="pagination" role="navigation" aria-label="Pagination Navigation">
-      <span class="pagination__item--first disabled" role="button">
-        <a aria-label="First">
-          <span aria-hidden="true">First</span>
-        </a>
+      <span class="pagination__item pagination__item--first disabled" role="button">
+        <a aria-label="First">First</a>
       </span>
       <span class="pagination__item" role="button">
-        <a aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
+        <a aria-label="Previous">&laquo;</a>
       </span>
       <span class="pagination__item active" role="button"><a>1</a></span>
       <span class="pagination__item" role="button"><a>2</a></span>
@@ -82,39 +74,27 @@
       <span class="pagination__item" role="button"><a>4</a></span>
       <span class="pagination__item" role="button"><a>5</a></span>
       <span  class="pagination__item"role="button">
-        <a aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
+        <a aria-label="Next">&raquo;</a>
       </span>
-      <span class="pagination__item--last" role="button">
-        <a aria-label="last">
-          <span aria-hidden="true">Last</span>
-        </a>
+      <span class="pagination__item pagination__item--last" role="button">
+        <a aria-label="last">Last</a>
       </span>
     </nav>
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;nav class=&#x22;pagination&#x22; role=&#x22;navigation&#x22;&#x3E;
-  &#x3C;span class=&#x22;pagination__item--first&#x22; role=&#x22;button&#x22;&#x3E;
-    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;First&#x22;&#x3E;
-      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;First&#x3C;/span&#x3E;
-    &#x3C;/a&#x3E;
+  &#x3C;span class=&#x22;pagination__item pagination__item--first&#x22; role=&#x22;button&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;First&#x22;&#x3E;First&#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
   &#x3C;span class=&#x22;pagination__item&#x22; role=&#x22;button&#x22;&#x3E;
-    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;[Previous or < symbol]&#x22;&#x3E;
-      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&laquo;&#x3C;/span&#x3E;
-    &#x3C;/a&#x3E;
+    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;[Previous or < symbol]&#x22;&#x3E;&laquo;&#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
   ...
   &#x3C;span class=&#x22;pagination__item&#x22; role=&#x22;button&#x22;&#x3E;
-    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;[Next or > symbol]&#x22;&#x3E;
-      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&raquo;&#x3C;/span&#x3E;
-    &#x3C;/a&#x3E;
+    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;[Next or > symbol]&#x22;&#x3E;&raquo;&#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
-  &#x3C;span class=&#x22;pagination__item--last&#x22; role=&#x22;button&#x22;&#x3E;
-    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;Last&#x22;&#x3E;
-      &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;Last&#x3C;/span&#x3E;
-    &#x3C;/a&#x3E;
+  &#x3C;span class=&#x22;pagination__item pagination__item--last&#x22; role=&#x22;button&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22; aria-label=&#x22;Last&#x22;&#x3E;Last&#x3C;/a&#x3E;
   &#x3C;/span&#x3E;
 &#x3C;/nav&#x3E;</pre>
   <hr>
@@ -123,25 +103,19 @@
   <p>Add the skin class to the main pagination element for the class to take affect.</p>
   <div *ngFor="let color of colors">
     <h6>Demo: <code>pagination--{{ color }}</code></h6>
-    <div class="flex-container">
-      <nav class="pagination pagination--{{ color }}" role="navigation" aria-label="Pagination Navigation">
-        <span class="pagination__item--first disabled" role="button">
-          <a aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </span>
-        <span class="pagination__item active" role="button"><a>1</a></span>
-        <span class="pagination__item" role="button"><a>2</a></span>
-        <span class="pagination__item" role="button"><a>3</a></span>
-        <span class="pagination__item" role="button"><a>4</a></span>
-        <span class="pagination__item" role="button"><a>5</a></span>
-        <span class="pagination__item--last" role="button">
-          <a aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </span>
-      </nav>
-    </div>
+    <nav class="pagination pagination--{{ color }}" role="navigation" aria-label="Pagination Navigation">
+      <span class="pagination__item pagination__item--first disabled" role="button">
+        <a aria-label="Previous">&laquo;</a>
+      </span>
+      <span class="pagination__item active" role="button"><a>1</a></span>
+      <span class="pagination__item" role="button"><a>2</a></span>
+      <span class="pagination__item" role="button"><a>3</a></span>
+      <span class="pagination__item" role="button"><a>4</a></span>
+      <span class="pagination__item" role="button"><a>5</a></span>
+      <span class="pagination__item pagination__item--last" role="button">
+        <a aria-label="Next">&raquo;</a>
+      </span>
+    </nav>
   </div>
   <h6>Markup:</h6>
 <pre>&#x3C;nav class=&#x22;pagination <mark>pagination--{{ '{' }}{{ '{' }} color {{ '}' }}{{ '}' }}</mark>&#x22; role=&#x22;navigation&#x22;&#x3E;</pre>

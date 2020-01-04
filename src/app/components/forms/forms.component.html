@@ -15,7 +15,7 @@
   <hr>
   <h4>Accessibility</h4>
   <p>Forms are made of inputs, labels, and buttons. Make sure to match labels with their corresponding input using <code>for=&#x22;&#x22;</code> and <code>id=&#x22;&#x22;</code> attributes. Use the <code>placeholder=&#x22;&#x22;</code> attribute to give your users a hint as to how you want them to fill in certain input elements.</p>
-  <p>Associated classes: <code>.form__group</code>.</p>
+  <p>Associated classes: <code>.form-group</code>.</p>
   <p>This class groups together <code>&#x3C;label&#x3E;</code> and <code>&#x3C;input&#x3E;</code> elements so that they don't stray from each other. This is not needed for small inline forms, more so for stacked and aligned forms.</p>
   <hr>
   <h4>Labels</h4>
@@ -24,19 +24,18 @@
   <h4>Default</h4>
   <p>Our default forms make labels and inputs inline with eachother. By wrapping any form elements such as, inputs and labels, in a form element with the classname <code>.form</code> they will take on the correct styles.</p>
   <h6>Demo:</h6>
-  <form class="form">
-    <div class="form__group">
+  <form class="form--inline">
+    <div class="form-group">
       <label for="name">Name:</label>
       <input id="name" type="text" aria-label="name input field" placeholder="john doe">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="email">Email:</label>
       <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
     </div>
-    <button class="btn btn--green" type="submit">Submit</button>
   </form>
   <h6>Markup:</h6>
-<pre>&#x3C;form class=&#x22;<mark>form</mark>&#x22;&#x3E;
+<pre>&#x3C;form class=&#x22;<mark>form--inline</mark>&#x22;&#x3E;
   &#x3C;label for=&#x22;name&#x22;&#x3E;Name:&#x3C;/label&#x3E;
   &#x3C;input id=&#x22;name&#x22; type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
   &#x3C;label for=&#x22;email&#x22;&#x3E;Email:&#x3C;/label&#x3E;
@@ -48,11 +47,11 @@
   <p>To create a stacked form with input elements below their corresponding labels, use <code>.form--stacked</code> class on the &#x3C;form&#x3E; element.</p>
   <h6>Demo:</h6>
   <form class="form form--stacked">
-    <div class="form__group">
+    <div class="form-group">
       <label for="name">Name:</label>
       <input id="name" type="text" aria-label="name input field" placeholder="john doe">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="email">Email:</label>
       <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
     </div>
@@ -60,7 +59,7 @@
   </form>
   <h6>Markup:</h6>
 <pre>&#x3C;form class=&#x22;form <mark>form--stacked</mark>&#x22;&#x3E;
-  &#x3C;div class=&#x22;<mark>form__group</mark>&#x22;&#x3E;
+  &#x3C;div class=&#x22;<mark>form-group</mark>&#x22;&#x3E;
     &#x3C;label for=&#x22;name&#x22;&#x3E;Name:&#x3C;/label&#x3E;
     &#x3C;input id=&#x22;name&#x22; type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
   &#x3C;/div&#x3E;
@@ -71,19 +70,19 @@
   <p>There are three alignments you can choose for a form (left, middle, and right). To create an aligned form, add the <code>.form--aligned-[direction]</code> class to the <code>&#x3C;form&#x3E;</code> element. On smaller screens, the aligned forms will revert to a stacked form for better user experience.</p>
   <h6>Demo: Aligned-left</h6>
   <form class="form form--aligned-left">
-    <div class="form__group">
+    <div class="form-group">
       <label for="name">Name:</label>
       <input id="name" type="text" aria-label="name input field" placeholder="john doe">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="email">Email:</label>
       <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="address">A long label form element:</label>
       <input id="address" type="text" aria-label="example input field" placeholder="example">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="phone">Phone:</label>
       <input id="phone" type="phone" aria-label="phone input field" placeholder="(xxx)xxx-xxxx">
     </div>
@@ -91,19 +90,19 @@
   </form>
   <h6>Demo: Aligned-center</h6>
   <form class="form form--aligned-center">
-    <div class="form__group">
+    <div class="form-group">
       <label for="name">Name:</label>
       <input id="name" type="text" aria-label="name input field" placeholder="john doe">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="email">Email:</label>
       <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="address">A long label form element:</label>
       <input id="address" type="text" aria-label="text input field" placeholder="example">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="phone">Phone:</label>
       <input id="phone" type="phone" aria-label="phone input field" placeholder="(xxx)xxx-xxxx">
     </div>
@@ -111,19 +110,19 @@
   </form>
   <h6>Demo: Aligned-right</h6>
   <form class="form form--aligned-right">
-    <div class="form__group">
+    <div class="form-group">
       <label for="name">Name:</label>
       <input id="name" type="text" aria-label="name input field" placeholder="john doe">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="email">Email:</label>
       <input id="email" type="email" aria-label="email input field" placeholder="someone@something.com">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="address">A long label form element:</label>
       <input id="address" type="text" aria-label="text input field" placeholder="example">
     </div>
-    <div class="form__group">
+    <div class="form-group">
       <label for="phone">Phone:</label>
       <input id="phone" type="phone" aria-label="phone input field" placeholder="(xxx)xxx-xxxx">
     </div>
@@ -131,7 +130,7 @@
   </form>
   <h6>Markup:</h6>
 <pre>&#x3C;form class=&#x22;form <mark>form--aligned-[center]</mark>&#x22;&#x3E;
-  &#x3C;div class=&#x22;form <mark>form__group</mark>&#x22;&#x3E;
+  &#x3C;div class=&#x22;form <mark>form-group</mark>&#x22;&#x3E;
     &#x3C;label for=&#x22;name&#x22;&#x3E;Name:&#x3C;/label&#x3E;
     &#x3C;input id=&#x22;name&#x22; type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
   &#x3C;/div&#x3E;
@@ -144,11 +143,11 @@
   <form class="form form--stacked">
     <fieldset>
       <legend>User</legend>
-        <div class="form__group">
+        <div class="form-group">
           <label>Username</label>
           <input type="text" aria-label="username input field" placeholder="username">
         </div>
-        <div class="form__group">
+        <div class="form-group">
           <label>Password</label>
           <input type="password" aria-label="password input field" placeholder="password">
         </div>
@@ -159,11 +158,11 @@
 <pre>&#x3C;form class=&#x22;form form--stacked&#x22;&#x3E;
   <mark>&#x3C;fieldset&#x3E;</mark>
     <mark>&#x3C;legend&#x3E;User&#x3C;/legend&#x3E;</mark>
-      &#x3C;div class=&#x22;form__group&#x22;&#x3E;
+      &#x3C;div class=&#x22;form-group&#x22;&#x3E;
         &#x3C;label&#x3E;Username&#x3C;/label&#x3E;
         &#x3C;input type=&#x22;text&#x22; placeholder=&#x22;...&#x22;&#x3E;
       &#x3C;/div&#x3E;
-      &#x3C;div class=&#x22;form__group&#x22;&#x3E;
+      &#x3C;div class=&#x22;form-group&#x22;&#x3E;
         &#x3C;label&#x3E;Password&#x3C;/label&#x3E;
         &#x3C;input type=&#x22;password&#x22; placeholder=&#x22;...&#x22;&#x3E;
       &#x3C;/div&#x3E;

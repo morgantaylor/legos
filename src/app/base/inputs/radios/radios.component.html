@@ -18,10 +18,10 @@
 &#x3C;/label&#x3E;</pre>
   <hr>
   <h4>Radio Group Inline</h4>
-  <p>It is best practice to enclose radio inputs inside of a <code>input-group</code> element. Wrapping the radios keeps the corresponding question inline with the <code>radio</code> elements.</p>
+  <p>It is best practice to enclose radio inputs inside of a <code>form-group</code> element. Wrapping the radios keeps the corresponding question inline with the <code>radio</code> elements.</p>
   <h6>Demo:</h6>
-  <div class="input-group">
-    <label aria-label="question for radio1">The question for radio:</label>
+  <div class="form-group">
+    <label class="radio" aria-label="question for radio1">The question for radio:</label>
     <label class="radio" for="optionsRadios5">
       <input type="radio" name="radiodemo3" id="optionsRadios5" checked>Radio 1
     </label>
@@ -30,9 +30,9 @@
     </label>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>input-group</mark>&#x22;&#x3E;
-  &#x3C;label aria-label=&#x22;&#x22;>The question for radio:&#x3C;/label&#x3E;
-  &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>form-group</mark>&#x22;&#x3E;
+  &#x3C;label class=&#x22;<mark>radio</mark>&#x22; aria-label=&#x22;&#x22;>&#x3C;/label&#x3E;
+  &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;Question:&#x3E;
     &#x3C;input type=&#x22;<mark>radio</mark>&#x22; name=&#x22;&#x22; id=&#x22;&#x22; checked&#x3E;Radio 1
   &#x3C;/label&#x3E;
   &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
@@ -41,9 +41,9 @@
 &#x3C;/div&#x3E;</pre>
   <hr>
   <h4>Radio Group Stacked</h4>
-  <p>If you'd like to use this in a form or with a label for a question it is wrap each section in a <code>input-group</code> and put the question <code>label</code> inside. The radio inputs are already wrapped by their <code>label</code>.</p>
-  <div class="input-group--stacked">
-    <label aria-label="question for radio2">The question for radio:</label>
+  <p>If you'd like to use this in a form or with a label for a question it is wrap each section in a <code>form-group</code> and put the question <code>label</code> inside. The radio inputs are already wrapped by their <code>label</code>.</p>
+  <div class="form-group--stacked">
+    <label class="radio" aria-label="question for radio2">The question for radio:</label>
     <label for="optionsRadios3" class="radio">
       <input type="radio" name="radiodemo2" id="optionsRadios3" checked>Radio 1
     </label>
@@ -52,7 +52,7 @@
     </label>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>input-group--stacked</mark>&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>form-group--stacked</mark>&#x22;&#x3E;
   &#x3C;label class=&#x22;<mark>radio</mark>&#x22; for=&#x22;&#x22;&#x3E;
     &#x3C;input type=&#x22;<mark>radio</mark>&#x22; name=&#x22;&#x22; id=&#x22;&#x22; checked&#x3E;Radio 1
   &#x3C;/label&#x3E;

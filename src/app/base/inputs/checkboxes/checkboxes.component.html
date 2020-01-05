@@ -18,10 +18,10 @@
 &#x3C;/label&#x3E;</pre>
   <hr>
   <h4>Checkbox Inline Group</h4>
-  <p>It is best practice to enclose checkbox inputs inside of an <code>input-group</code> element. Wrapping the checkboxes keeps the corresponding question inline with the <code>checkbox</code> elements.</p>
+  <p>It is best practice to enclose checkbox inputs inside of an <code>form-group</code> element. Wrapping the checkboxes keeps the corresponding question inline with the <code>checkbox</code> elements.</p>
   <h6>Demo:</h6>
-  <div class="input-group">
-    <label aria-label="question for checkbox1">The question for radio:</label>
+  <div class="form-group">
+    <label class="checkbox" aria-label="question for checkbox1">The question for radio:</label>
     <label class="checkbox">
       <input type="checkbox">Checkbox 1
     </label>
@@ -30,7 +30,8 @@
     </label>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>input-group</mark>&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>form-group</mark>&#x22;&#x3E;
+  &#x3C;label class=&#x22;checkbox&#x22; aria-label=&#x22;&#x22;&#x3E;Question:&#x3C;/label&#x3E;
   &#x3C;label class=&#x22;<mark>checkbox</mark>&#x22; for=&#x22;&#x22;&#x3E;
     &#x3C;input type=&#x22;<mark>checkbox</mark>&#x22; id=&#x22;&#x22; name=&#x22;&#x22;&#x3E;Checkbox 1
   &#x3C;/label&#x3E;
@@ -42,8 +43,8 @@
   <h4>Checkbox Group Stacked</h4>
   <p></p>
   <h6>Demo:</h6>
-  <div class="input-group--stacked">
-    <label aria-label="question for checkbox2">The question for radio:</label>
+  <div class="form-group--stacked">
+    <label class="checkbox" aria-label="question for checkbox2">The question for radio:</label>
     <label class="checkbox">
       <input type="checkbox">Checkbox 1
     </label>
@@ -52,7 +53,7 @@
     </label>
   </div>
   <h6>Markup:</h6>
-<pre>&#x3C;div class=&#x22;<mark>input-group--stacked</mark>&#x22;&#x3E;
+<pre>&#x3C;div class=&#x22;<mark>form-group--stacked</mark>&#x22;&#x3E;
   &#x3C;label class=&#x22;<mark>checkbox</mark>&#x22; for=&#x22;&#x22;&#x3E;
     &#x3C;input type=&#x22;<mark>checkbox</mark>&#x22; id=&#x22;&#x22; name=&#x22;&#x22;&#x3E;Checkbox 1
   &#x3C;/label&#x3E;

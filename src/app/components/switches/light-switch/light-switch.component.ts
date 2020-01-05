@@ -11,8 +11,7 @@ export class LightSwitchComponent implements OnInit {
     'blue',
     'green',
     'red',
-    'orange',
-    'gray'
+    'orange'
   ]
 
   constructor() { }

@@ -16,12 +16,8 @@
   <p>You may want to allow the user to remove chips. Add the <code>--removable</code> modifier to the <code>.chip</code> class and add the icon element after your chip text. This will add the "x" icon to the end of the chip and allow the user to delete the chip.</p>
   <h6>Demo:</h6>
   <div class="chips">
-    <span *ngFor="let chip of chips" class="chip--removable chip--{{ chip[0] }}">
-      {{ chip[1] }}
-      <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true"></fa-icon>
-    </span>
-    <span *ngFor="let chip of chips" class="chip--removable chip--outline-{{ chip[0] }}">
-      {{ chip[1] }}
+    <span class="chip--removable chip--green">
+      Hockey
       <fa-icon icon="times" class="icon chip__close-btn" aria-hidden="true"></fa-icon>
     </span>
   </div>

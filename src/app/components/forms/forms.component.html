@@ -1,28 +1,24 @@
 <h1>Form</h1>
 <section class="container">
-  <p>We spend a lot of our online time filling out forms. Whether we are creating a contact form, a shopping cart, or a survey form elements and how they all fit together cohesively are critical to web design. Hopefully these classes can help simplify the process.</p>
-  <h6>Attributes<sup>*</sup>:</h6>
+  <p>Forms are a large part of our daily lives. We spend our time filling out a contact form, adding items to a shopping cart, and taking a survey. Those form elements and how they all fit together are critical to web design and user experience.</p>
+  <h6>Attributes:</h6>
   <ul class="list--unstyled">
     <li role="listitem"><code>for</code> : <code>label</code> element</li>
     <li role="listitem"><code>id</code> : <code>input</code> element</li>
     <li role="listitem"><code>type</code> : <code>input</code> element</li>
     <li role="listitem"><code>placeholder</code> : <code>input</code> element</li>
-    <li role="listitem"><code>aria-label</code> : <code>input</code> element, defines a label for the element (only used when label text not visible on screen)</li>
+    <li role="listitem"><code>aria-label, title</code> : <code>input</code> element, defines a label for the element (only used when label text not visible on screen)</li>
     <li role="listitem"><code>type</code> : <code>button</code> element</li>
-    <li role="listitem"><code>title</code> : <code>button</code> element, when the button is just an icon and there is no inner content</li>
   </ul>
-  <p><sup>*</sup> These are used on form element items, not the form element itself.</p>
   <hr>
   <h4>Accessibility</h4>
-  <p>Forms are made of inputs, labels, and buttons. Make sure to match labels with their corresponding input using <code>for=&#x22;&#x22;</code> and <code>id=&#x22;&#x22;</code> attributes. Use the <code>placeholder=&#x22;&#x22;</code> attribute to give your users a hint as to how you want them to fill in certain input elements.</p>
-  <p>Associated classes: <code>.form-group</code>.</p>
-  <p>This class groups together <code>&#x3C;label&#x3E;</code> and <code>&#x3C;input&#x3E;</code> elements so that they don't stray from each other. This is not needed for small inline forms, more so for stacked and aligned forms.</p>
+  <p>Forms are made up of <code>input</code>, <code>label</code>, and <code>button</code> elements. Match <code>label</code> elements with its associated <code>input</code> element using the <code>for</code> and <code>id</code> attributes. Utilize the <code>placeholder</code> attribute for certain <code>input</code> elements that need to be given a hint.</p>
+  <h4>Form Group</h4>
+  <p>The <code>.form-group</code> class combines a <code>label</code> and <code>input</code> element. This is not needed for small inline forms. It is intended for lengthier <code>--stacked</code> or <code>--aligned</code> forms.</p>
   <hr>
   <h4>Labels</h4>
-  <p>It is recommend that you use <code>&#x3C;label&#x3E;</code> elements in a form and not <code>&#x3C;div&#x3E;</code> or <code>&#x3C;p&#x3E;</code> elements. The <code>.form__label</code> styles will override even the <code>&#x3C;p&#x3E;</code> tag styles but it is better to write semantic code from the beginning.</p>
+  <p>Don't use a <code>div</code> or <code>p</code> element instead of a <code>label</code> element in a form. The <code>.form__label</code> properties will override a paragraph element's characteristics but it is best practice to write semantic code.</p>
   <hr>
-  <h4>Default</h4>
-  <p>Our default forms make labels and inputs inline with eachother. By wrapping any form elements such as, inputs and labels, in a form element with the classname <code>.form</code> they will take on the correct styles.</p>
   <h6>Demo:</h6>
   <form class="form--inline">
     <div class="form-group">
@@ -44,7 +40,7 @@
 &#x3C;/form&#x3E;</pre>
   <hr>
   <h4>Stacked</h4>
-  <p>To create a stacked form with input elements below their corresponding labels, use <code>.form--stacked</code> class on the &#x3C;form&#x3E; element.</p>
+  <p>To create a stacked form with <code>input</code> elements below their corresponding <code>label</code> elements, add <code>--stacked</code> to the <code>.form</code> class on the <code>form</code> element.</p>
   <h6>Demo:</h6>
   <form class="form form--stacked">
     <div class="form-group">
@@ -67,7 +63,7 @@
 &#x3C;/form&#x3E;</pre>
   <hr>
   <h4>Aligned</h4>
-  <p>There are three alignments you can choose for a form (left, middle, and right). To create an aligned form, add the <code>.form--aligned-[direction]</code> class to the <code>&#x3C;form&#x3E;</code> element. On smaller screens, the aligned forms will revert to a stacked form for better user experience.</p>
+  <p>Three alignment classes are available, <code>-left</code>, <code>-middle</code>, and <code>-right</code>. To add an alignment to a form, add <code>.form--aligned-[direction]</code> to the <code>form</code> element. On smaller screens, the aligned forms will switch to a <code>--stacked</code> form for a better user experience.</p>
   <h6>Demo: Aligned-left</h6>
   <form class="form form--aligned-left">
     <div class="form-group">
@@ -138,7 +134,7 @@
 &#x3C;/form&#x3E;</pre>
   <hr>
   <h4>Legends</h4>
-  <p>Use the <code>&#x3C;fieldset&#x3E;</code> element to visually group related form elements. An optional <code>&#x3C;legend&#x3E;</code> ccan be used to give the group a name and bounding box.</p>
+  <p>Visually group related elements within the <code>fieldset</code> element. An optional <code>legend</code> can be used to give the group a name and border.</p>
   <h6>Demo:</h6>
   <form class="form form--stacked">
     <fieldset>

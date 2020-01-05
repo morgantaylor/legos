@@ -1,6 +1,6 @@
 <h1>Card</h1>
 <section class="container card-demo">
-  <p>The card component is built with content in mind. It had to be developed to be extremely versatile to accommodate as many different types of content in any way a user wants. With that in mind, the first demo is a classic representation of a card.</p>
+  <p>Card components are built around a content-first approach. They are extremely versatile to accommodate as many different types of content in any order a user wants.</p>
   <hr>
   <h6>Demo:</h6>
   <div class="card">
@@ -17,10 +17,10 @@
     &#x3C;span class=&#x22;<mark>card__text</mark>&#x22;&#x3E;card text&#x3C;/span&#x3E;
   &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;</pre>
-  <p>Next, we'll step through what options we can configure.</p>
+  <p>Next, we'll step through card options and how we can configure them.</p>
   <hr>
   <h4>Images</h4>
-  <p>Add an image to either the top or bottom of a card by adding an <code>&#x3C;img&#x3E;</code> or <code>&#x3C;div&#x3E;</code> element with the <code>.card__display--top</code> or <code>.card__display--bottom</code> class making sure to put it above or below the <code>.card__body</code> section.</p>
+  <p>Display an image or div element with the <code>.card__display--top</code> or <code>.card__display--bottom</code> classes. Make sure the image is inside the <code>.card__body</code> element.</p>
   <h6>Demo:</h6>
   <div class="flex-container">
     <div class="card">
@@ -94,7 +94,7 @@
 &#x3C;/div&#x3E;</pre>
   <hr>
   <h4>Sizes</h4>
-  <p>A card comes in three sizes. You can also customize the sizes on your own. The size of a card, if you don't add a specific size class defaults to medium. To add a size to a card add <code>.card--sm</code> or <code>.card--lg</code>.</p>
+  <p>Card components have three sizes available. The size of a card, if you don't add a specific class the default width is <code>300px</code>. Add <code>.card--sm</code> or <code>.card--lg</code> to the <code>.card</code> element to adjust.</p>
   <h6>Demo:</h6>
   <div class="flex-container cards-container">
     <div class="card card--sm">
@@ -126,7 +126,7 @@
   </div>
   <hr>
   <h4>Alignment</h4>
-  <p>Basic alignment is built-in. Add <code>.card--left</code>, <code>.card--centered</code>, or <code>.card--right</code> on the card element for positioning. Anything further then you'll need to add more custom styles to individual items. </p>
+  <p>Add <code>.card--left</code>, <code>.card--centered</code>, or <code>.card--right</code> on the <code>.card</code> element to change the alignment of the card content.</p>
   <h6>Demo:</h6>
   <div class="flex-container cards-container">
     <div class="card card--left">

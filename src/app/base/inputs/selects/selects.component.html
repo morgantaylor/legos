@@ -1,18 +1,18 @@
 <h1>Select</h1>
 <section class="container">
-  <p>Note that many native select menus—namely in Safari and Chrome—are not customizable. They have rounded corners that cannot be modified via the border-radius property. With our custom select element, we can customize whether you want rounded or squared corners.</p>
-  <p>To disabled a <code>select</code> component the inner <code>select</code> tag needs to be <code>:disabled</code> as well as a <code>.disabled</code> class added to the outer <code>select</code> component</p>
+  <p>Native select menus, namely in Safari and Chrome, are not customizable. They have rounded corners that cannot be modified with CSS which can be frustrating. This select component customizes the border-radius, color, and arrow icons.</p>
+  <p>To disable a select component the inner <code>select</code> element needs to be <code>:disabled</code>, and a <code>.disabled</code> class added to the select component wrapper.</p>
   <h6>Attributes:</h6>
   <ul class="list--unstyled" role="group">
     <li role="listitem"><code>name</code> : <code>select</code> element, specifies the name of the control group</li>
-    <li role="listitem"><code>multiple</code> : <code>select</code> element, indicates whether more than option is allowed to be selected</li>
-    <li role="listitem"><code>label</code> : <code>option</code> element, if there is not label present then the value becomes the label text</li>
+    <li role="listitem"><code>multiple</code> : <code>select</code> element, indicates whether more than one option is allowed to be selected</li>
+    <li role="listitem"><code>label</code> : <code>option</code> element, if there is no label present then the value attribute becomes the label text</li>
     <li role="listitem"><code>value</code> : <code>option</code> element, the value to be submitted with the form</li>
     <li role="listitem"><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
   </ul>
   <hr>
   <h4>Block Level</h4>
-  <p>When you want the select element to take up its entire parent container or span the entire line.</p>
+  <p>By default, the select component is a block element and takes up its entire parent container.</p>
   <h6>Demo:</h6>
   <div class="select">
     <select name="selectExample" id="selectExample" aria-label="select example">
@@ -33,7 +33,7 @@
 &#x3C;/div&#x3E;</pre>
   <hr>
   <h4>Inline</h4>
-  <p>If you want to put a <code>&#x3C;select&#x3E;</code> element next to another <code>&#x3C;input&#x3E;</code> element or <code>&#x3C;button&#x3E;</code> use the <code>.select--inline</code> class.</p>
+  <p>To make a select component inline with another inline element add the <code>.select--inline</code> class to the select wrapper.</p>
   <h6>Demo:</h6>
   <input type="email" aria-label="email input">
   <div class="select--inline">
@@ -53,11 +53,11 @@
 &#x3C;/div&#x3E;</pre>
   <hr>
   <h4>Squared Corners</h4>
-  <p>To change the corners of the <code>&#x3C;select&#x3E;</code> element to be squared add the <code>.select--squared</code> class to the <code>&#x3C;select&#x3E;</code> wrapper.</p>
+  <p>To change the <code>border-radius</code> on the select component to be squared add <code>.select--squared</code> to the select wrapper.</p>
   <h6>Demo:</h6>
   <div class="select--inline select--squared">
     <select name="selectExample" id="selectExample" aria-label="squared corners select example">
-      <option>Select and option</option>
+      <option>Select an option</option>
       <option value="1">Pure CSS</option>
       <option value="2">No JS</option>
       <option value="3">Nice!</option>

@@ -1,6 +1,6 @@
 <h1>Button</h1>
 <section class="container">
-  <p>When creating a button please be sure to use a <code>&#x3C;button&#x3E;</code> or <code>&#x3C;a&#x3E;</code> tag for accessibility purposes. There are three different types of buttons.</p>
+  <p>When creating a button use a <code>&#x3C;button&#x3E;</code> or <code>&#x3C;a&#x3E;</code> element for accessibility purposes. There are three different types of buttons.</p>
   <h6>Attributes:</h6>
   <ul class="list--unstyled">
     <li><code>type</code> : <code>&#x22;submit&#x22;</code>, <code>&#x22;reset&#x22;</code>, <code>&#x22;button&#x22;</code></li>
@@ -10,18 +10,18 @@
   </ul>
   <hr>
   <h4>States</h4>
-  <p>Buttons have three states besides the normal button state.</p>
+  <p>Buttons have three states besides the standard button state.</p>
   <p>They are <code>:hover</code>, <code>:active, .active</code> and <code>:disabled</code>.</p>
   <hr>
   <h4>Skin</h4>
-  <p>Buttons have their own specific skin styles. They are very similar to the global skins but with additional styles just for them.</p>
+  <p>Buttons are one of the components that have their own dedicated skin. It is very similar to global skins but with additional characteristics.</p>
   <ul>
     <li *ngFor="let color of colors" class="color-swatch"><code>btn--{{ color }}</code><span class="swatch {{ color }}"></span></li>
     <li *ngFor="let color of colors" class="color-swatch"><code>btn--outline-{{ color }}</code><span class="swatch outline-{{ color }}"></span></li>
   </ul>
   <hr>
   <h4>Filled</h4>
-  <p>Filled buttons have colored borders and backgrounds with white font color.</p>
+  <p>Filled buttons have colored borders, backgrounds, and white font color.</p>
   <h6>Demo:</h6>
   <div *ngFor="let color of colors">
     <button type="button" class="btn btn--{{ color }}">{{ color }}</button>
@@ -32,7 +32,7 @@
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn <mark>btn--green</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
   <hr>
   <h4>Outlined</h4>
-  <p>Outlined buttons only have colored text and borders, otherwise, they are the same as filled buttons. The same rules apply.</p>
+  <p>Outlined buttons are the reverse of filled buttons. Their font and border have color while the background is white. Otherwise, they are the same as filled buttons.</p>
   <h6>Demo:</h6>
   <div *ngFor="let color of colors">
     <button type="button" class="btn btn--outline-{{ color }}">outlined {{ color }}</button>
@@ -43,10 +43,10 @@
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn <mark>btn--outline-orange</mark>&#x22;&#x3E;...&#x3C;/button&#x3E;</pre>
   <hr>
   <h4>Links</h4>
-  <p>This element is not a <code>&#x3C;button&#x3E;</code> element, it is infact an <code>&#x3C;a&#x3E;</code> element.</p>
-  <p>While not specifically a button (it does not get the <code>.btn</code> base) links are still within the button category. They get the same skins and the same type of hover actions but do not take up the same amount of space.  A link takes up only the amount of space it needs for what's inside of it, which is unlike buttons that have set padding.</p>
-  <p>Links do not have outline skins like buttons do.</p>
-  <p><sup>*</sup>Note: Anchor tags do not have a <code>:disabled</code> state. Use the <code>aria-disabled=&#x22;true&#x22;</code> attribute to style a disabled anchor element the same way a disabled <code>button</code> is styles.</p>
+  <p>This element is not a <code>button</code> element, it is infact an <code>a</code> element.</p>
+  <p>While not specifically a button (it does not get the .btn base), links are still in the button category because they use the same skin and hover actions. A link is an inline element with text that takes up only the amount of space it needs, unlike buttons who have padding.</p>
+  <p>Outline skins are not available for links.</p>
+  <p><sup>*</sup>Note: Anchor elements do not have the <code>:disabled</code> state. Use the <code>aria-disabled=&#x22;true&#x22;</code> attribute to style a disabled anchor element the same as a disabled button.</p>
   <h6>Demo:</h6>
   <div>
     <div *ngFor="let color of colors">
@@ -59,7 +59,7 @@
 &#x3C;a class=&#x22;<mark>link--green</mark>&#x22; <mark>aria-disabled=&#x22;true&#x22;</mark>&#x3E;...&#x3C;/a&#x3E;</pre>
   <hr>
   <h4>Block Buttons</h4>
-  <p>Block buttons span the entire width of their parent container.</p>
+  <p>Block buttons take up the entire width of their parent container.</p>
   <h6>Demo:</h6>
   <div class="container" style="max-width: 400px; border: 1px solid #999; padding: 10px; border-radius: 6px; margin: 0;">
     <button type="button" class="btn btn--red btn--block">Default Size</button>

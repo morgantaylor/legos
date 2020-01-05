@@ -1,6 +1,6 @@
 <h1>Dropdown</h1>
 <section class="container">
-  <p>Our dropdowns are solely built with CSS without any need for Javascript. Under the hood, they are activated with an invisible input checkbox. Because of this if the dropdown is open you need to click it again to close it. Clicking outside of it will not close it, but you could add some custom javascript if that's your thing.</p>
+  <p>Our dropdowns are built with CSS without any need for Javascript. Under the hood, they are animated with a hidden input checkbox. Because of this, if the dropdown is open, click it again to close it. Clicking outside of the dropdown will not close it, but adding some custom javascript could easily change that.</p>
   <hr>
   <h6>Demo:</h6>
   <div class="dropdown">
@@ -40,7 +40,7 @@
     &#x3C;li class=&#x22;dropdown__item&#x22;&#x3E;...&#x3C;/li&#x3E;
   &#x3C;/ul&#x3E;
 &#x3C;/div&#x3E;</pre>
- <p>To disabled a <code>dropdown</code> the inner <code>input</code> needs to be <code>:disabled</code> as well as a <code>.disabled</code> class added to the <code>dropdown</code> component</p>
+ <p>To disable a dropdown component two things need to be happen. The <code>input</code> element needs to be <code>:disabled</code> as well as a <code>.disabled</code> class added to the dropdown component.</p>
 <pre>&#x3C;div class=&#x22;dropdown <mark>disabled</mark>&#x22;&#x3E;
   &#x3C;input type=&#x22;checkbox&#x22; <mark>disabled</mark> class=&#x22;dropdown__toggle&#x22; aria-label=&#x22;dropdown__toggle&#x22;&#x3E;
   ...

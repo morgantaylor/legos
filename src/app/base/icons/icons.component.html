@@ -1,11 +1,10 @@
 <h1>Icon</h1>
 <section class="container" ng-app="iconApp">
-  <p>LegoCSS uses <a href="http://fontawesome.io/icons/" target="_blank" rel="noreferrer">Font Awesome</a> icons. Visit the website to see all icons that are available. You can use the icons anywhere using a <code>span</code> or <code>i</code> elements. By default, the icons have a height of 14px.</p>
-  <p>See this <a href="https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility" target="_blank" rel="noreferrer">article</a> for more information on Font Awesome icon accessibility.</p>
+  <p>LegoCSS uses <a href="http://fontawesome.io/icons/" target="_blank" rel="noreferrer">Font Awesome</a>. Visit the website to see all the available icons. You can use these icons anywhere using a <code>span</code> or <code>i</code> element. To learn more about accessibility read their <a href="https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility" target="_blank" rel="noreferrer">article</a>.</p>
   <h6>Attributes:</h6>
   <ul class="list--unstyled">
     <li><code>aria-hidden</code> : <code>'true'</code></li>
-    <li><code>title</code> : it is best practice to add a title which provides a tooltip for sighted mouse users</li>
+    <li><code>title</code> : adding a title provides a tooltip for sighted mouse users</li>
   </ul>
   <hr>
   <h6>Demo:</h6>
@@ -19,18 +18,18 @@
   </div>
   <hr>
   <h4>Decorative:</h4>
-  <p>If the icon you are using is purely decorative, has no functional purpose, and will not effect a users interacts then the icon is decorative. In this case add an <code>aria-hidden</code> attribute to the icons so screen readers don't waste time trying to read what it is.</p>
+  <p>Decorative icons have no functional purpose and will not affect user interacts. Add an <code>aria-hidden</code> attribute to the icon, alerting screen readers to not read the element.</p>
   <h6>Demo:</h6>
   <fa-icon icon="shower" class="icon" aria-hidden="true"></fa-icon>
   <h6>Markup:</h6>
 <pre>&#x3C;i class=&#x22;icon fas fa-shower&#x22; <mark>aria-hidden=&#x22;true&#x22;</mark>&#x3E;&#x3C;/i&#x3E;</pre>
   <hr>
   <h4>Semantic:</h4>
-  <p>If an icon is being used to convey meaning, such as an button icon with no text associated with it, it is a semantic icon. There are a few things you need to do to make sure this icon is accessible for assisitive technologies.</p>
-  <p>If the icon is wrapped by another element such as a <code>button</code> or an <code>anchor</code> element then adding the <code>aria-label</code> to the outer element is suffiecient.</p>
+  <p>A semantic icon is used to convey meaning, such as inside a button with no associated text. To make this icon accessible for assistive technologies there are a few things you need to do.</p>
+  <p>If the icon is wrapped by another element such as a <code>button</code> or <code>anchor</code> element add an <code>aria-label</code> to the outer element. If the icon is by itself and not wrapped by another element add the <code>aria-label</code> to the icon element itself.</p>
   <h6>Attributes:</h6>
   <ul class="list--unstyled">
-    <li><code>aria-label</code> : adding a description to the element will provide an accessible alternative name for the element</li>
+    <li><code>aria-label</code> : provide an accessible alternative name for the element</li>
   </ul>
   <h6>Demo:</h6>
   <button type="button" class="btn btn--outline-blue" aria-label="settings button" title="settings button">
@@ -45,7 +44,7 @@
 <pre>&#x3C;i ... <mark>aria-hidden=&#x22;true&#x22; aria-label=&#x22;&#x22; title=&#x22;&#x22;</mark>&#x3E;&#x3C;/i&#x3E;</pre>
   <hr>
   <h4>Size Classes:</h4>
-  <p>Icons come with basic size classes. See demo below for example sizes.</p>
+  <p>All icons come with size classes. See the demo below for an example of how to use them.</p>
   <h6>Demo:</h6>
   <div class="column">
     <p>

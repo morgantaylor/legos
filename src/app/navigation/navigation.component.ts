@@ -17,7 +17,8 @@ export class NavigationComponent implements OnInit {
 
   @Input() isOpen: boolean;
   @Output() newItemEvent = new EventEmitter<boolean>();
-
+  newItem: boolean;
+  
   constructor() { }
 
   ngOnInit() {

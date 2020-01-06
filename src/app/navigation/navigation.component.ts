@@ -23,7 +23,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
   }
 
-  addNewItem(newItem: boolean) {
-    this.newItemEvent.emit(newItem);
+  addNewItem(value) {
+    this.newItemEvent.emit(value);
   }
 }

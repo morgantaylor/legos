@@ -12,8 +12,9 @@ export class MobileNavComponent implements OnInit {
   ngOnInit() {
   }
 
-  isOpen = false;
-  currentState = true;
+  isOpen: boolean = false;
+  currentState: boolean = true;
+  newItem: boolean;
 
   toggleNav(this) { 
     this.isOpen = !this.isOpen;

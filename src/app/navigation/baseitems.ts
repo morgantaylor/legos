@@ -62,15 +62,15 @@ export const BASEITEMS: Item[] = [
     divider: false
   },
   {
-    link: 'base/inputs/selects',
-    class: 'nav__item--nested',
-    name: 'Select',
-    divider: false
-  },
-  {
     link: 'base/inputs/input-groups',
     class: 'nav__item--nested',
     name: 'Input Group',
+    divider: false
+  },
+  {
+    link: 'base/inputs/selects',
+    class: 'nav__item--nested',
+    name: 'Select',
     divider: false
   },
   {

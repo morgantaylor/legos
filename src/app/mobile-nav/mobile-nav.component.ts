@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'mobile-nav',
@@ -12,4 +12,14 @@ export class MobileNavComponent implements OnInit {
   ngOnInit() {
   }
 
+  isOpen = false;
+  currentState = true;
+
+  toggleNav(this) { 
+    this.isOpen = !this.isOpen;
+  }
+
+  addItem(newItem: boolean) {
+    this.isOpen = newItem;
+  }
 }

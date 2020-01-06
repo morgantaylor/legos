@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Item } from '../navigation/item';
 import { BASEITEMS } from '../navigation/baseitems';
 import { COMPONENTITEMS } from '../navigation/componentitems';
@@ -14,26 +14,16 @@ export class NavigationComponent implements OnInit {
   baseitems = BASEITEMS;
   componentitems = COMPONENTITEMS;
   startingitems = STARTINGITEMS;
-  // accordionInput : string;
-  // mobileNav : string;
+
+  @Input() isOpen: boolean;
+  @Output() newItemEvent = new EventEmitter<boolean>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  // toggleAccordion(e){
-  //   this.accordionInput = e.target.parentElement.parentElement.children[0];
-  //   this.mobileNav = document.getElementById('mobile-nav');
-
-  //   console.log(this.accordionInput);
-  //   console.log(e.target.parentElement.parentElement.children[0]);
-
-  //   // console.log(this.mobileNav);
-  //   // console.log(document.getElementById('mobile-nav').checked);
-
-  //   this.accordionInput.checked = false;
-  //   // this.mobileNav = false;
-  // }
-
+  addNewItem(newItem: boolean) {
+    this.newItemEvent.emit(newItem);
+  }
 }

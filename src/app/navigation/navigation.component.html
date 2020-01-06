@@ -7,7 +7,8 @@
   </div>
   <div class="accordion__container">
     <ul class="list--nav">
-      <li *ngFor="let item of startingitems" 
+      <li *ngFor="let item of startingitems"
+         (click)="addNewItem(newItem)" 
          routerLink="{{ item.link }}" 
          [ngClass]="{'divider': item.divider}"
          class="{{ item.class }}">
@@ -24,7 +25,8 @@
   </div>
   <div class="accordion__container">
     <ul class="list--nav">
-      <li *ngFor="let item of baseitems" 
+      <li *ngFor="let item of baseitems"
+        (click)="addNewItem(newItem)" 
         routerLink="{{ item.link }}" 
         [ngClass]="{'divider': item.divider}"
         class="{{ item.class }}">
@@ -41,7 +43,8 @@
   </div>
   <div class="accordion__container">
     <ul class="list--nav">
-      <li *ngFor="let item of componentitems" 
+      <li *ngFor="let item of componentitems"
+         (click)="addNewItem(newItem)" 
          routerLink="{{ item.link }}" 
          [ngClass]="{'divider': item.divider}"
          class="{{ item.class }}">

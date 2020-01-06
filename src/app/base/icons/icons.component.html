@@ -2,9 +2,9 @@
 <section class="container" ng-app="iconApp">
   <p>LegoCSS uses <a href="http://fontawesome.io/icons/" target="_blank" rel="noreferrer">Font Awesome</a>. Visit the website to see all the available icons. You can use these icons anywhere using a <code>span</code> or <code>i</code> element. To learn more about accessibility read their <a href="https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility" target="_blank" rel="noreferrer">article</a>.</p>
   <h6>Attributes:</h6>
-  <ul class="list--unstyled">
-    <li><code>aria-hidden</code> : <code>'true'</code></li>
-    <li><code>title</code> : adding a title provides a tooltip for sighted mouse users</li>
+  <ul role="group">
+    <li role="listitem"><code>aria-hidden</code> : <code>'true'</code></li>
+    <li role="listitem"><code>title</code> : adding a title provides a tooltip for sighted mouse users</li>
   </ul>
   <hr>
   <h6>Demo:</h6>
@@ -28,8 +28,8 @@
   <p>A semantic icon is used to convey meaning, such as inside a button with no associated text. To make this icon accessible for assistive technologies there are a few things you need to do.</p>
   <p>If the icon is wrapped by another element such as a <code>button</code> or <code>anchor</code> element add an <code>aria-label</code> to the outer element. If the icon is by itself and not wrapped by another element add the <code>aria-label</code> to the icon element itself.</p>
   <h6>Attributes:</h6>
-  <ul class="list--unstyled">
-    <li><code>aria-label</code> : provide an accessible alternative name for the element</li>
+  <ul role="group">
+    <li role="listitem"><code>aria-label</code> : provide an accessible alternative name for the element</li>
   </ul>
   <h6>Demo:</h6>
   <button type="button" class="btn btn--outline-blue" aria-label="settings button" title="settings button">

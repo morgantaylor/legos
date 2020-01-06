@@ -1,0 +1,17 @@
+thead {
+  @media (max-width: 599px) {
+    display: none;
+  }
+}
+
+tbody td {
+
+  @media (max-width: 599px) {
+    display: flex;
+
+    &:first-of-type {
+      background-color: #7E7E7E;
+      color: #fff;
+    }
+  }
+}

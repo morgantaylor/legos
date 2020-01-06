@@ -15,8 +15,6 @@ export class InputsComponent implements OnInit {
     'email',
     'number',
     'password',
-    'range',
-    'search',
     'text',
     'time'
   ]

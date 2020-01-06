@@ -17,7 +17,7 @@
     <tbody>
       <tr *ngFor="let inputType of inputTypes">
         <td><code>&#x3C;input type=&#x22;{{ inputType }}&#x22;&#x3E;</code></td>
-        <td><input type="{{ inputType }}" title="{{ inputType }} input example"></td>
+        <td><input type="{{ inputType }}" class="input" title="{{ inputType }} input example"></td>
       </tr>
       <tr>
         <td><code>&#x3C;progress&#x3E;&#x3C;/progress&#x3E;</code></td>
@@ -35,7 +35,7 @@
       </tr>
       <tr>
         <td><code>&#x3C;textarea&#x3E;&#x3C;/textarea&#x3E;</code></td>
-        <td><textarea aria-label="textarea input example"></textarea></td>
+        <td><textarea class="input" aria-label="textarea input example"></textarea></td>
       </tr>
     </tbody>
   </table>

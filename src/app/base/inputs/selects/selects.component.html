@@ -11,9 +11,9 @@
     <li role="listitem"><code>aria-label</code> : defines a label for the element (only used when label text not visible on screen)</li>
   </ul>
   <hr>
-  <h4>Block Level</h4>
-  <p>By default, the select component is a block element and takes up its entire parent container.</p>
+  <p>By default, the select component is a inline element, just like <code>input</code> and <code>button</code> elements and takes up only the space it needs.</p>
   <h6>Demo:</h6>
+  <input type="email" class="input" aria-label="email input">
   <div class="select">
     <select name="selectExample" id="selectExample" aria-label="select example">
       <option>Choose</option>
@@ -22,6 +22,7 @@
       <option value="3">Nice!</option>
     </select>
   </div>
+  <button type="button" class="btn btn--blue">Button</button>
   <h6>Markup:</h6>
 <pre>&#x3C;div <mark>class=&#x22;select&#x22;</mark>&#x3E;
   &#x3C;select name=&#x22;name&#x22; id=&#x22;id&#x22;&#x3E;
@@ -32,11 +33,11 @@
   &#x3C;/select&#x3E;
 &#x3C;/div&#x3E;</pre>
   <hr>
-  <h4>Inline</h4>
-  <p>To make a select component inline with another inline element add the <code>.select--inline</code> class to the select wrapper.</p>
+  <h4>Stacked</h4>
+  <p>To make a select component stack ontop of another component add <code>--stacked</code> to the <code>.select</code> class wrapper.</p>
   <h6>Demo:</h6>
-  <input type="email" aria-label="email input">
-  <div class="select--inline">
+  <input type="email" class="input" aria-label="email input">
+  <div class="select--stacked">
     <select name="selectExample" id="selectExample" aria-label="inline select example">
       <option>Choose</option>
       <option value="1">Pure CSS</option>
@@ -46,7 +47,7 @@
   </div>
   <button type="button" class="btn btn--blue">Button</button>
   <h6>Markup:</h6>
-<pre>&#x3C;div <mark>class=&#x22;select--inline&#x22;</mark>&#x3E;
+<pre>&#x3C;div <mark>class=&#x22;select--stacked&#x22;</mark>&#x3E;
   &#x3C;select name=&#x22;name&#x22; id=&#x22;id&#x22;&#x3E;
     ...
   &#x3C;/select&#x3E;
@@ -55,7 +56,7 @@
   <h4>Squared Corners</h4>
   <p>To change the <code>border-radius</code> on the select component to be squared add <code>.select--squared</code> to the select wrapper.</p>
   <h6>Demo:</h6>
-  <div class="select--inline select--squared">
+  <div class="select select--squared">
     <select name="selectExample" id="selectExample" aria-label="squared corners select example">
       <option>Select an option</option>
       <option value="1">Pure CSS</option>

@@ -1,0 +1,10 @@
+> tbody > tr > td,
+> tbody > tr > th, 
+> tfoot > tr > td, 
+> tfoot > tr > th, 
+> thead > tr > td,
+> thead > tr > th {
+  @media (max-width: 599px) {
+    display: block;
+  }
+}

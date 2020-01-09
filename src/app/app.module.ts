@@ -9,7 +9,10 @@ import { AppBaseComponent } from './app-base/app-base.component';
 
 // Font Awesome icon imports
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faShower } from '@fortawesome/free-solid-svg-icons';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
@@ -150,6 +153,7 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 export class AppModule { 
 
   constructor() {
+    library.add(fas, fab);
     library.add(faShower, 
     faBookmark, 
     faCheck, 
@@ -169,6 +173,7 @@ export class AppModule {
     faCaretDown,
     faUpload,
     faCode,
-    faBars);
+    faBars,
+    faGithub);
   }
 }

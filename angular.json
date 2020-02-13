@@ -28,6 +28,7 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "dist/production",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -45,6 +46,7 @@
               "buildOptimizer": true
             },
             "staging": {
+              "outputPath": "dist/staging",
               "tsConfig": "src/tsconfig.app.stage.json",
               "fileReplacements": [
                 {

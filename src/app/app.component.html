@@ -1,3 +1,4 @@
+<div class="staging" *ngIf="stagingFlag">Staging Environment</div>
 <div class="page">
   <!-- <header style="position: fixed;">
     <mobile-nav id="nav-mobile" class="mobile-nav"></mobile-nav> 
@@ -22,7 +23,7 @@
   </header> -->
   <mobile-nav id="nav-mobile" class="mobile-nav skin-blue"></mobile-nav>  
   <aside class="sidebar skin-blue">
-    <h5 class="sidebar__title truncate" routerLink="/">LegoCSS</h5>
+    <h5 class="sidebar__title truncate" routerLink="/">{{title}}</h5>
     <navigation class="nav--vert nav--lego"></navigation>
   </aside>
   <main class="content">

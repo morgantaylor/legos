@@ -26,3 +26,15 @@ $font-lg      :   1.4em;
 $font-md      :   1.2em;
 $font-sm      :   .9em;
 $font-xs      :   .6em;
+
+.staging {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 4px;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: $lego-success;
+    color: $white;
+}

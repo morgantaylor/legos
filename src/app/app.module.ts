@@ -95,6 +95,8 @@ import { FormsComponent } from './components/forms/forms.component';
 
 // module/layout section
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -145,7 +147,8 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

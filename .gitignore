@@ -7,8 +7,6 @@
 /out-tsc
 *.map
 src/assets/*.css
-site.webmanifest
-src/site.webmanifest
 
 # dependencies
 /node_modules

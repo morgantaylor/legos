@@ -1,92 +1,92 @@
-import { Item } from '../navigation/item';
+import { Item } from './item';
 
-export const BASEITEMS: Item[] = [
+export const COREITEMS: Item[] = [
   {
-    link: 'base/colors',
+    link: 'core/colors',
     class: 'nav__item--nested',
     name: 'Color',
     divider: false
   },
   {
-    link: 'base/icons',
+    link: 'core/icons',
     class: 'nav__item--nested',
     name: 'Icon',
     divider: false
   },
   {
-    link: 'base/skins',
+    link: 'core/skins',
     class: 'nav__item--nested',
     name: 'Skin',
     divider: false
   },
   {
-    link: 'base/typography',
+    link: 'core/typography',
     class: 'nav__item--nested',
     name: 'Typography',
     divider: false
   },
   {
-    link: 'base/containers',
+    link: 'core/containers',
     class: 'nav__item--nested',
     name: 'Container',
     divider: true
   },
   {
-    link: 'base/buttons',
+    link: 'core/buttons',
     class: 'nav__item--nested',
     name: 'Button',
     divider: false
   },
   {
-    link: 'base/buttons/button-icons',
+    link: 'core/buttons/button-icons',
     class: 'nav__item--nested',
     name: 'Button Icon',
     divider: false
   },
   {
-    link: 'base/buttons/button-groups',
+    link: 'core/buttons/button-groups',
     class: 'nav__item--nested',
     name: 'Button Group',
     divider: false
   },
   {
-    link: 'base/buttons/dropdowns',
+    link: 'core/buttons/dropdowns',
     class: 'nav__item--nested',
     name: 'Dropdown',
     divider: true
   },
   {
-    link: 'base/inputs',
+    link: 'core/inputs',
     class: 'nav__item--nested',
     name: 'Input',
     divider: false
   },
   {
-    link: 'base/inputs/input-groups',
+    link: 'core/inputs/input-groups',
     class: 'nav__item--nested',
     name: 'Input Group',
     divider: false
   },
   {
-    link: 'base/inputs/selects',
+    link: 'core/inputs/selects',
     class: 'nav__item--nested',
     name: 'Select',
     divider: false
   },
   {
-    link: 'base/inputs/checkboxes',
+    link: 'core/inputs/checkboxes',
     class: 'nav__item--nested',
     name: 'Checkbox',
     divider: false
   },
   {
-    link: 'base/inputs/radios',
+    link: 'core/inputs/radios',
     class: 'nav__item--nested',
     name: 'Radio',
     divider: true
   },
   {
-    link: 'base/tables',
+    link: 'core/tables',
     class: 'nav__item--nested',
     name: 'Table',
     divider: false

@@ -7,7 +7,7 @@
 
 [[redirects]]
   from = "/build/component.min.css"
-  to = "https://legocsslibrary.netlify.app/build/component.min.cs"
+  to = "https://legocsslibrary.netlify.app/build/component.min.css"
   status = 200
   force = true
   headers = {X-From = "Netlify"}

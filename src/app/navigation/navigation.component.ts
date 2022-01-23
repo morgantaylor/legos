@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Item } from '../navigation/item';
-import { BASEITEMS } from '../navigation/baseitems';
+import { COREITEMS } from '../navigation/coreitems';
 import { COMPONENTITEMS } from '../navigation/componentitems';
 import { STARTINGITEMS } from '../navigation/startingitems';
 
@@ -11,7 +11,7 @@ import { STARTINGITEMS } from '../navigation/startingitems';
 })
 export class NavigationComponent implements OnInit {
 
-  baseitems = BASEITEMS;
+  coreitems = COREITEMS;
   componentitems = COMPONENTITEMS;
   startingitems = STARTINGITEMS;
 

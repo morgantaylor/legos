@@ -47,31 +47,31 @@ import { NamingComponent } from './getting-started/naming/naming.component';
 import { DocumentationComponent } from './getting-started/documentation/documentation.component';
 import { AccessabilityComponent } from './getting-started/accessability/accessability.component';
 
-// base section
-import { BaseComponent } from './base/base.component';
+// core section
+import { CoreComponent } from './core/core.component';
 
-import { ColorsComponent } from './base/colors/colors.component';
-import { SkinsComponent } from './base/skins/skins.component';
-import { IconsComponent } from './base/icons/icons.component';
-import { TypographyComponent } from './base/typography/typography.component';
+import { ColorsComponent } from './core/colors/colors.component';
+import { SkinsComponent } from './core/skins/skins.component';
+import { IconsComponent } from './core/icons/icons.component';
+import { TypographyComponent } from './core/typography/typography.component';
 
-import { ContainersComponent } from './base/containers/containers.component';
-import { ListComponent } from './base/list/list.component';
+import { ContainersComponent } from './core/containers/containers.component';
+import { ListComponent } from './core/list/list.component';
 
-import { ButtonsComponent } from './base/buttons/buttons.component';
-import { BtnIconsComponent } from './base/buttons/icons/icons.component';
-import { GroupsComponent } from './base/buttons/groups/groups.component';
-import { DropdownsComponent } from './base/buttons/dropdowns/dropdowns.component';
+import { ButtonsComponent } from './core/buttons/buttons.component';
+import { BtnIconsComponent } from './core/buttons/icons/icons.component';
+import { GroupsComponent } from './core/buttons/groups/groups.component';
+import { DropdownsComponent } from './core/buttons/dropdowns/dropdowns.component';
 
-import { InputsComponent } from './base/inputs/inputs.component';
-import { SelectsComponent } from './base/inputs/selects/selects.component';
-import { InputGroupsComponent } from './base/inputs/input-groups/input-groups.component';
-import { CheckboxesComponent } from './base/inputs/checkboxes/checkboxes.component';
-import { RadiosComponent } from './base/inputs/radios/radios.component';
+import { InputsComponent } from './core/inputs/inputs.component';
+import { SelectsComponent } from './core/inputs/selects/selects.component';
+import { InputGroupsComponent } from './core/inputs/input-groups/input-groups.component';
+import { CheckboxesComponent } from './core/inputs/checkboxes/checkboxes.component';
+import { RadiosComponent } from './core/inputs/radios/radios.component';
 
-import { TablesComponent } from './base/tables/tables.component';
-import { BorderedComponent } from './base/tables/bordered/bordered.component';
-import { StripedComponent } from './base/tables/striped/striped.component';
+import { TablesComponent } from './core/tables/tables.component';
+import { BorderedComponent } from './core/tables/bordered/bordered.component';
+import { StripedComponent } from './core/tables/striped/striped.component';
 
 // component section
 import { ComponentsComponent } from './components/components.component';
@@ -131,7 +131,7 @@ import { environment } from '../environments/environment';
     LightSwitchComponent,
     ContainersComponent,
     ToastComponent,
-    BaseComponent,
+    CoreComponent,
     ComponentsComponent,
     NamingComponent,
     AppBaseComponent,

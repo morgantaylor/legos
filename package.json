@@ -30,6 +30,7 @@
     "ajv-keywords": "^3.5.1",
     "core-js": "^2.6.11",
     "rxjs": "~6.2.0",
+    "sass": "^1.49.0",
     "serialize-javascript": "^2.1.2",
     "set-value": "^3.0.2",
     "zone.js": "^0.8.29"

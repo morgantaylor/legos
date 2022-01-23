@@ -26,7 +26,7 @@
   </div>
   <div class="accordion__container">
     <ul class="list--nav">
-      <li *ngFor="let item of baseitems"
+      <li *ngFor="let item of coreitems"
         (click)="addNewItem(newItem)" 
         routerLink="{{ item.link }}" 
         [ngClass]="{'divider': item.divider}"

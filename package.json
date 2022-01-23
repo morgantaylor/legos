@@ -32,7 +32,7 @@
     "rxjs": "~6.2.0",
     "sass": "^1.49.0",
     "serialize-javascript": "^2.1.2",
-    "set-value": "^3.0.2",
+    "set-value": "^4.0.1",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {

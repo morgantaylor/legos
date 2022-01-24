@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AccessabilityComponent } from './accessability.component';
+import { AccessibilityComponent } from './accessibility.component';
 
-describe('AccessabilityComponent', () => {
-  let component: AccessabilityComponent;
-  let fixture: ComponentFixture<AccessabilityComponent>;
+describe('AccessibilityComponent', () => {
+  let component: AccessibilityComponent;
+  let fixture: ComponentFixture<AccessibilityComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccessabilityComponent ]
+      declarations: [ AccessibilityComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AccessabilityComponent);
+    fixture = TestBed.createComponent(AccessibilityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

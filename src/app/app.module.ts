@@ -45,7 +45,7 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { IncludingComponent } from './getting-started/including/including.component';
 import { NamingComponent } from './getting-started/naming/naming.component';
 import { DocumentationComponent } from './getting-started/documentation/documentation.component';
-import { AccessabilityComponent } from './getting-started/accessability/accessability.component';
+import { AccessibilityComponent } from './getting-started/accessibility/accessibility.component';
 
 // core section
 import { CoreComponent } from './core/core.component';
@@ -138,7 +138,7 @@ import { environment } from '../environments/environment';
     GettingStartedComponent,
     IncludingComponent,
     DocumentationComponent,
-    AccessabilityComponent,
+    AccessibilityComponent,
     MobileNavComponent,
     FormsComponent,
     ListComponent,

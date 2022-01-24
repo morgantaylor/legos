@@ -11,7 +11,7 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { IncludingComponent } from './getting-started/including/including.component';
 import { DocumentationComponent } from './getting-started/documentation/documentation.component';
 import { NamingComponent } from './getting-started/naming/naming.component';
-import { AccessabilityComponent } from './getting-started/accessability/accessability.component';
+import { AccessibilityComponent } from './getting-started/accessibility/accessibility.component';
 
 // base section
 import { CoreComponent } from './core/core.component';
@@ -65,7 +65,7 @@ const routes: Routes = [
       { path: 'including', component: IncludingComponent },
       { path: 'documentation', component: DocumentationComponent },
       { path: 'naming', component: NamingComponent },
-      { path: 'accessability', component: AccessabilityComponent }
+      { path: 'accessibility', component: AccessibilityComponent }
     ]
   },
   { path: 'core', component: CoreComponent, 

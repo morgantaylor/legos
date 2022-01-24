@@ -21,9 +21,9 @@ export const STARTINGITEMS: Item[] = [
   }
   ,
   {
-    link: 'getting-started/accessability',
+    link: 'getting-started/accessibility',
     class: 'nav__item--nested',
-    name: 'Accessability',
+    name: 'Accessibility',
     divider: false
   }
 ]
